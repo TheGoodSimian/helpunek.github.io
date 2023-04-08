@@ -369,6 +369,7 @@ figure {
     padding: 0;
     margin: 0;
     padding-left: 20px;
+    float:right;
 }
 
 .widget-recent-posts ul li {
