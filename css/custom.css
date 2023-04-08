@@ -608,7 +608,7 @@ figure {
 
 .social li a:hover {
 	background-color: #333;
-	color: #fff;
+	color: #3a322d;
 }
 
 .facebook a {
@@ -764,7 +764,7 @@ figure {
 	}
 
 	.post {
-		background: #fff;
+		background: #3a322d;
 		padding: 0 10px 0;
 	}
 
