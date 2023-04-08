@@ -185,7 +185,7 @@ figure {
 }
 
 .post {
-	background: #fff;
+	background: #3a322d;
 	padding: 30px 30px 0;
 }
 
@@ -319,7 +319,7 @@ figure {
  */
 
 .widget {
-    background: #fff;  
+    background: #3a322d;  
     padding: 30px 0 0;  
 }
 
@@ -486,7 +486,7 @@ figure {
 	height: 100%;
 	top: 0;
 	left: 0;
-	background: #fff;
+	background: #3a322d;
 }
 
 .overlay .overlay-close {
