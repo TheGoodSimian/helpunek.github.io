@@ -46,8 +46,9 @@ Text Domain: blackandwhite
 
 * {outline: none;}
 
-body
-{ background-color: #3a322d;} 
+body {
+	background-color: #3a322d;
+} 
 
 h1, 
 h2, 
