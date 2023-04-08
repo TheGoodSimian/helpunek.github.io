@@ -69,11 +69,11 @@ a:hover, a:focus {
 }
 
 ::selection {
-	background-color: #3a322d;
+	background-color: #eeee;
 }
 
 body {
-	color: #444;
+	color: #3a322d;
 	font-family: 'Lato', sans-serif;
 }
 
