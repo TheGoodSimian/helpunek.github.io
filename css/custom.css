@@ -130,7 +130,7 @@ figure {
 .main-nav a:active,
 .main-nav a:focus,
 .main-nav a:hover {
-	background-color: transparent !important;
+	background-color: #000 !important;
 	border-bottom: 0;
 }
 
