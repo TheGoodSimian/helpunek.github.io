@@ -496,8 +496,8 @@ figure {
 	padding: 0;
 	overflow: hidden;
 	border: none;
-	color: transparent;
-	background-color: transparent;
+	color: #000;
+	background-color: #000;
 	z-index: 100;
 }
 
