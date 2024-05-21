@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Bio / Autodescription</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      text-align: center;
+      margin-left: 500px;
+      max-width: 900px;
+    }
+
+    h1 {
+      color: #333;
+    }
+
+    h2 {
+      color: #666;
+    }
+
+    .bio-text {
+      font-size: 16px;
+      line-height: 1.6;
+      text-align: left;
+      max-width: 900px;
+      padding: 10px;
+    }
+
+    /* Style for the present perfect simple tense phrases when hovering over the div */
+    .highlighted .present-perfect {
+      background-color: lightblue;
+    }
+  </style>
+</head>
+
+<body>
+  <h1>Bio / Autodescription</h1>
+  <h2>Please notice that bios use a lot of perfect tenses, mostly present perfect simple and present perfect continuous.
+    Can you explain why?</h2>
+  <div class="bio-text" id="bioText">
+
+    <p> Photography <span class="present-perfect">has always been</span> my greatest passion. I <span
+        class="present-perfect">have been honing</span> my skills behind the lens for more than a decade now.
+      Throughout my journey, I <span class="present-perfect">have captured</span> countless awe-inspiring photos,
+      and my work <span class="present-perfect">has been featured</span> in several prestigious magazines and
+      exhibitions.
+    </p>
+    <p> My adventures <span class="present-perfect">have taken</span> me to some of the most remote corners of the
+      globe. I <span class="present-perfect">have hiked</span> through dense rainforests, having unforgettable
+      encounters with exotic wildlife. I <span class="present-perfect">have also trekked</span> across vast deserts,
+      marveling at the endless dunes and starry skies.
+    </p>
+    <p>
+      In addition to photography, I <span class="present-perfect">have also been</span> involved in various
+      philanthropic projects. I <span class="present-perfect">have volunteered</span> with organizations that focus on
+      environmental conservation and community development. By working closely with these communities, I <span
+        class="present-perfect">have been able to witness</span> the positive impact of collective efforts.
+    </p>
+    <p>
+      Lately, I <span class="present-perfect">have been exploring</span> the art of storytelling through short films.
+      The power of visual storytelling intrigues me, and I <span class="present-perfect">find joy</span> in conveying
+      compelling narratives through my lens.
+    </p>
+
+  </div>
+
+  <script>
+    // JavaScript to handle hover effect on the div
+    const bioText = document.getElementById('bioText');
+
+    bioText.addEventListener('mouseover', () => {
+      bioText.classList.add('highlighted');
+    });
+
+    bioText.addEventListener('mouseout', () => {
+      bioText.classList.remove('highlighted');
+    });
+  </script>
+</body>
+
+</html>

@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Post-Class Review</title>
+  <script src='assets/js/jspdf.umd.min.js'></script>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #ededed; 
+      color: #333;  
+      margin: 0;
+      padding: 0;
+    }
+
+    header {
+      background-color: #eaeaea;
+      color: #fff;
+      text-align: center;
+      padding: 1rem;
+    }
+
+    main {
+      max-width: 600px;
+      margin: 0 auto;
+      padding: 1rem;
+      background-color: #fff;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+      border-radius: 4px;
+    }
+
+    form {
+      display: flex;
+      flex-direction: column;
+    }
+
+    label {
+      font-weight: bold;
+      margin-top: 1rem;
+    }
+
+    input[type="text"],
+    textarea {
+      border: 1px solid #ccc;
+      padding: 0.5rem;
+      border-radius: 4px;
+      resize: vertical; /* Allow vertical resizing of the textarea */
+    }
+
+    button[type="submit"] {
+      background-color: #444;
+      color: #fff;
+      border: none;
+      padding: 0.5rem 1rem;
+      margin-top: 1rem;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+
+    button[type="submit"]:hover {
+      background-color: #333;
+    }
+
+    a {
+      color: #333;
+      text-decoration: none;
+      margin-top: 0.5rem;
+      display: inline-block;
+    }
+
+    a:hover {
+      color: #000;
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <h1>Post-Class Review</h1>
+  </header>
+
+  <main>
+    <form id="reviewForm">
+      <label for="name">What's your name?</label>
+      <input type="text" id="name" name="name" required>
+
+      <label for="wordsLearned">What words did you learn today?</label>
+      <textarea type="text" id="wordsLearned" name="wordsLearned" required></textarea>
+      <label for="wordExample">Write an example sentence using each word:</label>
+      <textarea type="text" id="wordExample" name="wordExample" required></textarea>
+      <label for="wordAssociations">Associations:</label>
+      <textarea id="wordAssociations" name="wordAssociations" required></textarea>
+
+      <label for="phrasesLearned">What phrases did you learn today?</label>
+      <textarea type="text" id="phrasesLearned" name="phrasesLearned" required></textarea>
+      <label for="phraseExample">Write an example sentence using the phrase:</label>
+      <textarea type="text" id="phraseExample" name="phraseExample" required></textarea>
+      <label for="phraseAssociations">Associations:</label>
+      <textarea id="phraseAssociations" name="phraseAssociations" required></textarea>
+
+      <label for="grammarCorrection">What's a correction or new grammar rule that you remember from the class?</label>
+      <textarea id="grammarCorrection" name="grammarCorrection" required></textarea>
+
+      <label for="classParagraph">Write a paragraph or two using the words, phrases, and grammatical structures covered during the class:</label>
+      <textarea id="classParagraph" name="classParagraph" required></textarea>
+
+      <button type="submit">Submit</button>
+    </form>
+
+    <!-- Add download links -->
+    <a id="downloadJsonLink" style="display: none;">Download JSON File</a>
+    <a id="downloadPdfLink" style="display: none;">Download PDF File</a>
+  </main>
+    
+//
+  <script>
+    document.getElementById('reviewForm').addEventListener('submit', function (event) {
+      event.preventDefault();
+
+      const name = document.getElementById('name').value;
+      const wordsLearned = document.getElementById('wordsLearned').value;
+      const wordExample = document.getElementById('wordExample').value;
+      const wordAssociations = document.getElementById('wordAssociations').value;
+
+      const phrasesLearned = document.getElementById('phrasesLearned').value;
+      const phraseExample = document.getElementById('phraseExample').value;
+      const phraseAssociations = document.getElementById('phraseAssociations').value;
+
+      const grammarCorrection = document.getElementById('grammarCorrection').value;
+      const classParagraph = document.getElementById('classParagraph').value;
+
+      const timestamp = new Date().toLocaleString();
+      const fileName = `${name}_${timestamp.replace(/[/: ,]/g, '-')}`;
+
+      // Create a JSON object with the form data
+      const reviewData = {
+        name: name,
+        wordsLearned: wordsLearned,
+        wordExample: wordExample,
+        wordAssociations: wordAssociations,
+        phrasesLearned: phrasesLearned,
+        phraseExample: phraseExample,
+        phraseAssociations: phraseAssociations,
+        grammarCorrection: grammarCorrection,
+        classParagraph: classParagraph,
+        date: timestamp
+      };
+
+      // Convert the JSON object to a JSON string
+      const jsonContent = JSON.stringify(reviewData, null, 2); // null, 2 for pretty-printing with indentation
+
+      // Create a Blob with the JSON content
+      const jsonBlob = new Blob([jsonContent], { type: 'application/json' });
+
+      // Set the data and attributes of the JSON download link
+      const downloadJsonLink = document.getElementById('downloadJsonLink');
+      downloadJsonLink.href = URL.createObjectURL(jsonBlob);
+      downloadJsonLink.download = `${fileName}.json`;
+      downloadJsonLink.style.display = 'inline'; // Make the link visible
+
+      
+
+      // Clean up: revoke the Blob URL after some time (optional)
+      //setTimeout(() => URL.revokeObjectURL(downloadJsonLink.href), 10000);
+      // Check if jsPDF is available
+       // Check if jsPDF is available
+      if (typeof jsPDF !== 'undefined') {
+        // Generate PDF
+        
+
+        const pdf = new jsPDF();
+        
+        // Define max width for text
+        const maxWidth = 175;
+
+        // Split text into lines that fit within maxWidth
+        const postClassReviewLines = pdf.splitTextToSize("Post-Class Review", maxWidth);
+        const dateLines = pdf.splitTextToSize(`Date: ${timestamp}`, maxWidth);
+        const studentNameLines = pdf.splitTextToSize(`Student Name: ${name}`, maxWidth);
+        const wordsLearnedLines = pdf.splitTextToSize(`Words learned: ${wordsLearned}`, maxWidth);
+        const wordExampleLines = pdf.splitTextToSize(`Example sentence: ${wordExample}`, maxWidth);
+        const wordAssociationsLines = pdf.splitTextToSize(`Associations: ${wordAssociations}`, maxWidth);
+        const phrasesLearnedLines = pdf.splitTextToSize(`Phrases learned: ${phrasesLearned}`, maxWidth);
+        const phraseExampleLines = pdf.splitTextToSize(`Example sentence: ${phraseExample}`, maxWidth);
+        const phraseAssociationsLines = pdf.splitTextToSize(`Associations: ${phraseAssociations}`, maxWidth);
+        const grammarCorrectionLines = pdf.splitTextToSize(`Correction / New grammar rule: ${grammarCorrection}`, maxWidth);
+        const classParagraphLines = pdf.splitTextToSize(`Paragraph: ${classParagraph}`, maxWidth);
+        const thankYouLines = pdf.splitTextToSize(`Thank you for taking the time to review the material! :)`, maxWidth);
+
+        // Add text to the PDF with calculated line breaks
+        pdf.text(postClassReviewLines, 20, 20);
+        pdf.text(dateLines, 100, 20);
+        pdf.text(studentNameLines, 20, 60);
+        pdf.text(wordsLearnedLines, 20, 75);
+        pdf.text(wordExampleLines, 20, 90);
+        pdf.text(wordAssociationsLines, 20, 105);
+        pdf.text(phrasesLearnedLines, 20, 130);
+        pdf.text(phraseExampleLines, 20, 145);
+        pdf.text(phraseAssociationsLines, 20, 160);
+        pdf.text(grammarCorrectionLines, 20, 175);
+        pdf.text(classParagraphLines, 20, 190);
+        pdf.text(thankYouLines, 30, 220);
+
+       
+
+        // Create a Blob with the PDF content
+        const pdfBlob = pdf.output('blob');
+
+        // Set the data and attributes of the PDF download link
+        const downloadPdfLink = document.getElementById('downloadPdfLink');
+        downloadPdfLink.href = URL.createObjectURL(pdfBlob);
+        downloadPdfLink.download = `${fileName}.pdf`;
+        downloadPdfLink.style.display = 'inline'; // Make the link visible
+
+        // Clean up: revoke the Blob URL after some time (optional)
+        setTimeout(() => URL.revokeObjectURL(downloadPdfLink.href), 10000);
+      } else {
+        // If jsPDF is not available, show an error message or fallback
+        alert('Unable to generate PDF. Please try downloading JSON only.');
+      }
+    });
+  </script>
+
+</body>
+
+</html>
