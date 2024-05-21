@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mixing Tense and Aspect</title>
+  <style>
+    /* Basic styling for the webpage */
+    body {
+      font-family: Arial, sans-serif;
+      text-align: center;
+    }
+    .container {
+      display: flex;
+      justify-content: center;
+      margin-top: 20px;
+    }
+    .cell {
+      padding: 10px;
+      border: 1px solid #ccc;
+      margin: 0 5px;
+    }
+    .output {
+      margin-top: 20px;
+      border: 1px solid #ccc;
+      padding: 10px;
+    }
+  </style>
+</head>
+<body>
+  <h1>Mixing Tense and Aspect</h1>
+    <p>The tense system in English is made up of two elements: tense, which tells you about the "time" of an event, and aspect, which tells you about the "character" of an event (simple = completed, continuous = incomplete, perfect = contextual)</p>
+    <p> Experiment with mixing the three in different combinations, e.g. "present simple"</p>
+  <div class="container">
+    <div class="cell">
+      <label for="tenseInput">Tense:</label>
+      <input type="text" id="tenseInput">
+    </div>
+    <div class="cell">
+      <label for="aspectInput">Aspect:</label>
+      <input type="text" id="aspectInput">
+    </div>
+    <div class="cell">
+      <label for="aspect2Input">Aspect 2:</label>
+      <input type="text" id="aspect2Input">
+    </div>
+  </div>
+  <div class="output" id="outputDiv"></div>
+    <div class ="output" id=outputDiv2> Example sentence here </div>
+
+  <script>
+    // JavaScript code to handle the input and show output in the div
+    const outputDiv = document.getElementById('outputDiv');
+      const outputDiv2 = document.getElementById('outputDiv2');
+  const tenseInput = document.getElementById('tenseInput');
+  const aspectInput = document.getElementById('aspectInput');
+  const aspect2Input = document.getElementById('aspect2Input');
+
+  function checkInputs() {
+    const tense = tenseInput.value.trim().toLowerCase();
+    const aspect = aspectInput.value.trim().toLowerCase();
+    const aspect2 = aspect2Input.value.trim().toLowerCase();
+
+if (tense === 'past' && aspect === 'simple') {
+      outputDiv.textContent = 'I ate.';
+    } else if (tense === 'present' && aspect === 'simple') {
+      outputDiv.textContent = 'I eat.';
+    } else if (tense === 'present' && aspect === 'continuous') {
+      outputDiv.textContent = 'I am eating.';
+    } else if (tense === 'past' && aspect === 'continuous') {
+      outputDiv.textContent = 'I was eating.';
+    } else if (tense === 'present' && aspect === 'perfect' && aspect2 === 'simple') {
+      outputDiv.textContent = 'I have eaten.';
+    } else if (tense === 'present' && aspect === 'perfect' && aspect2 === 'continuous') {
+      outputDiv.textContent = 'I have been eating.';
+    } else if (tense === 'future' && aspect === 'simple') {
+      outputDiv.textContent = 'I will eat.';
+    } else if (tense === 'future' && aspect === 'continuous') {
+      outputDiv.textContent = 'I will be eating.';
+    } else if (tense === 'future' && aspect === 'perfect' && aspect2 === 'continuous') {
+      outputDiv.textContent = 'I will have been eating.';
+    } else if (tense === 'future' && aspect === 'perfect' && aspect2 === 'simple') {
+      outputDiv.textContent = 'I will have eaten.';
+    } else if (tense === 'past' && aspect === 'perfect' && aspect2 === 'simple') {
+      outputDiv.textContent = 'I had eaten.';
+      outputDiv2.textContent = "Before I arrived at the party, *I had eaten* dinner at home, so I didn't have much appetite for the cake *they had prepared*."
+    } else if (tense === 'past' && aspect === 'perfect' && aspect2 === 'continuous') {
+      outputDiv.textContent = 'I had been eating.';
+    } else if (tense === 'future' && aspect === 'simple') {
+      outputDiv.textContent = 'I will eat.';
+    } else if (tense === 'future' && aspect === 'continuous') {
+      outputDiv.textContent = 'I will be eating.';
+    } else if (tense === 'future' && aspect === 'perfect' && aspect2 === 'continuous') {
+      outputDiv.textContent = 'I will have been eating.';
+    } else if (tense === 'future' && aspect === 'perfect' && aspect2 === 'simple') {
+      outputDiv.textContent = 'I will have eaten.';
+    } else {
+      outputDiv.textContent = '';
+      outputDiv2.textContent = '';
+    }
+  }
+
+  // Attach event listeners to input elements
+  tenseInput.addEventListener('input', checkInputs);
+  aspectInput.addEventListener('input', checkInputs);
+  aspect2Input.addEventListener('input', checkInputs);
+</script>
+</body>
+</html>

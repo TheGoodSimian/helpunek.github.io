@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Bilingual Reader</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      text-align: center;
+      margin: 20px;
+        background: rgb(229, 235, 252);
+        
+            
+    }
+
+    .sentenceContainer {
+      font-size: 18px;
+      color: #333;
+      cursor: pointer;
+      padding-bottom: 30px;
+      border: none;
+      transition: background-color 0.3s;
+      margin: 5px;
+      width: 800px; /* Fixed width for the container */
+      height:auto;
+    }
+    
+      .h1 {
+          padding: 10px;
+          margin: 100px;
+      }
+      
+      .reader {
+            justify-content: space-around;
+            max-width: 900px;
+            margin: 0 auto;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 20px 16px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            margin-top: 40px;
+        }
+      }
+      
+    .sentenceContainer:hover {
+      background-color: #f0f0f0;
+    }
+      
+    .sentenceContainer:active {
+      font-size: 36px;
+  }  
+      
+      .notepad {
+      position: fixed;
+      display:flex;
+      flex: 1;
+      padding-right: 20px;
+      border-right: 1px;
+      margin-right: 10px;
+        
+      
+      }
+      
+      form {
+      display: flex;
+      flex-direction: column;
+    }
+
+    label {
+      font-weight: bold;
+      margin-top: 1rem;
+    }
+      
+      input[type="text"],
+    textarea {
+        width: 100%; /* Set the desired width */
+        height:100%;
+        max-width: 400px;
+        max-height: 500px;
+        border: 1px solid #ccc;
+        padding: 0.5rem;
+        border-radius: 4px;
+        resize:both; /* Allow vertical resizing of the textarea */
+    }
+      
+      @media 
+      
+  </style>
+</head>
+
+<body>
+   <div class="notepad">
+
+    <form id="notepad">
+      <label for="notes">Notes</label>
+        <textarea type="text"id="notes" notes="notes"></textarea>
+    </form>
+
+    </div>
+    <h1> Also Sprach Zarathustra</h1>
+<div class="reader">
+    
+  <div class="sentenceContainer" onmouseover="switchSentence(0)" onmouseout="switchSentence(0)" ></div>
+  <div class="sentenceContainer" onmouseover="switchSentence(1)" onmouseout="switchSentence(1)"></div>
+  <div class="sentenceContainer" onmouseover="switchSentence(2)" onmouseout="switchSentence(2)"></div>
+  <div class="sentenceContainer" onmouseover="switchSentence(3)" onmouseout="switchSentence(3)"></div>
+  <div class="sentenceContainer" onmouseover="switchSentence(4)" onmouseout="switchSentence(4)"></div>
+  <div class="sentenceContainer" onmouseover="switchSentence(5)" onmouseout="switchSentence(5)"></div>
+  <div class="sentenceContainer" onmouseover="switchSentence(6)" onmouseout="switchSentence(6)"></div>
+  <div class="sentenceContainer" onmouseover="switchSentence(7)" onmouseout="switchSentence(7)"></div>
+  <div class="sentenceContainer" onmouseover="switchSentence(8)" onmouseout="switchSentence(8)"></div>
+  <div class="sentenceContainer" onmouseover="switchSentence(9)" onmouseout="switchSentence(9)"></div>
+  <div class="sentenceContainer" onmouseover="switchSentence(10)" onmouseout="switchSentence(10)"></div>
+  <div class="sentenceContainer" onmouseover="switchSentence(11)" onmouseout="switchSentence(11)"></div>
+    <!-- Add more divs for other sentences as needed -->
+</div>
+
+
+  <script src="script.js"></script>
+ 
+</body>
+
+</html>
