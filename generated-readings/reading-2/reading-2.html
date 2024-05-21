@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="el">
+<head>
+  <title>Sentence Switcher</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      text-align: center;
+      margin: 20px;
+      background: rgb(229, 235, 252);
+    }
+
+    .sentenceContainer {
+      font-size: 18px;
+      color: #333;
+      cursor: pointer;
+      padding-bottom: 30px;
+      border: none;
+      transition: background-color 0.3s;
+      margin: 5px;
+      width: 800px; /* Fixed width for the container */
+      height: auto;
+    }
+
+    .reader {
+      justify-content: space-around;
+      max-width: 900px;
+      margin: 0 auto;
+      background-color: #fff;
+      border-radius: 8px;
+      box-shadow: 0 20px 16px rgba(0, 0, 0, 0.1);
+      padding: 20px;
+      margin-top: 40px;
+    }
+
+    .sentenceContainer:hover {
+      background-color: #f0f0f0;
+    }
+
+    .sentenceContainer:active {
+      font-size: 36px;
+    }
+  </style>
+</head>
+<body>
+  <div class="reader">
+    <div class="sentenceContainer"><div class="sentence">Our sati is like a compact fluorescent lamp.</div></div>
+    <div class="sentenceContainer"><div class="sentence">
+When it is first switched on, the light is relatively dim, but after a while, the light gets brighter and brighter.</div></div>
+    <div class="sentenceContainer"><div class="sentence">
+
+Mindfulness of our body is like the light from a fluorescent lamp on our body.</div></div>
+    <div class="sentenceContainer"><div class="sentence"> At first, our sati is just a glimmer.</div></div>
+    <div class="sentenceContainer"><div class="sentence"> So, if you can’t focus well, don’t worry.</div></div>
+    <div class="sentenceContainer"><div class="sentence"> Allow things to be.</div></div>
+    <div class="sentenceContainer"><div class="sentence"> Simply be aware of what’s going on, allowing the light to shine on.</div></div>
+    <div class="sentenceContainer"><div class="sentence"> After a while, the light will become stronger.</div></div>
+    <div class="sentenceContainer"><div class="sentence">
+
+Likewise, mindfulness of our body starts small with a small part.</div></div>
+    <div class="sentenceContainer"><div class="sentence"> After having worked for a longer period, our sati will become more and more active until it finally becomes fully functional.</div></div>
+    <div class="sentenceContainer"><div class="sentence"> Then, our mind will be brightly lit with sati.</div></div>
+    <div class="sentenceContainer"><div class="sentence">
+
+When mental irritants have been eliminated, we will feel happy—nothing is there to bother us.</div></div>
+    <div class="sentenceContainer"><div class="sentence"> Irritants, whether pleasing or displeasing, harm our mind, but when sati is with us, we can experience them with unruffled calm.</div></div>
+    <div class="sentenceContainer"><div class="sentence">
+
+To have sati or mindfulness is an objective of our training, of meditation
+Different schools seek different methods to develop sati.</div></div>
+    <div class="sentenceContainer"><div class="sentence"> All approaches aim for the same purpose: to develop mindfulness.</div></div>
+    <div class="sentenceContainer"><div class="sentence">
+
+During our practice, we should try to sustain our mindfulness, keeping it focused on our body and not wandering outside as well as not getting curious and going inside the mind to explore new mental experiences.</div></div>
+    <div class="sentenceContainer"><div class="sentence"> We should sustain our mindfulness on our body parts such as keeping our head and body erect but with shoulders relaxed.</div></div>
+    <div class="sentenceContainer"><div class="sentence"> Then, our mind will be peaceful and free from the unwholesome.</div></div>
+    <div class="sentenceContainer"><div class="sentence">
+
+Not yet awakened with full sati, we, who are just trainees, should continuously develop experience.</div></div>
+    <div class="sentenceContainer"><div class="sentence"> Do it when you feel diligent.</div></div>
+    <div class="sentenceContainer"><div class="sentence"> Do it when you feel lazy.</div></div>
+    <div class="sentenceContainer"><div class="sentence"> Do it when you are busy.</div></div>
+    <div class="sentenceContainer"><div class="sentence"> And do it when you are free.</div></div>
+    <div class="sentenceContainer"><div class="sentence">
+
+What we usually find is that there is little time to practice mindfulness because we always claim busyness or wishes to do something else.</div></div>
+    <div class="sentenceContainer"><div class="sentence"> Even when we are happy, we say to ourselves: “Could I postpone the practice as I want to enjoy my happiness first?</div></div>
+    <div class="sentenceContainer"><div class="sentence">” But when we are miserable, we don’t have an iota of sati to start with!</div></div>
+    <div class="sentenceContainer"><div class="sentence">
+
+An hour or two of each single day of your remaining time on Earth should be spent on cultivating mindfulness for your own benefits.</div></div>
+    <div class="sentenceContainer"><div class="sentence"> Be mindful when you work, speak, think or even eat.</div></div>
+    <div class="sentenceContainer"><div class="sentence"> Always practice mindfulness.</div></div>
+    <div class="sentenceContainer"><div class="sentence"> Don’t waste your day.</div></div>
+  </div>
+  <script src="sentences-source.js"></script>
+  <script src="sentences-target.js"></script>
+  <script>
+    const divs = document.querySelectorAll(".sentenceContainer .sentence");
+
+    divs.forEach((div, index) => {
+      div.addEventListener("mouseover", () => {
+        div.innerText = sentencesTarget[index];
+      });
+      div.addEventListener("mouseout", () => {
+        div.innerText = sentencesSource[index];
+      });
+    });
+  </script>
+            <p>Source: https://wiswo.org/books/afcm/</p>
+</body>
+</html>
