@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="el">
+<head>
+  <title>Biingual Reader</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      text-align: center;
+      margin: 20px;
+      background: rgb(229, 235, 252);
+    }
+
+    .sentenceContainer {
+      font-size: 18px;
+      color: #333;
+      cursor: pointer;
+      padding-bottom: 30px;
+      border: none;
+      transition: background-color 0.3s;
+      margin: 5px;
+      width: 800px; /* Fixed width for the container */
+      height: auto;
+    }
+
+    .reader {
+      justify-content: space-around;
+      max-width: 800px;
+      margin: 0 auto;
+      background-color: #fff;
+      border-radius: 8px;
+      box-shadow: 0 20px 16px rgba(0, 0, 0, 0.1);
+      padding: 20px;
+      margin-top: 40px;
+    }
+
+    .sentenceContainer:hover {
+      background-color: #f0f0f0;
+    }
+
+    .sentenceContainer:active {
+      font-size: 36px;
+    }
+
+	.notepad {
+	  position: fixed;
+	  display: flex;
+	  flex: 1;
+	  padding-right: 20px;
+	  border-right: 1px;
+	  margin-right: 10px;
+	}
+
+	form {
+     display: flex;
+     flex-direction: column;
+	}
+
+	label {
+      font-weight: bold;
+      margin-top: 1rem;
+    }
+      input[type="text"],
+	textarea {
+	    width: 80px; /* Set the desired width */
+       height: 160px;
+       border: 1px solid #ccc;
+       padding: 0.5rem;
+       border-radius: 4px;
+       resize:both; /* Allow vertical resizing of the textarea */
+	}
+
+	</style>
+</head>
+	<div class="notepad">
+	<form id="notepad">
+	<label for="notes">Notes</label>
+	<textarea type="text"id="notes" notes="notes">Write down any stuff you want to remember, here. Try resizing me! </textarea>
+	</form>
+	</div>
+  <h>The Heron</h>
+<body>
+  <div class="reader">
+    <div class="sentenceContainer"><div class="sentence">The Heron A Heron was walking sedately along the bank of a stream, his eyes on the clear water, and his long neck and pointed bill ready to snap up a likely morsel for his breakfast.</div></div>
+    <div class="sentenceContainer"><div class="sentence"> The clear water swarmed with fish, but Master Heron was hard to please that morning.</div></div>
+    <div class="sentenceContainer"><div class="sentence"> 'No small fry for me,' he said.</div></div>
+    <div class="sentenceContainer"><div class="sentence"> 'Such scanty fare is not fit for a Heron'.</div></div>
+    <div class="sentenceContainer"><div class="sentence"> Now a fine young Perch swam near.</div></div>
+    <div class="sentenceContainer"><div class="sentence"> 'No indeed,' said the Heron.</div></div>
+    <div class="sentenceContainer"><div class="sentence"> 'I wouldn't even trouble to open my beak for anything like that!</div></div>
+    <div class="sentenceContainer"><div class="sentence">' As the sun rose, the fish left the shallow water near the shore and swam below into the cool depths toward the middle.</div></div>
+    <div class="sentenceContainer"><div class="sentence"> The Heron saw no more fish, and very glad was he at last to breakfast on a tiny Snail.</div></div>
+    <div class="sentenceContainer"><div class="sentence"> Do not be too hard to suit or you may have to be content with the worst or with nothing at all.</div></div>
+  </div>
+  <script src="sentences-source.js"></script>
+  <script src="sentences-target.js"></script>
+  <script>
+    const divs = document.querySelectorAll(".sentenceContainer .sentence");
+
+    divs.forEach((div, index) => {
+      div.addEventListener("mouseover", () => {
+        div.innerText = sentencesTarget[index];
+      });
+      div.addEventListener("mouseout", () => {
+        div.innerText = sentencesSource[index];
+      });
+    });
+  </script>
+</body>
+</html>

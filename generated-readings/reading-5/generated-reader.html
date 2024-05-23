@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="el">
+<head>
+  <title>Biingual Reader</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      text-align: center;
+      margin: 20px;
+      background: rgb(229, 235, 252);
+    }
+
+    .sentenceContainer {
+      font-size: 18px;
+      color: #333;
+      cursor: pointer;
+      padding-bottom: 30px;
+      border: none;
+      transition: background-color 0.3s;
+      margin: 5px;
+      width: 800px; /* Fixed width for the container */
+      height: auto;
+    }
+
+    .reader {
+      justify-content: space-around;
+      max-width: 800px;
+      margin: 0 auto;
+      background-color: #fff;
+      border-radius: 8px;
+      box-shadow: 0 20px 16px rgba(0, 0, 0, 0.1);
+      padding: 20px;
+      margin-top: 40px;
+    }
+
+    .sentenceContainer:hover {
+      background-color: #f0f0f0;
+    }
+
+    .sentenceContainer:active {
+      font-size: 36px;
+    }
+
+	.notepad {
+	  position: fixed;
+	  display: flex;
+	  flex: 1;
+	  padding-right: 20px;
+	  border-right: 1px;
+	  margin-right: 10px;
+	}
+
+	form {
+     display: flex;
+     flex-direction: column;
+	}
+
+	label {
+      font-weight: bold;
+      margin-top: 1rem;
+    }
+      input[type="text"],
+	textarea {
+	    width: 80px; /* Set the desired width */
+       height: 160px;
+       border: 1px solid #ccc;
+       padding: 0.5rem;
+       border-radius: 4px;
+       resize:both; /* Allow vertical resizing of the textarea */
+	}
+
+	</style>
+</head>
+	<div class="notepad">
+	<form id="notepad">
+	<label for="notes">Notes</label>
+	<textarea type="text"id="notes" notes="notes">Write down any stuff you want to remember, here. Try resizing me! </textarea>
+	</form>
+	</div>
+  <h>The Wild Boar & the Fox</h>
+<body>
+  <div class="reader">
+    <div class="sentenceContainer"><div class="sentence"> A Wild Boar was sharpening his tusks busily against the stump of a tree, when a Fox happened by.</div></div>
+    <div class="sentenceContainer"><div class="sentence"> Now the Fox was always looking for a chance to make fun of his neighbors.</div></div>
+    <div class="sentenceContainer"><div class="sentence"> So he made a great show of looking anxiously about, as if in fear of some hidden enemy.</div></div>
+    <div class="sentenceContainer"><div class="sentence"> But the Boar kept right on with his work.</div></div>
+    <div class="sentenceContainer"><div class="sentence"> 'Why are you doing that'?</div></div>
+    <div class="sentenceContainer"><div class="sentence"> asked the Fox at last with a grin.</div></div>
+    <div class="sentenceContainer"><div class="sentence"> 'There isn't any danger that I can see'.</div></div>
+    <div class="sentenceContainer"><div class="sentence"> 'True enough,' replied the Boar, 'but when danger does come there will not be time for such work as this.</div></div>
+    <div class="sentenceContainer"><div class="sentence"> My weapons will have to be ready for use then, or I shall suffer for it'.</div></div>
+    <div class="sentenceContainer"><div class="sentence"> Preparedness for war is the best guarantee of peace.</div></div>
+  </div>
+  <script src="sentences-source.js"></script>
+  <script src="sentences-target.js"></script>
+  <script>
+    const divs = document.querySelectorAll(".sentenceContainer .sentence");
+
+    divs.forEach((div, index) => {
+      div.addEventListener("mouseover", () => {
+        div.innerText = sentencesTarget[index];
+      });
+      div.addEventListener("mouseout", () => {
+        div.innerText = sentencesSource[index];
+      });
+    });
+  </script>
+</body>
+</html>
