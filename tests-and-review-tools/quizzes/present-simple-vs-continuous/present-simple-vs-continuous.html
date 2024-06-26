@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fill-in the Gap Exercise</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        .question {
+            margin-bottom: 10px;
+        }
+        .input-field {
+            margin-bottom: 10px;
+        }
+        .result {
+            margin-top: 20px;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <h1>Present Simple or Present Continuous?</h1>
+    <h2>Choose the correct tense and form, and fill-in the gaps.</h2>
+    <div id="exercise">
+        <div class="question">I <input type="text" placeholder="to work" id="answer1" class="input-field"> at an ice cream booth. We are open all year round we usually <input type="text" placeholder="to have" id="answer2" class="input-field"> a lot of business, but for some reason, people just <input type="text" placeholder="to not buy" id="answer3" class="input-field"> ice cream this summer. It must be the cold spike.</div>
+        <div class="question">I <input type="text" placeholder="to feel" id="answer4" class="input-field"> it right now.</div>
+        <div class="question">I <input type="text" placeholder="to feel" id="answer5" class="input-field"> guilty whenever I <input type="text" placeholder="to have to" id="answer6" class="input-field"> decline a credit offer.</div>
+        <div class="question">Oil prices usually <input type ="text" placeholder="go up" id="answer7" id="input-field"> this time of the year, but this year, they <input type="text" placeholder="to skyrocket", id="answer8", class="input-field">.</div>
+      <!--   <div class="question">text <input type="text" id="answer3" class="input-field"> text.</div>
+        <div class="question">text <input type="text" id="answer3" class="input-field"> text.</div>
+        <div class="question">text <input type="text" id="answer3" class="input-field"> text.</div> -->
+
+        <button onclick="checkAnswers()">Check Answers</button>
+        <div id="result" class="result"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
