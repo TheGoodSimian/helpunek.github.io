@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Post-</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf-autotable/3.5.23/jspdf.plugin.autotable.min.js"></script>
+    <style>
+        
+         textarea {
+            width: 50%;
+            height: 50px; /* 2x smaller height */
+            resize: vertical;
+        }
+        .input-group {
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Post-Class Review</h1>
+    <form id="pdfForm">
+        <div class="input-group">
+            <label for="inputName">Your Name:</label><br>
+            <textarea id="inputName"></textarea>
+        </div>
+
+        <div class="input-group">
+            <label for="input1">Words you learned:</label><br>
+            <textarea id="input1"></textarea>
+        </div>
+
+        <div class="input-group">
+            <label for="input2">Examples:</label><br>
+            <textarea id="input2"></textarea>
+        </div>
+
+        <div class="input-group">
+            <label for="input3">Associations:</label><br>
+            <textarea id="input3"></textarea>
+        </div>
+
+        <div class="input-group">
+            <label for="input4">Phrases you learned:</label><br>
+            <textarea id="input4"></textarea>
+        </div>
+
+        <div class="input-group">
+            <label for="input5">Examples:</label><br>
+            <textarea id="input5"></textarea>
+        </div>
+
+        <div class="input-group">
+            <label for="input6">Associations:</label><br>
+            <textarea id="input6"></textarea>
+        </div>
+
+        <div class="input-group">
+            <label for="input7">A piece of grammar or a correction you learned:</label><br>
+            <textarea id="input7"></textarea>
+        </div>
+
+        <div class="input-group">
+            <label for="input8">Write a paragraph or two using the new words and grammar:</label><br>
+            <textarea id="input8"></textarea>
+        </div>
+
+        <button type="button" onclick="generatePDF()">Download PDF</button>
+        <button type="button" onclick="generateJSON()">Download JSON</button>
+    </form>
+
+    <script>
+        function generatePDF() {
+            const { jsPDF } = window.jspdf;
+            const doc = new jsPDF();
+
+            const name = document.getElementById('inputName').value;
+            const today = new Date();
+            const date = today.toISOString().split('T')[0]; // Format: YYYY-MM-DD
+            const filename = `review-${name}-${date}.pdf`;
+
+            // Add the date to the top right corner of the first page
+            doc.text(date, doc.internal.pageSize.width - 10 - doc.getTextWidth(date), 10);
+
+            const inputs = [
+                { label: 'Your Name:', value: name },
+                { label: 'Words you learned:', value: document.getElementById('input1').value },
+                { label: 'Examples:', value: document.getElementById('input2').value },
+                { label: 'Associations:', value: document.getElementById('input3').value },
+                { label: 'Phrases you learned:', value: document.getElementById('input4').value },
+                { label: 'Examples:', value: document.getElementById('input5').value },
+                { label: 'Associations:', value: document.getElementById('input6').value },
+                { label: 'A piece of grammar or a correction you learned:', value: document.getElementById('input7').value },
+                { label: 'Write a paragraph or two using the new words and grammar:', value: document.getElementById('input8').value }
+            ];
+
+            let yOffset = 20; // Initial y offset, slightly below the date
+            const margin = 10; // Margin for text
+
+            inputs.forEach((input, index) => {
+                const text = `${input.label} ${input.value}`;
+                const lines = doc.splitTextToSize(text, 180); // Split text into lines
+                const requiredHeight = lines.length * 10; // Estimate the height required for this text
+
+                if (yOffset + requiredHeight > doc.internal.pageSize.height - margin) {
+                    doc.addPage();
+                    yOffset = 10; // Reset y offset for new page
+                }
+
+                doc.text(lines, margin, yOffset);
+                yOffset += requiredHeight + 10; // Increment y offset for the next text
+            });
+
+            // Add the note at the end of the document
+            const thankYouNote = "Thank you for taking your time to fill out the review!";
+            if (yOffset + 20 > doc.internal.pageSize.height - margin) {
+                doc.addPage();
+                yOffset = 10; // Reset y offset for new page
+            }
+            yOffset += 10; // Add some space before the note
+            doc.text(thankYouNote, margin, yOffset);
+
+            doc.save(filename);
+        }
+
+        function generateJSON() {
+            const name = document.getElementById('inputName').value;
+            const today = new Date();
+            const date = today.toISOString().split('T')[0]; // Format: YYYY-MM-DD
+            const filename = `review-${name}-${date}.json`;
+
+            const inputs = {
+                "Your Name": name,
+                "Words you learned": document.getElementById('input1').value,
+                "Examples1": document.getElementById('input2').value,
+                "Associations1": document.getElementById('input3').value,
+                "Phrases you learned": document.getElementById('input4').value,
+                "Examples2": document.getElementById('input5').value,
+                "Associations2": document.getElementById('input6').value,
+                "A piece of grammar or a correction you learned": document.getElementById('input7').value,
+                "Paragraph using new words and grammar": document.getElementById('input8').value
+            };
+
+            const jsonString = JSON.stringify(inputs, null, 2); // Pretty print JSON with 2 spaces
+            const blob = new Blob([jsonString], { type: 'application/json' });
+            const url = URL.createObjectURL(blob);
+
+            const a = document.createElement('a');
+            a.href = url;
+            a.download = filename;
+            a.click();
+            URL.revokeObjectURL(url); // Clean up URL.createObjectURL
+        }
+    </script>
+</body>
+</html>
