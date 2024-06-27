@@ -17,12 +17,12 @@
     }
     .cell {
       padding: 10px;
-      border: 1px solid #ccc;
+      border: 1px transparent #ccc;
       margin: 0 5px;
     }
     .output {
       margin-top: 20px;
-      border: 1px solid #ccc;
+      border: 1px transparent #ccc;
       padding: 10px;
     }
   </style>
@@ -50,8 +50,8 @@
 
   <script>
     // JavaScript code to handle the input and show output in the div
-    const outputDiv = document.getElementById('outputDiv');
-      const outputDiv2 = document.getElementById('outputDiv2');
+  const outputDiv = document.getElementById('outputDiv');
+  const outputDiv2 = document.getElementById('outputDiv2');
   const tenseInput = document.getElementById('tenseInput');
   const aspectInput = document.getElementById('aspectInput');
   const aspect2Input = document.getElementById('aspect2Input');
@@ -95,8 +95,8 @@ if (tense === 'past' && aspect === 'simple') {
     } else if (tense === 'future' && aspect === 'perfect' && aspect2 === 'simple') {
       outputDiv.textContent = 'I will have eaten.';
     } else {
-      outputDiv.textContent = '';
-      outputDiv2.textContent = '';
+      outputDiv.textContent = 'You will see an example structure here';
+      outputDiv2.textContent = 'You will see an example sentence here';
     }
   }
 
