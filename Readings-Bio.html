@@ -20,7 +20,7 @@
       color: #666;
     }
 
-    .bio-text {
+    .text {
       font-size: 16px;
       line-height: 1.6;
       text-align: left;
@@ -42,7 +42,7 @@
   <h1>Bio / Autodescription</h1>
   <h2>Notice that bios use a lot of perfect tenses, mostly <span class="present-perfect">present perfect simple</span> and <span class="present-perfect-continuous">present perfect continuous</span>.
     Can you explain why?</h2>
-  <div class="bio-text" id="bioText">
+  <div class="text" id="text">
 
     <p> Photography <span class="present-perfect">has always been</span> my greatest passion. I <span
         class="present-perfect-continuous">have been honing</span> my skills behind the lens for more than a decade now.
@@ -71,14 +71,14 @@
 
   <script>
     // JavaScript to handle hover effect on the div
-    const bioText = document.getElementById('bioText');
+    const text = document.getElementById('text');
 
-    bioText.addEventListener('mouseover', () => {
-      bioText.classList.add('highlighted');
+    text.addEventListener('mouseover', () => {
+      text.classList.add('highlighted');
     });
 
-    bioText.addEventListener('mouseout', () => {
-      bioText.classList.remove('highlighted');
+    text.addEventListener('mouseout', () => {
+      text.classList.remove('highlighted');
     });
   </script>
 </body>
