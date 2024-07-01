@@ -1,1 +1,54 @@
-
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kontakt</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            color: #333;
+            margin: 0;
+            padding: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        .contact-container {
+            background-color: #fff;
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            border-radius: 5px;
+        }
+        .contact-header {
+            margin-bottom: 20px;
+            font-size: 24px;
+        }
+        .contact-item {
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="contact-container">
+        <div class="contact-header">Kontakt</div>
+        <div class="contact-item">
+            Email: <span id="email"></span>
+        </div>
+        <div class="contact-item">
+<!--             Phone: <a href="tel:+">+1 234 567 890</a>
+ -->        </div>
+    </div> 
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            var user = "learn.english";
+            var domain = "tutanota";
+            var tld = "com";
+            var email = user + "@" + domain + "." + tld;
+            document.getElementById("email").innerText = email;
+        });
+    </script>
+</body>
+</html>
