@@ -1,0 +1,11 @@
+table {
+    border-collapse: collapse; /* Remove gaps between cells */
+  }
+  
+  td {
+    width: 30px; /* Adjust cell width as needed */
+    height: 30px; /* Adjust cell height as needed */
+    border: 1px solid black; /* Add borders */
+    text-align: center; /* Center text in cells */
+  }
+  
