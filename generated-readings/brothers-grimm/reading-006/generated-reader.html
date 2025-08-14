@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="el">
+<head>
+  <title>Biingual Reader</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      text-align: center;
+      margin: 20px;
+      background: rgb(229, 235, 252);
+    }
+
+    .sentenceContainer {
+      font-size: 18px;
+      color: #333;
+      cursor: pointer;
+      padding-bottom: 30px;
+      border: none;
+      transition: background-color 0.3s;
+      margin: 5px;
+      width: 800px; /* Fixed width for the container */
+      height: auto;
+    }
+
+    .reader {
+      justify-content: space-around;
+      max-width: 800px;
+      margin: 0 auto;
+      background-color: #fff;
+      border-radius: 8px;
+      box-shadow: 0 20px 16px rgba(0, 0, 0, 0.1);
+      padding: 20px;
+      margin-top: 40px;
+    }
+
+    .sentenceContainer:hover {
+      background-color: #f0f0f0;
+    }
+
+    .sentenceContainer:active {
+      font-size: 36px;
+    }
+
+	.notepad {
+	  position: fixed;
+	  display: flex;
+	  flex: 1;
+	  padding-right: 20px;
+	  border-right: 1px;
+	  margin-right: 10px;
+	}
+
+	form {
+     display: flex;
+     flex-direction: column;
+	}
+
+	label {
+      font-weight: bold;
+      margin-top: 1rem;
+    }
+      input[type="text"],
+	textarea {
+	    width: 80px; /* Set the desired width */
+       height: 160px;
+       border: 1px solid #ccc;
+       padding: 0.5rem;
+       border-radius: 4px;
+       resize:both; /* Allow vertical resizing of the textarea */
+	}
+
+	</style>
+</head>
+	<div class="notepad">
+	<form id="notepad">
+	<label for="notes">Notes</label>
+	<textarea type="text"id="notes" notes="notes">Write down any stuff you want to remember, here. Try resizing me! </textarea>
+	</form>
+	</div>
+<body>
+  <div class="reader">
+    <div class="sentenceContainer"><div class="sentence">There was once a peasant who had driven his cow to the fair, and sold her for seven talers.</div></div>
+    <div class="sentenceContainer"><div class="sentence"> On the way home he had to pass a pond, and already from afar he heard the frogs crying, aik, aik, aik, aik.</div></div>
+    <div class="sentenceContainer"><div class="sentence"> Well, said he to himself, they are talking without rhyme or reason, it is seven that I have received, not eight.</div></div>
+    <div class="sentenceContainer"><div class="sentence"> When he got to the water, he cried to them, stupid animals that you are.</div></div>
+    <div class="sentenceContainer"><div class="sentence"> Don't you know better than that.</div></div>
+    <div class="sentenceContainer"><div class="sentence"> It is seven thalers and not eight.</div></div>
+    <div class="sentenceContainer"><div class="sentence"> The frogs, however, stuck to their, aik aik, aik, aik.</div></div>
+    <div class="sentenceContainer"><div class="sentence"> Come, then, if you won't believe it, I can count it out to you.</div></div>
+    <div class="sentenceContainer"><div class="sentence"> And he took his money out of his pocket and counted out the seven talers, always reckoning four and twenty groschen to a taler.</div></div>
+    <div class="sentenceContainer"><div class="sentence"> The frogs, however, paid no attention to his reckoning, but still cried, aik, aik, aik, aik.</div></div>
+    <div class="sentenceContainer"><div class="sentence"> What, cried the peasant, quite angry, if you know better than I, count it yourselves, and threw all the money at them into the water.</div></div>
+    <div class="sentenceContainer"><div class="sentence"> He stood still and wanted to wait until they were through and had returned to him what was his, but the frogs maintained their opinion and cried continually, aik, aik, aik, aik.</div></div>
+    <div class="sentenceContainer"><div class="sentence"> And besides that, did not throw the money out again.</div></div>
+    <div class="sentenceContainer"><div class="sentence"> He still waited a long while until evening came on and he was forced to go home.</div></div>
+    <div class="sentenceContainer"><div class="sentence"> Then he abused the frogs and cried, you water-splashers, you thick-heads, you goggle-eyes, you have great mouths and can screech till you hurt one's ears, but you cannot count seven talers.</div></div>
+    <div class="sentenceContainer"><div class="sentence"> Do you think I'm going to stand here till you get through.</div></div>
+    <div class="sentenceContainer"><div class="sentence"> And with that he went away, but the frogs still cried, aik, aik, aik, aik, after him till he went home sorely vexed.</div></div>
+    <div class="sentenceContainer"><div class="sentence"> After a while he bought another cow, which he slaughtered, and he made the calculation that if he sold the meat well he might gain as much as the two cows were worth, and have the hide into the bargain.</div></div>
+    <div class="sentenceContainer"><div class="sentence"> When therefore he got to the town with the meat, a great pack of dogs were gathered together in front of the gate, with a large greyhound at the head of them, which jumped at the meat, sniffed at it, and barked, wow, wow, wow.</div></div>
+    <div class="sentenceContainer"><div class="sentence"> As there was no stopping him, the peasant said to him, yes, yes, I know quite well that you are saying wow, wow, wow, because you want some of the meat, but I should be in a fine state if I were to give it to you.</div></div>
+    <div class="sentenceContainer"><div class="sentence"> The dog, however, answered nothing but wow, wow.</div></div>
+    <div class="sentenceContainer"><div class="sentence"> Will you promise not to devour it all then, and will you go bail for your companions.</div></div>
+    <div class="sentenceContainer"><div class="sentence"> Wow, wow, wow, said the dog.</div></div>
+    <div class="sentenceContainer"><div class="sentence"> Well, if you insist on it, I will leave it for you, I know you well, and know whom you serve, but this I tell you, I must have my money in three days or else it will go ill with you, you can just bring it out to me.</div></div>
+    <div class="sentenceContainer"><div class="sentence"> Thereupon he unloaded the meat and turned back again.</div></div>
+    <div class="sentenceContainer"><div class="sentence"> The dogs fell upon it and loudly barked, wow, wow.</div></div>
+    <div class="sentenceContainer"><div class="sentence"> The countryman, who heard them from afar, said to himself, hark, now they all want some, but the big one is responsible to me for it.</div></div>
+    <div class="sentenceContainer"><div class="sentence"> When three days had passed, the countryman thought, to-night my money will be in my pocket, and was quite delighted.</div></div>
+    <div class="sentenceContainer"><div class="sentence"> But no one would come and pay it.</div></div>
+    <div class="sentenceContainer"><div class="sentence"> There is no trusting any one now, said he.</div></div>
+    <div class="sentenceContainer"><div class="sentence"> At last he lost patience, and went into the town to the butcher and demanded his money.</div></div>
+    <div class="sentenceContainer"><div class="sentence"> The butcher thought it was a joke, but the peasant said, jesting apart, I will have my money.</div></div>
+    <div class="sentenceContainer"><div class="sentence"> Did not the big dog bring you the whole of the slaughtered cow three days ago.</div></div>
+    <div class="sentenceContainer"><div class="sentence"> Then the butcher grew angry, snatched a broomstick and drove him out.</div></div>
+    <div class="sentenceContainer"><div class="sentence"> Wait, said the peasant, there is still some justice in the world, and went to the royal palace and begged for an audience.</div></div>
+    <div class="sentenceContainer"><div class="sentence"> He was led before the king, who sat there with his daughter, and asked him what injury he had suffered.</div></div>
+    <div class="sentenceContainer"><div class="sentence"> Alas, said he, the frogs and the dogs have taken from me what is mine, and the butcher has paid me for it with the stick.</div></div>
+    <div class="sentenceContainer"><div class="sentence"> And he related at full length what had happened.</div></div>
+    <div class="sentenceContainer"><div class="sentence"> Thereupon the king's daughter began to laugh heartily, and the king said to him, I cannot give you justice in this, but you shall have my daughter to wife for it - in her whole life she has never yet laughed as she has just done at you, and I have promised her to him who could make her laugh.</div></div>
+    <div class="sentenceContainer"><div class="sentence"> You may thank God for your good fortune.</div></div>
+    <div class="sentenceContainer"><div class="sentence"> Oh, answered the peasant, I do not want her at all.</div></div>
+    <div class="sentenceContainer"><div class="sentence"> I have a wife already, and she is one too many for me, when I go home, it is just as if I had a wife standing in every corner.</div></div>
+    <div class="sentenceContainer"><div class="sentence"> Then the king grew angry, and said, you are a boor.</div></div>
+    <div class="sentenceContainer"><div class="sentence"> Ah, lord king, replied the peasant, what can you expect from an ox, but beef.</div></div>
+    <div class="sentenceContainer"><div class="sentence"> Saint* p, answered the king, you shall have another reward.</div></div>
+    <div class="sentenceContainer"><div class="sentence"> Be off now, but come back in three days, and then you shall have five hundred counted out in full.</div></div>
+    <div class="sentenceContainer"><div class="sentence"> When the peasant went out by the gate, the sentry said, you have made the king's daughter laugh, so you will certainly receive something good.</div></div>
+    <div class="sentenceContainer"><div class="sentence"> Yes, that is what I think, answered the peasant, five hundred are to be counted out to me.</div></div>
+    <div class="sentenceContainer"><div class="sentence"> Listen, said the soldier, give me some of it.</div></div>
+    <div class="sentenceContainer"><div class="sentence"> What can you do with all that money.</div></div>
+    <div class="sentenceContainer"><div class="sentence"> As it is you, said the peasant, you shall have two hundred, present yourself in three days, time before the king, and let it be paid to you.</div></div>
+    <div class="sentenceContainer"><div class="sentence"> A Jew, who was standing by and had heard the conversation, ran after the peasant, held him by the coat, and said, oh, wonder of God, what a child of fortune you are.</div></div>
+    <div class="sentenceContainer"><div class="sentence"> I will change it for you, I will change it for you into small coins, what do you want with the great talers.</div></div>
+    <div class="sentenceContainer"><div class="sentence"> Jew, said the countryman, three hundred can you still have, give it to me at once in coin, in three days from this, you will be paid for it by the king.</div></div>
+    <div class="sentenceContainer"><div class="sentence"> The Jew was delighted with the small profit, and brought the sum in bad groschen, three of which were worth two good ones.</div></div>
+    <div class="sentenceContainer"><div class="sentence"> After three days had passed, according to the king's command, the peasant went before the king.</div></div>
+    <div class="sentenceContainer"><div class="sentence"> Pull his coat off, said the latter, and he shall have his five hundred.</div></div>
+    <div class="sentenceContainer"><div class="sentence"> Ah, said the peasant, they no longer belong to me, I presented two hundred of them to the sentry, and three hundred the Jew has changed for me, so by right nothing at all belongs to me.</div></div>
+    <div class="sentenceContainer"><div class="sentence"> In the meantime the soldier and the Jew entered and claimed what they had gained from the peasant, and they received the blows strictly counted out.</div></div>
+    <div class="sentenceContainer"><div class="sentence"> The soldier bore it patiently and knew already how it tasted, but the Jew said sorrowfully, alas, alas, are these the heavy talers.</div></div>
+    <div class="sentenceContainer"><div class="sentence"> The king could not help laughing at the peasant, and when all his anger was spent, he said, as you have already lost your reward before it fell to your lot, I will give you compensation.</div></div>
+    <div class="sentenceContainer"><div class="sentence"> Go into my treasure chamber and get some money for yourself, as much as you will.</div></div>
+    <div class="sentenceContainer"><div class="sentence"> The peasant did not need to be told twice, and stuffed into his big pockets whatsoever would go in.</div></div>
+    <div class="sentenceContainer"><div class="sentence"> Afterwards he went to an inn and counted out his money.</div></div>
+    <div class="sentenceContainer"><div class="sentence"> The Jew had crept after him and heard how he muttered to himself, that rogue of a king has cheated me after all, why could he not have given me the money himself, and then I should have known what I had.</div></div>
+    <div class="sentenceContainer"><div class="sentence"> How can I tell now if what I have had the luck to put in my pockets is right or not.</div></div>
+    <div class="sentenceContainer"><div class="sentence"> Good heavens, said the Jew to himself, that man is speaking disrespectfully of our lord the king, I will run and inform, and then I shall get a reward, and he will be punished as well.</div></div>
+    <div class="sentenceContainer"><div class="sentence"> When the king heard of the peasant's words he fell into a passion, and commanded the Jew to go and bring the offender to him.</div></div>
+    <div class="sentenceContainer"><div class="sentence"> The Jew ran to the peasant, you are to go at once to the lord king in the very clothes you have on.</div></div>
+    <div class="sentenceContainer"><div class="sentence"> I know what's right better than that, answered the peasant, I shall have a new coat made first.</div></div>
+    <div class="sentenceContainer"><div class="sentence"> Do you think that a man with so much money in his pocket should go there in his ragged old coat.</div></div>
+    <div class="sentenceContainer"><div class="sentence"> The Jew, as he saw that the peasant would not stir without another coat, and as he feared that if the king's anger cooled, he himself would lose his reward, and the peasant his punishment, said, I will out of pure friendship lend you a coat for the short time.</div></div>
+    <div class="sentenceContainer"><div class="sentence"> What people will not do for love.</div></div>
+    <div class="sentenceContainer"><div class="sentence"> The peasant was contented with this, put the Jew's coat on, and went off with him.</div></div>
+    <div class="sentenceContainer"><div class="sentence"> The king reproached the countryman because of the evil speaking of which the Jew had informed him.</div></div>
+    <div class="sentenceContainer"><div class="sentence"> Ah, said the peasant, what a Jew says is always false - no true word ever comes out of his mouth.</div></div>
+    <div class="sentenceContainer"><div class="sentence"> That rascal there is capable of maintaining that I have his coat on.</div></div>
+    <div class="sentenceContainer"><div class="sentence"> What is that, shrieked the Jew, is the coat not mine.</div></div>
+    <div class="sentenceContainer"><div class="sentence"> Have I not lent it to you out of pure friendship, in order that you might appear before the lord king.</div></div>
+    <div class="sentenceContainer"><div class="sentence"> When the king heard that, he said, the Jew has assuredly deceived one or the other of us, either myself or the peasant.</div></div>
+    <div class="sentenceContainer"><div class="sentence"> And again he ordered something to be counted out to him in hard thalers.</div></div>
+    <div class="sentenceContainer"><div class="sentence"> The peasant, however, went home in the good coat, with the good money in his pocket, and said to himself, this time I have made it.</div></div>
+  <div>Source: https://www.cs.cmu.edu/~spok/grimmtmp/006.txt</div>
+  </div>
+  <script src="sentences-source.js"></script>
+  <script src="sentences-target.js"></script>
+  <script>
+    const divs = document.querySelectorAll(".sentenceContainer .sentence");
+
+    divs.forEach((div, index) => {
+      div.addEventListener("mouseover", () => {
+        div.innerText = sentencesTarget[index];
+      });
+      div.addEventListener("mouseout", () => {
+        div.innerText = sentencesSource[index];
+      });
+    });
+  </script>
+</body>
+</html>

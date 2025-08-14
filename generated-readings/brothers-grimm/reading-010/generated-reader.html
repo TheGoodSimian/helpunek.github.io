@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="el">
+<head>
+  <title>Biingual Reader</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      text-align: center;
+      margin: 20px;
+      background: rgb(229, 235, 252);
+    }
+
+    .sentenceContainer {
+      font-size: 18px;
+      color: #333;
+      cursor: pointer;
+      padding-bottom: 30px;
+      border: none;
+      transition: background-color 0.3s;
+      margin: 5px;
+      width: 800px; /* Fixed width for the container */
+      height: auto;
+    }
+
+    .reader {
+      justify-content: space-around;
+      max-width: 800px;
+      margin: 0 auto;
+      background-color: #fff;
+      border-radius: 8px;
+      box-shadow: 0 20px 16px rgba(0, 0, 0, 0.1);
+      padding: 20px;
+      margin-top: 40px;
+    }
+
+    .sentenceContainer:hover {
+      background-color: #f0f0f0;
+    }
+
+    .sentenceContainer:active {
+      font-size: 36px;
+    }
+
+	.notepad {
+	  position: fixed;
+	  display: flex;
+	  flex: 1;
+	  padding-right: 20px;
+	  border-right: 1px;
+	  margin-right: 10px;
+	}
+
+	form {
+     display: flex;
+     flex-direction: column;
+	}
+
+	label {
+      font-weight: bold;
+      margin-top: 1rem;
+    }
+      input[type="text"],
+	textarea {
+	    width: 80px; /* Set the desired width */
+       height: 160px;
+       border: 1px solid #ccc;
+       padding: 0.5rem;
+       border-radius: 4px;
+       resize:both; /* Allow vertical resizing of the textarea */
+	}
+
+	</style>
+</head>
+	<div class="notepad">
+	<form id="notepad">
+	<label for="notes">Notes</label>
+	<textarea type="text"id="notes" notes="notes">Write down any stuff you want to remember, here. Try resizing me! </textarea>
+	</form>
+	</div>
+<body>
+  <div class="reader">
+    <div class="sentenceContainer"><div class="sentence">There was once a man whose wife died, and a woman whose husband died, and the man had a daughter, and the woman also had a daughter.</div></div>
+    <div class="sentenceContainer"><div class="sentence"> The girls were acquainted with each other, and went out walking together, and afterwards came to the woman in her house.</div></div>
+    <div class="sentenceContainer"><div class="sentence"> Then said she to the man's daughter, listen, tell your father that I would like to marry him, and then you shall wash yourself in milk every morning, and drink wine, but my own daughter shall wash herself in water and drink water.</div></div>
+    <div class="sentenceContainer"><div class="sentence"> The girl went home, and told her father what the woman had said.</div></div>
+    <div class="sentenceContainer"><div class="sentence"> The man said, what shall I do.</div></div>
+    <div class="sentenceContainer"><div class="sentence"> Marriage is a joy and also a torment.</div></div>
+    <div class="sentenceContainer"><div class="sentence"> At length as he could come to no decision, he pulled off his boot, and said, take this boot, it has a hole in the sole of it.</div></div>
+    <div class="sentenceContainer"><div class="sentence"> Go with it up to the loft, hang it on the big nail, and then pour water into it.</div></div>
+    <div class="sentenceContainer"><div class="sentence"> If it hold the water, then I will again take a wife, but if it run through, I will not.</div></div>
+    <div class="sentenceContainer"><div class="sentence"> The girl did as she was bid, but the water drew the hole together and the boot became full to the top.</div></div>
+    <div class="sentenceContainer"><div class="sentence"> She informed her father how it had turned out.</div></div>
+    <div class="sentenceContainer"><div class="sentence"> Then he himself went up, and when he saw that she was right, he went to the widow and wooed her, and the wedding was celebrated.</div></div>
+    <div class="sentenceContainer"><div class="sentence"> The next morning, when the two girls got up, there stood before the man's daughter milk for her to wash in and wine for her to drink, but before the woman's daughter stood water to wash herself with and water for drinking.</div></div>
+    <div class="sentenceContainer"><div class="sentence"> On the second morning, stood water for washing and water for drinking before the man's daughter as well as before the woman's daughter.</div></div>
+    <div class="sentenceContainer"><div class="sentence"> And on the third morning stood water for washing and water for drinking before the man's daughter, and milk for washing and wine for drinking, before the woman's daughter, and so it continued.</div></div>
+    <div class="sentenceContainer"><div class="sentence"> The woman became her step-daughter's bitterest enemy, and day by day did her best to treat her still worse.</div></div>
+    <div class="sentenceContainer"><div class="sentence"> She was also envious because her step-daughter was beautiful and lovable, and her own daughter ugly and repulsive.</div></div>
+    <div class="sentenceContainer"><div class="sentence"> Once, in winter, when everything was frozen as hard as a stone, and hill and vale lay covered with snow, the woman made a frock of paper, called her step-daughter, and said, here, put on this dress and go out into the wood, and fetch me a little basketful of strawberries - I have a fancy for some.</div></div>
+    <div class="sentenceContainer"><div class="sentence"> Good heavens, said the girl, no strawberries grow in winter.</div></div>
+    <div class="sentenceContainer"><div class="sentence"> The ground is frozen, and besides the snow has covered everything.</div></div>
+    <div class="sentenceContainer"><div class="sentence"> And why am I to go in this paper frock.</div></div>
+    <div class="sentenceContainer"><div class="sentence"> It is so cold outside that one's very breath freezes.</div></div>
+    <div class="sentenceContainer"><div class="sentence"> The wind will blow through the frock, and the thorns tear it off my body.</div></div>
+    <div class="sentenceContainer"><div class="sentence"> Will you contradict me, said the step-mother.</div></div>
+    <div class="sentenceContainer"><div class="sentence"> See that you go, and do not show your face again until you have the basketful of strawberries.</div></div>
+    <div class="sentenceContainer"><div class="sentence"> Then she gave her a little piece of hard bread, and said, this will last you the day, and thought, you will die of cold and hunger outside, and will never be seen again by me.</div></div>
+    <div class="sentenceContainer"><div class="sentence"> Then the maiden was obedient, and put on the paper frock, and went out with the basket.</div></div>
+    <div class="sentenceContainer"><div class="sentence"> Far and wide there was nothing but snow, and not a green blade to be seen.</div></div>
+    <div class="sentenceContainer"><div class="sentence"> When she got into the wood she saw a small house out of which peeped three little men.</div></div>
+    <div class="sentenceContainer"><div class="sentence"> She wished them good day, and knocked modestly at the door.</div></div>
+    <div class="sentenceContainer"><div class="sentence"> They cried, come in, and she entered the room and seated herself on the bench by the stove, where she began to warm herself and eat her breakfast.</div></div>
+    <div class="sentenceContainer"><div class="sentence"> The little men said, give us some of it, too.</div></div>
+    <div class="sentenceContainer"><div class="sentence"> Willingly, she said, and divided her piece of bread in two 'and gave them the half.</div></div>
+    <div class="sentenceContainer"><div class="sentence"> They asked, what do you here in the forest in the winter time, in your thin dress.</div></div>
+    <div class="sentenceContainer"><div class="sentence"> Ah, she answered, I am to look for a basketful of strawberries, and am not to go home until I can take them with me.</div></div>
+    <div class="sentenceContainer"><div class="sentence"> When she had eaten her bread, they gave her a broom and said, sweep away the snow at the back door.</div></div>
+    <div class="sentenceContainer"><div class="sentence"> But when she was outside, the three little men said to each other, what shall we give her as she is so good, and has shared her bread with us.</div></div>
+    <div class="sentenceContainer"><div class="sentence"> Then said the first, my gift is, that she shall every day grow more beautiful.</div></div>
+    <div class="sentenceContainer"><div class="sentence"> The second said, my gift is, that gold pieces shall fall out of her mouth every time she speaks.</div></div>
+    <div class="sentenceContainer"><div class="sentence"> The third said, my gift is, that a king shall come and take her to wife.</div></div>
+    <div class="sentenceContainer"><div class="sentence"> The girl, however, did as the little men had bidden her, swept away the snow behind the little house with the broom, and what did she find but real ripe strawberries, which came up quite dark-red out of the snow.</div></div>
+    <div class="sentenceContainer"><div class="sentence"> In her joy she hastily gathered her basket full, thanked the little men, shook hands with each of them, and ran home to take her step-mother what she had longed for so much.</div></div>
+    <div class="sentenceContainer"><div class="sentence"> When she went in and said good-evening, a piece of gold at once fell out of her mouth.</div></div>
+    <div class="sentenceContainer"><div class="sentence"> Thereupon she related what had happened to her in the wood, but with every word she spoke, gold pieces fell from her mouth, until very soon the whole room was covered with them.</div></div>
+    <div class="sentenceContainer"><div class="sentence"> Now look at her arrogance, cried the step-sister, to throw about gold in that way.</div></div>
+    <div class="sentenceContainer"><div class="sentence"> But she was secretly envious of it, and wanted to go into the forest also to seek strawberries.</div></div>
+    <div class="sentenceContainer"><div class="sentence"> The mother said, no, my dear little daughter, it is too cold, you might freeze to death.</div></div>
+    <div class="sentenceContainer"><div class="sentence"> However, as her daughter let her have no peace, the mother at last yielded, made her a magnificent coat of fur, which she was obliged to put on, and gave her bread-and-butter and cake for her journey.</div></div>
+    <div class="sentenceContainer"><div class="sentence"> The girl went into the forest and straight up to the little house.</div></div>
+    <div class="sentenceContainer"><div class="sentence"> The three little men peeped out again, but she did not greet them, and without looking round at them and without speaking to them, she went awkwardly into the room, seated herself by the stove, and began to eat her bread-and-butter and cake.</div></div>
+    <div class="sentenceContainer"><div class="sentence"> Give us some of it, cried the little men.</div></div>
+    <div class="sentenceContainer"><div class="sentence"> But she replied, there is not enough for myself, so how can I give it away to other people.</div></div>
+    <div class="sentenceContainer"><div class="sentence"> When she had finished eating, they said, there is a broom for you, sweep it all clean in front of the back-door.</div></div>
+    <div class="sentenceContainer"><div class="sentence"> Sweep for yourselves, she answered, I am not your servant.</div></div>
+    <div class="sentenceContainer"><div class="sentence"> When she saw that they were not going to give her anything, she went out by the door.</div></div>
+    <div class="sentenceContainer"><div class="sentence"> Then the little men said to each other, what shall we give her as she is so naughty, and has a wicked envious heart, that will never let her do a good turn to any one.</div></div>
+    <div class="sentenceContainer"><div class="sentence"> The first said, I grant that she may grow uglier every day.</div></div>
+    <div class="sentenceContainer"><div class="sentence"> The second said, I grant that at every word she says, a toad shall spring out of her mouth.</div></div>
+    <div class="sentenceContainer"><div class="sentence"> The third said, I grant that she may die a miserable death.</div></div>
+    <div class="sentenceContainer"><div class="sentence"> The maiden looked for strawberries outside, but as she found none, she went angrily home.</div></div>
+    <div class="sentenceContainer"><div class="sentence"> And when she opened her mouth, and was about to tell her mother what had happened to her in the wood, with every word she said, a toad sprang out of her mouth, so that everyone was seized with horror of her.</div></div>
+    <div class="sentenceContainer"><div class="sentence"> Then the step-mother was still more enraged, and thought of nothing but how to do every possible injury to the man's daughter, whose beauty, however, grew daily greater.</div></div>
+    <div class="sentenceContainer"><div class="sentence"> At length she took a cauldron, set it on the fire, and boiled yarn in it.</div></div>
+    <div class="sentenceContainer"><div class="sentence"> When it was boiled, she flung it on the poor girl's shoulder, and gave her an axe in order that she might go on the frozen river, cut a hole in the ice, and rinse the yarn.</div></div>
+    <div class="sentenceContainer"><div class="sentence"> She was obedient, went thither and cut a hole in the ice.</div></div>
+    <div class="sentenceContainer"><div class="sentence"> And while she was in the midst of her cutting, a splendid carriage came driving up, in which sat the king.</div></div>
+    <div class="sentenceContainer"><div class="sentence"> The carriage stopped, and the king asked, my child, who are you, and what are you doing here.</div></div>
+    <div class="sentenceContainer"><div class="sentence"> I am a poor girl, and I am rinsing yarn.</div></div>
+    <div class="sentenceContainer"><div class="sentence"> Then the king felt compassion, and when he saw that she was so very beautiful, he said to her, will you go away with me.</div></div>
+    <div class="sentenceContainer"><div class="sentence"> Ah, yes, with all my heart, she answered, for she was glad to get away from the mother and sister.</div></div>
+    <div class="sentenceContainer"><div class="sentence"> So she got into the carriage and drove away with the king, and when they arrived at his palace, the wedding was celebrated with great pomp, as the little men had granted to the maiden.</div></div>
+    <div class="sentenceContainer"><div class="sentence"> When a year was over, the young queen bore a son, and as the step-mother had heard of her great good-fortune, she came with her daughter to the palace and pretended that she wanted to pay her a visit.</div></div>
+    <div class="sentenceContainer"><div class="sentence"> But, when the king had gone out, and no one else was present, the wicked woman seized the queen by the head, and her daughter seized her by the feet, and they lifted her out of the bed, and threw her out of the window into the stream which flowed by.</div></div>
+    <div class="sentenceContainer"><div class="sentence"> Then the ugly daughter laid herself in the bed, and the old woman covered her up over her head.</div></div>
+    <div class="sentenceContainer"><div class="sentence"> When the king came home again and wanted to speak to his wife, the old woman cried, hush, hush, that can't be now, she is lying in a violent sweat.</div></div>
+    <div class="sentenceContainer"><div class="sentence"> You must let her rest to-day.</div></div>
+    <div class="sentenceContainer"><div class="sentence"> The king suspected no evil, and did not come back again till next morning.</div></div>
+    <div class="sentenceContainer"><div class="sentence"> And as he talked with his wife and she answered him, with every word a toad leaped out, whereas formerly a piece of gold had fallen.</div></div>
+    <div class="sentenceContainer"><div class="sentence"> Then he asked what that could be, but the old woman said that she had got that from the violent sweat, and would soon lose it again.</div></div>
+    <div class="sentenceContainer"><div class="sentence"> During the night, however, the scullion saw a duck come swimming up the gutter, and it said - king, what art thou doing now.</div></div>
+    <div class="sentenceContainer"><div class="sentence"> Sleepest thou, or wakest thou.</div></div>
+    <div class="sentenceContainer"><div class="sentence"> And as he returned no answer, it said - and my guests, what may they do.</div></div>
+    <div class="sentenceContainer"><div class="sentence"> The scullion said - they are sleeping soundly, too.</div></div>
+    <div class="sentenceContainer"><div class="sentence"> Then it asked again - what does little baby mine.</div></div>
+    <div class="sentenceContainer"><div class="sentence"> He answered - sleepeth in her cradle fine.</div></div>
+    <div class="sentenceContainer"><div class="sentence"> Then she went upstairs in the form of the queen, nursed the baby, shook up its little bed, covered it over, and then swam away again down the gutter in the shape of a duck.</div></div>
+    <div class="sentenceContainer"><div class="sentence"> She came thus for two nights.</div></div>
+    <div class="sentenceContainer"><div class="sentence"> On the third, she said to the scullion, go and tell the king to take his sword and swing it three times over me on the threshold.</div></div>
+    <div class="sentenceContainer"><div class="sentence"> Then the scullion ran and told this to the king, who came with his sword and swung it thrice over the spirit, and at the third time, his wife stood before him strong, living, and healthy as she had been before.</div></div>
+    <div class="sentenceContainer"><div class="sentence"> Thereupon the king was full of great joy, but he kept the queen hidden in a chamber until the sunday, when the baby was to be christened.</div></div>
+    <div class="sentenceContainer"><div class="sentence"> And when it was christened he said, what does a person deserve who drags another out of bed and throws him in the water.</div></div>
+    <div class="sentenceContainer"><div class="sentence"> The wretch deserves nothing better, answered the old woman, than to be taken and put in a barrel stuck full of nails, and rolled down hill into the water.</div></div>
+    <div class="sentenceContainer"><div class="sentence"> Then, said the king, you have pronounced your own sentence.</div></div>
+    <div class="sentenceContainer"><div class="sentence"> And he ordered such a barrel to be brought, and the old woman to be put into it with her daughter, and then the top was hammered on, and the barrel rolled down hill until it went into the river.</div></div>
+  <div>Source: https://www.cs.cmu.edu/~spok/grimmtmp/010.txt</div>
+  </div>
+  <script src="sentences-source.js"></script>
+  <script src="sentences-target.js"></script>
+  <script>
+    const divs = document.querySelectorAll(".sentenceContainer .sentence");
+
+    divs.forEach((div, index) => {
+      div.addEventListener("mouseover", () => {
+        div.innerText = sentencesTarget[index];
+      });
+      div.addEventListener("mouseout", () => {
+        div.innerText = sentencesSource[index];
+      });
+    });
+  </script>
+</body>
+</html>
