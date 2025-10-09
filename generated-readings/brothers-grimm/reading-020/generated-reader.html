@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="el">
+<head>
+  <title>Biingual Reader</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      text-align: center;
+      margin: 20px;
+      background: rgb(229, 235, 252);
+    }
+
+    .sentenceContainer {
+      font-size: 18px;
+      color: #333;
+      cursor: pointer;
+      padding-bottom: 30px;
+      border: none;
+      transition: background-color 0.3s;
+      margin: 5px;
+      width: 800px; /* Fixed width for the container */
+      height: auto;
+    }
+
+    .reader {
+      justify-content: space-around;
+      max-width: 800px;
+      margin: 0 auto;
+      background-color: #fff;
+      border-radius: 8px;
+      box-shadow: 0 20px 16px rgba(0, 0, 0, 0.1);
+      padding: 20px;
+      margin-top: 40px;
+    }
+
+    .sentenceContainer:hover {
+      background-color: #f0f0f0;
+    }
+
+    .sentenceContainer:active {
+      font-size: 36px;
+    }
+
+	.notepad {
+	  position: fixed;
+	  display: flex;
+	  flex: 1;
+	  padding-right: 20px;
+	  border-right: 1px;
+	  margin-right: 10px;
+	}
+
+	form {
+     display: flex;
+     flex-direction: column;
+	}
+
+	label {
+      font-weight: bold;
+      margin-top: 1rem;
+    }
+      input[type="text"],
+	textarea {
+	    width: 80px; /* Set the desired width */
+       height: 160px;
+       border: 1px solid #ccc;
+       padding: 0.5rem;
+       border-radius: 4px;
+       resize:both; /* Allow vertical resizing of the textarea */
+	}
+
+	</style>
+</head>
+	<div class="notepad">
+	<form id="notepad">
+	<label for="notes">Notes</label>
+	<textarea type="text"id="notes" notes="notes">Write down any stuff you want to remember, here. Try resizing me! </textarea>
+	</form>
+	</div>
+<body>
+  <div class="reader">
+  <div>Source: Little Red-Cap</div>
+    <div class="sentenceContainer"><div class="sentence">Little Red-Cap Once upon a time there was a dear little girl who was loved by every one who looked at her, but most of all by her grandmother, and there was nothing that she would not have given to the child.</div></div>
+    <div class="sentenceContainer"><div class="sentence"> Once she gave her a little cap of red velvet, which suited her so well that she would never wear anything else.</div></div>
+    <div class="sentenceContainer"><div class="sentence"> So she was always called little red-cap.</div></div>
+    <div class="sentenceContainer"><div class="sentence"> One day her mother said to her, come, little red-cap, here is a piece of cake and a bottle of wine.</div></div>
+    <div class="sentenceContainer"><div class="sentence"> Take them to your grandmother, she is ill and weak, and they will do her good.</div></div>
+    <div class="sentenceContainer"><div class="sentence"> Set out before it gets hot, and when you are going, walk nicely and quietly and do not run off the path, or you may fall and break the bottle, and then your grandmother will get nothing.</div></div>
+    <div class="sentenceContainer"><div class="sentence"> And when you go into her room, don't forget to say, good-morning, and don't peep into every corner before you do it.</div></div>
+    <div class="sentenceContainer"><div class="sentence"> I will take great care, said little red-cap to her mother, and gave her hand on it.</div></div>
+    <div class="sentenceContainer"><div class="sentence"> The grandmother lived out in the wood, half a league from the village, and just as little red-cap entered the wood, a wolf met her.</div></div>
+    <div class="sentenceContainer"><div class="sentence"> Red-cap did not know what a wicked creature he was, and was not at all afraid of him.</div></div>
+    <div class="sentenceContainer"><div class="sentence"> 'Good-day, little red-cap,' said he.</div></div>
+    <div class="sentenceContainer"><div class="sentence"> 'Thank you kindly, wolf'.</div></div>
+    <div class="sentenceContainer"><div class="sentence"> 'Whither away so early, little red-cap'?</div></div>
+    <div class="sentenceContainer"><div class="sentence"> 'To my grandmother's'.</div></div>
+    <div class="sentenceContainer"><div class="sentence"> 'What have you got in your apron'?</div></div>
+    <div class="sentenceContainer"><div class="sentence"> 'Cake and wine.</div></div>
+    <div class="sentenceContainer"><div class="sentence"> Yesterday was baking-day, so poor sick grandmother is to have something good, to make her stronger'.</div></div>
+    <div class="sentenceContainer"><div class="sentence"> 'Where does your grandmother live, little red-cap'?</div></div>
+    <div class="sentenceContainer"><div class="sentence"> 'A good quarter of a league farther on in the wood.</div></div>
+    <div class="sentenceContainer"><div class="sentence"> Her house stands under the three large oak-trees, the nut-trees are just below.</div></div>
+    <div class="sentenceContainer"><div class="sentence"> You surely must know it,' replied little red-cap.</div></div>
+    <div class="sentenceContainer"><div class="sentence"> The wolf thought to himself, what a tender young creature.</div></div>
+    <div class="sentenceContainer"><div class="sentence"> What a nice plump mouthful, she will be better to eat than the old woman.</div></div>
+    <div class="sentenceContainer"><div class="sentence"> I must act craftily, so as to catch both.</div></div>
+    <div class="sentenceContainer"><div class="sentence"> So he walked for a short time by the side of little red-cap, and then he said, 'see little red-cap, how pretty the flowers are about here.</div></div>
+    <div class="sentenceContainer"><div class="sentence"> Why do you not look round.</div></div>
+    <div class="sentenceContainer"><div class="sentence"> I believe, too, that you do not hear how sweetly the little birds are singing.</div></div>
+    <div class="sentenceContainer"><div class="sentence"> You walk gravely along as if you were going to school, while everything else out here in the wood is merry'.</div></div>
+    <div class="sentenceContainer"><div class="sentence"> Little red-cap raised her eyes, and when she saw the sunbeams dancing here and there through the trees, and pretty flowers growing everywhere, she thought, suppose I take grandmother a fresh nosegay.</div></div>
+    <div class="sentenceContainer"><div class="sentence"> That would please her too.</div></div>
+    <div class="sentenceContainer"><div class="sentence"> It is so early in the day that I shall still get there in good time.</div></div>
+    <div class="sentenceContainer"><div class="sentence"> And so she ran from the path into the wood to look for flowers.</div></div>
+    <div class="sentenceContainer"><div class="sentence"> And whenever she had picked one, she fancied that she saw a still prettier one farther on, and ran after it, and so got deeper and deeper into the wood.</div></div>
+    <div class="sentenceContainer"><div class="sentence"> Meanwhile the wolf ran straight to the grandmother's house and knocked at the door.</div></div>
+    <div class="sentenceContainer"><div class="sentence"> 'Who is there'?</div></div>
+    <div class="sentenceContainer"><div class="sentence"> 'Little red-cap,' replied the wolf.</div></div>
+    <div class="sentenceContainer"><div class="sentence"> 'She is bringing cake and wine.</div></div>
+    <div class="sentenceContainer"><div class="sentence"> Open the door'.</div></div>
+    <div class="sentenceContainer"><div class="sentence"> 'Lift the latch,' called out the grandmother, 'I am too weak, and cannot get up'.</div></div>
+    <div class="sentenceContainer"><div class="sentence"> The wolf lifted the latch, the door sprang open, and without saying a word he went straight to the grandmother's bed, and devoured her.</div></div>
+    <div class="sentenceContainer"><div class="sentence"> Then he put on her clothes, dressed himself in her cap, laid himself in bed and drew the curtains.</div></div>
+    <div class="sentenceContainer"><div class="sentence"> Little red-cap, however, had been running about picking flowers, and when she had gathered so many that she could carry no more, she remembered her grandmother, and set out on the way to her.</div></div>
+    <div class="sentenceContainer"><div class="sentence"> She was surprised to find the cottage-door standing open, and when she went into the room, she had such a strange feeling that she said to herself, oh dear, how uneasy I feel to-day, and at other times I like being with grandmother so much.</div></div>
+    <div class="sentenceContainer"><div class="sentence"> She called out, 'good morning,' but received no answer.</div></div>
+    <div class="sentenceContainer"><div class="sentence"> So she went to the bed and drew back the curtains.</div></div>
+    <div class="sentenceContainer"><div class="sentence"> There lay her grandmother with her cap pulled far over her face, and looking very strange.</div></div>
+    <div class="sentenceContainer"><div class="sentence"> 'Oh, grandmother,' she said, 'what big ears you have'.</div></div>
+    <div class="sentenceContainer"><div class="sentence"> 'The better to hear you with, my child,' was the reply.</div></div>
+    <div class="sentenceContainer"><div class="sentence"> 'But, grandmother, what big eyes you have,' she said.</div></div>
+    <div class="sentenceContainer"><div class="sentence"> 'The better to see you with,' my dear.</div></div>
+    <div class="sentenceContainer"><div class="sentence"> 'But, grandmother, what large hands you have'.</div></div>
+    <div class="sentenceContainer"><div class="sentence"> 'The better to hug you with'.</div></div>
+    <div class="sentenceContainer"><div class="sentence"> 'Oh, but, grandmother, what a terrible big mouth you have'.</div></div>
+    <div class="sentenceContainer"><div class="sentence"> 'The better to eat you with'.</div></div>
+    <div class="sentenceContainer"><div class="sentence"> And scarcely had the wolf said this, than with one bound he was out of bed and swallowed up red-cap.</div></div>
+    <div class="sentenceContainer"><div class="sentence"> When the wolf had appeased his appetite, he lay down again in the bed, fell asleep and began to snore very loud.</div></div>
+    <div class="sentenceContainer"><div class="sentence"> The huntsman was just passing the house, and thought to himself, how the old woman is snoring.</div></div>
+    <div class="sentenceContainer"><div class="sentence"> I must just see if she wants anything.</div></div>
+    <div class="sentenceContainer"><div class="sentence"> So he went into the room, and when he came to the bed, he saw that the wolf was lying in it.</div></div>
+    <div class="sentenceContainer"><div class="sentence"> Do I find you here, you old sinner, said he.</div></div>
+    <div class="sentenceContainer"><div class="sentence"> I have long sought you.</div></div>
+    <div class="sentenceContainer"><div class="sentence"> Then just as he was going to fire at him, it occurred to him that the wolf might have devoured the grandmother, and that she might still be saved, so he did not fire, but took a pair of scissors, and began to cut open the stomach of the sleeping wolf.</div></div>
+    <div class="sentenceContainer"><div class="sentence"> When he had made two snips, he saw the little red-cap shining, and then he made two snips more, and the little girl sprang out, crying, ah, how frightened I have been.</div></div>
+    <div class="sentenceContainer"><div class="sentence"> How dark it was inside the wolf.</div></div>
+    <div class="sentenceContainer"><div class="sentence"> And after that the aged grandmother came out alive also, but scarcely able to breathe.</div></div>
+    <div class="sentenceContainer"><div class="sentence"> Red-cap, however, quickly fetched great stones with which they filled the wolf's belly, and when he awoke, he wanted to run away, but the stones were so heavy that he collapsed at once, and fell dead.</div></div>
+    <div class="sentenceContainer"><div class="sentence"> Then all three were delighted.</div></div>
+    <div class="sentenceContainer"><div class="sentence"> The huntsman drew off the wolf's skin and went home with it.</div></div>
+    <div class="sentenceContainer"><div class="sentence"> The grandmother ate the cake and drank the wine which red-cap had brought, and revived, but red-cap thought to herself, as long as I live, I will never by myself leave the path, to run into the wood, when my mother has forbidden me to do so.</div></div>
+    <div class="sentenceContainer"><div class="sentence"> It is also related that once when red-cap was again taking cakes to the old grandmother, another wolf spoke to her, and tried to entice her from the path.</div></div>
+    <div class="sentenceContainer"><div class="sentence"> Red-cap, however, was on her guard, and went straight forward on her way, and told her grandmother that she had met the wolf, and that he had said good-morning to her, but with such a wicked look in his eyes, that if they had not been on the public road she was certain he would have eaten her up.</div></div>
+    <div class="sentenceContainer"><div class="sentence"> Well, said the grandmother, we will shut the door, that he may not come in.</div></div>
+    <div class="sentenceContainer"><div class="sentence"> Soon afterwards the wolf knocked, and cried, open the door, grandmother, I am little red-cap, and am bringing you some cakes.</div></div>
+    <div class="sentenceContainer"><div class="sentence"> But they did not speak, or open the door, so the grey-beard stole twice or thrice round the house, and at last jumped on the roof, intending to wait until red-cap went home in the evening, and then to steal after her and devour her in the darkness.</div></div>
+    <div class="sentenceContainer"><div class="sentence"> But the grandmother saw what was in his thoughts.</div></div>
+    <div class="sentenceContainer"><div class="sentence"> In front of the house was a great stone trough, so she said to the child, take the pail, red-cap.</div></div>
+    <div class="sentenceContainer"><div class="sentence"> I made some sausages yesterday, so carry the water in which I boiled them to the trough.</div></div>
+    <div class="sentenceContainer"><div class="sentence"> Red-cap carried until the great trough was quite full.</div></div>
+    <div class="sentenceContainer"><div class="sentence"> Then the smell of the sausages reached the wolf, and he sniffed and peeped down, and at last stretched out his neck so far that he could no longer keep his footing and began to slip, and slipped down from the roof straight into the great trough, and was drowned.</div></div>
+    <div class="sentenceContainer"><div class="sentence"> But red-cap went joyously home, and no one ever did anything to harm her again.</div></div>
+  <div>Source: https://www.cs.cmu.edu/~spok/grimmtmp/020.txt</div>
+  </div>
+  <script src="sentences-source.js"></script>
+  <script src="sentences-target.js"></script>
+  <script>
+    const divs = document.querySelectorAll(".sentenceContainer .sentence");
+
+    divs.forEach((div, index) => {
+      div.addEventListener("mouseover", () => {
+        div.innerText = sentencesTarget[index];
+      });
+      div.addEventListener("mouseout", () => {
+        div.innerText = sentencesSource[index];
+      });
+    });
+  </script>
+</body>
+</html>

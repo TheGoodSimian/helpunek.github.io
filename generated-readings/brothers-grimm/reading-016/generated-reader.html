@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="el">
+<head>
+  <title>Biingual Reader</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      text-align: center;
+      margin: 20px;
+      background: rgb(229, 235, 252);
+    }
+
+    .sentenceContainer {
+      font-size: 18px;
+      color: #333;
+      cursor: pointer;
+      padding-bottom: 30px;
+      border: none;
+      transition: background-color 0.3s;
+      margin: 5px;
+      width: 800px; /* Fixed width for the container */
+      height: auto;
+    }
+
+    .reader {
+      justify-content: space-around;
+      max-width: 800px;
+      margin: 0 auto;
+      background-color: #fff;
+      border-radius: 8px;
+      box-shadow: 0 20px 16px rgba(0, 0, 0, 0.1);
+      padding: 20px;
+      margin-top: 40px;
+    }
+
+    .sentenceContainer:hover {
+      background-color: #f0f0f0;
+    }
+
+    .sentenceContainer:active {
+      font-size: 36px;
+    }
+
+	.notepad {
+	  position: fixed;
+	  display: flex;
+	  flex: 1;
+	  padding-right: 20px;
+	  border-right: 1px;
+	  margin-right: 10px;
+	}
+
+	form {
+     display: flex;
+     flex-direction: column;
+	}
+
+	label {
+      font-weight: bold;
+      margin-top: 1rem;
+    }
+      input[type="text"],
+	textarea {
+	    width: 80px; /* Set the desired width */
+       height: 160px;
+       border: 1px solid #ccc;
+       padding: 0.5rem;
+       border-radius: 4px;
+       resize:both; /* Allow vertical resizing of the textarea */
+	}
+
+	</style>
+</head>
+	<div class="notepad">
+	<form id="notepad">
+	<label for="notes">Notes</label>
+	<textarea type="text"id="notes" notes="notes">Write down any stuff you want to remember, here. Try resizing me! </textarea>
+	</form>
+	</div>
+<body>
+  <div class="reader">
+  <div>Source: Cinderella</div>
+    <div class="sentenceContainer"><div class="sentence">Cinderella The wife of a rich man fell sick, and as she felt that her end was drawing near, she called her only daughter to her bedside and said, dear child, be good and pious, and then the good God will always protect you, and I will look down on you from heaven and be near you.</div></div>
+    <div class="sentenceContainer"><div class="sentence"> Thereupon she closed her eyes and departed.</div></div>
+    <div class="sentenceContainer"><div class="sentence"> Every day the maiden went out to her mother's grave, and wept, and she remained pious and good.</div></div>
+    <div class="sentenceContainer"><div class="sentence"> When winter came the snow spread a white sheet over the grave, and by the time the spring sun had drawn it off again, the man had taken another wife.</div></div>
+    <div class="sentenceContainer"><div class="sentence"> The woman had brought with her into the house two daughters, who were beautiful and fair of face, but vile and black of heart.</div></div>
+    <div class="sentenceContainer"><div class="sentence"> Now began a bad time for the poor step-child.</div></div>
+    <div class="sentenceContainer"><div class="sentence"> Is the stupid goose to sit in the parlor with us, they said.</div></div>
+    <div class="sentenceContainer"><div class="sentence"> He who wants to eat bread must earn it.</div></div>
+    <div class="sentenceContainer"><div class="sentence"> Out with the kitchen-wench.</div></div>
+    <div class="sentenceContainer"><div class="sentence"> They took her pretty clothes away from her, put an old grey bedgown on her, and gave her wooden shoes.</div></div>
+    <div class="sentenceContainer"><div class="sentence"> Just look at the proud princess, how decked out she is, they cried, and laughed, and led her into the kitchen.</div></div>
+    <div class="sentenceContainer"><div class="sentence"> There she had to do hard work from morning till night, get up before daybreak, carry water, light fires, cook and wash.</div></div>
+    <div class="sentenceContainer"><div class="sentence"> Besides this, the sisters did her every imaginable injury - they mocked her and emptied her peas and lentils into the ashes, so that she was forced to sit and pick them out again.</div></div>
+    <div class="sentenceContainer"><div class="sentence"> In the evening when she had worked till she was weary she had no bed to go to, but had to sleep by the hearth in the cinders.</div></div>
+    <div class="sentenceContainer"><div class="sentence"> And as on that account she always looked dusty and dirty, they called her cinderella.</div></div>
+    <div class="sentenceContainer"><div class="sentence"> It happened that the father was once going to the fair, and he asked his two step-daughters what he should bring back for them.</div></div>
+    <div class="sentenceContainer"><div class="sentence"> Beautiful dresses, said one, pearls and jewels, said the second.</div></div>
+    <div class="sentenceContainer"><div class="sentence"> And you, cinderella, said he, what will you have.</div></div>
+    <div class="sentenceContainer"><div class="sentence"> Father break off for me the first branch which knocks against your hat on your way home.</div></div>
+    <div class="sentenceContainer"><div class="sentence"> So he bought beautiful dresses, pearls and jewels for his two step-daughters, and on his way home, as he was riding through a green thicket, a hazel twig brushed against him and knocked off his hat.</div></div>
+    <div class="sentenceContainer"><div class="sentence"> Then he broke off the branch and took it with him.</div></div>
+    <div class="sentenceContainer"><div class="sentence"> When he reached home he gave his step-daughters the things which they had wished for, and to cinderella he gave the branch from the hazel-bush.</div></div>
+    <div class="sentenceContainer"><div class="sentence"> Cinderella thanked him, went to her mother's grave and planted the branch on it, and wept so much that the tears fell down on it and watered it.</div></div>
+    <div class="sentenceContainer"><div class="sentence"> And it grew and became a handsome tree.</div></div>
+    <div class="sentenceContainer"><div class="sentence"> Thrice a day cinderella went and sat beneath it, and wept and prayed, and a little white bird always came on the tree, and if cinderella expressed a wish, the bird threw down to her what she had wished for.</div></div>
+    <div class="sentenceContainer"><div class="sentence"> It happened, however, that the king gave orders for a festival which was to last three days, and to which all the beautiful young girls in the country were invited, in order that his son might choose himself a bride.</div></div>
+    <div class="sentenceContainer"><div class="sentence"> When the two step-sisters heard that they too were to appear among the number, they were delighted, called cinderella and said, comb our hair for us, brush our shoes and fasten our buckles, for we are going to the wedding at the king's palace.</div></div>
+    <div class="sentenceContainer"><div class="sentence"> Cinderella obeyed, but wept, because she too would have liked to go with them to the dance, and begged her step-mother to allow her to do so.</div></div>
+    <div class="sentenceContainer"><div class="sentence"> You go, cinderella, said she, covered in dust and dirt as you are, and would go to the festival.</div></div>
+    <div class="sentenceContainer"><div class="sentence"> You have no clothes and shoes, and yet would dance.</div></div>
+    <div class="sentenceContainer"><div class="sentence"> As, however, cinderella went on asking, the step-mother said at last, I have emptied a dish of lentils into the ashes for you, if you have picked them out again in two hours, you shall go with us.</div></div>
+    <div class="sentenceContainer"><div class="sentence"> The maiden went through the back-door into the garden, and called, you tame pigeons, you turtle-doves, and all you birds beneath the sky, come and help me to pick the good into the pot, the bad into the crop.</div></div>
+    <div class="sentenceContainer"><div class="sentence"> Then two white pigeons came in by the kitchen window, and afterwards the turtle-doves, and at last all the birds beneath the sky, came whirring and crowding in, and alighted amongst the ashes.</div></div>
+    <div class="sentenceContainer"><div class="sentence"> And the pigeons nodded with their heads and began pick, pick, pick, pick, and the rest began also pick, pick, pick, pick, and gathered all the good grains into the dish.</div></div>
+    <div class="sentenceContainer"><div class="sentence"> Hardly had one hour passed before they had finished, and all flew out again.</div></div>
+    <div class="sentenceContainer"><div class="sentence"> Then the girl took the dish to her step-mother, and was glad, and believed that now she would be allowed to go with them to the festival.</div></div>
+    <div class="sentenceContainer"><div class="sentence"> But the step-mother said, no, cinderella, you have no clothes and you can not dance.</div></div>
+    <div class="sentenceContainer"><div class="sentence"> You would only be laughed at.</div></div>
+    <div class="sentenceContainer"><div class="sentence"> And as cinderella wept at this, the step-mother said, if you can pick two dishes of lentils out of the ashes for me in one hour, you shall go with us.</div></div>
+    <div class="sentenceContainer"><div class="sentence"> And she thought to herself, that she most certainly cannot do again.</div></div>
+    <div class="sentenceContainer"><div class="sentence"> When the step-mother had emptied the two dishes of lentils amongst the ashes, the maiden went through the back-door into the garden and cried, you tame pigeons, you turtle-doves, and all you birds beneath the sky, come and help me to pick the good into the pot, the bad into the crop.</div></div>
+    <div class="sentenceContainer"><div class="sentence"> Then two white pigeons came in by the kitchen-window, and afterwards the turtle-doves, and at length all the birds beneath the sky, came whirring and crowding in, and alighted amongst the ashes.</div></div>
+    <div class="sentenceContainer"><div class="sentence"> And the doves nodded with their heads and began pick, pick, pick, pick, and the others began also pick, pick, pick, pick, and gathered all the good seeds into the dishes, and before half an hour was over they had already finished, and all flew out again.</div></div>
+    <div class="sentenceContainer"><div class="sentence"> Then the maiden was delighted, and believed that she might now go with them to the wedding.</div></div>
+    <div class="sentenceContainer"><div class="sentence"> But the step-mother said, all this will not help.</div></div>
+    <div class="sentenceContainer"><div class="sentence"> You cannot go with us, for you have no clothes and can not dance.</div></div>
+    <div class="sentenceContainer"><div class="sentence"> We should be ashamed of you.</div></div>
+    <div class="sentenceContainer"><div class="sentence"> On this she turned her back on cinderella, and hurried away with her two proud daughters.</div></div>
+    <div class="sentenceContainer"><div class="sentence"> As no one was now at home, cinderella went to her mother's grave beneath the hazel-tree, and cried - shiver and quiver, little tree, silver and gold throw down over me.</div></div>
+    <div class="sentenceContainer"><div class="sentence"> Then the bird threw a gold and silver dress down to her, and slippers embroidered with silk and silver.</div></div>
+    <div class="sentenceContainer"><div class="sentence"> She put on the dress with all speed, and went to the wedding.</div></div>
+    <div class="sentenceContainer"><div class="sentence"> Her step-sisters and the step-mother however did not know her, and thought she must be a foreign princess, for she looked so beautiful in the golden dress.</div></div>
+    <div class="sentenceContainer"><div class="sentence"> They never once thought of cinderella, and believed that she was sitting at home in the dirt, picking lentils out of the ashes.</div></div>
+    <div class="sentenceContainer"><div class="sentence"> The prince approached her, took her by the hand and danced with her.</div></div>
+    <div class="sentenceContainer"><div class="sentence"> He would dance with no other maiden, and never let loose of her hand, and if any one else came to invite her, he said, this is my partner.</div></div>
+    <div class="sentenceContainer"><div class="sentence"> She danced till it was evening, and then she wanted to go home.</div></div>
+    <div class="sentenceContainer"><div class="sentence"> But the king's son said, I will go with you and bear you company, for he wished to see to whom the beautiful maiden belonged.</div></div>
+    <div class="sentenceContainer"><div class="sentence"> She escaped from him, however, and sprang into the pigeon-house.</div></div>
+    <div class="sentenceContainer"><div class="sentence"> The king's son waited until her father came, and then he told him that the unknown maiden had leapt into the pigeon-house.</div></div>
+    <div class="sentenceContainer"><div class="sentence"> The old man thought, can it be cinderella.</div></div>
+    <div class="sentenceContainer"><div class="sentence"> And they had to bring him an axe and a pickaxe that he might hew the pigeon-house to pieces, but no one was inside it.</div></div>
+    <div class="sentenceContainer"><div class="sentence"> And when they got home cinderella lay in her dirty clothes among the ashes, and a dim little oil-lamp was burning on the mantle-piece, for cinderella had jumped quickly down from the back of the pigeon-house and had run to the little hazel-tree, and there she had taken off her beautiful clothes and laid them on the grave, and the bird had taken them away again, and then she had seated herself in the kitchen amongst the ashes in her grey gown.</div></div>
+    <div class="sentenceContainer"><div class="sentence"> Next day when the festival began afresh, and her parents and the step-sisters had gone once more, cinderella went to the hazel-tree and said - shiver and quiver, my little tree, silver and gold throw down over me.</div></div>
+    <div class="sentenceContainer"><div class="sentence"> Then the bird threw down a much more beautiful dress than on the preceding day.</div></div>
+    <div class="sentenceContainer"><div class="sentence"> And when cinderella appeared at the wedding in this dress, every one was astonished at her beauty.</div></div>
+    <div class="sentenceContainer"><div class="sentence"> The king's son had waited until she came, and instantly took her by the hand and danced with no one but her.</div></div>
+    <div class="sentenceContainer"><div class="sentence"> When others came and invited her, he said, this is my partner.</div></div>
+    <div class="sentenceContainer"><div class="sentence"> When evening came she wished to leave, and the king's son followed her and wanted to see into which house she went.</div></div>
+    <div class="sentenceContainer"><div class="sentence"> But she sprang away from him, and into the garden behind the house.</div></div>
+    <div class="sentenceContainer"><div class="sentence"> Therein stood a beautiful tall tree on which hung the most magnificent pears.</div></div>
+    <div class="sentenceContainer"><div class="sentence"> She clambered so nimbly between the branches like a squirrel that the king's son did not know where she was gone.</div></div>
+    <div class="sentenceContainer"><div class="sentence"> He waited until her father came, and said to him, the unknown maiden has escaped from me, and I believe she has climbed up the pear-tree.</div></div>
+    <div class="sentenceContainer"><div class="sentence"> The father thought, can it be cinderella.</div></div>
+    <div class="sentenceContainer"><div class="sentence"> And had an axe brought and cut the tree down, but no one was on it.</div></div>
+    <div class="sentenceContainer"><div class="sentence"> And when they got into the kitchen, cinderella lay there among the ashes, as usual, for she had jumped down on the other side of the tree, had taken the beautiful dress to the bird on the little hazel-tree, and put on her grey gown.</div></div>
+    <div class="sentenceContainer"><div class="sentence"> On the third day, when the parents and sisters had gone away, cinderella went once more to her mother's grave and said to the little tree - shiver and quiver, my little tree, silver and gold throw down over me.</div></div>
+    <div class="sentenceContainer"><div class="sentence"> And now the bird threw down to her a dress which was more splendid and magnificent than any she had yet had, and the slippers were golden.</div></div>
+    <div class="sentenceContainer"><div class="sentence"> And when she went to the festival in the dress, no one knew how to speak for astonishment.</div></div>
+    <div class="sentenceContainer"><div class="sentence"> The king's son danced with her only, and if any one invited her to dance, he said this is my partner.</div></div>
+    <div class="sentenceContainer"><div class="sentence"> When evening came, cinderella wished to leave, and the king's son was anxious to go with her, but she escaped from him so quickly that he could not follow her.</div></div>
+    <div class="sentenceContainer"><div class="sentence"> The king's son, however, had employed a ruse, and had caused the whole staircase to be smeared with pitch, and there, when she ran down, had the maiden's left slipper remained stuck.</div></div>
+    <div class="sentenceContainer"><div class="sentence"> The king's son picked it up, and it was small and dainty, and all golden.</div></div>
+    <div class="sentenceContainer"><div class="sentence"> Next morning, he went with it to the father, and said to him, no one shall be my wife but she whose foot this golden slipper fits.</div></div>
+    <div class="sentenceContainer"><div class="sentence"> Then were the two sisters glad, for they had pretty feet.</div></div>
+    <div class="sentenceContainer"><div class="sentence"> The eldest went with the shoe into her room and wanted to try it on, and her mother stood by.</div></div>
+    <div class="sentenceContainer"><div class="sentence"> But she could not get her big toe into it, and the shoe was too small for her.</div></div>
+    <div class="sentenceContainer"><div class="sentence"> Then her mother gave her a knife and said, cut the toe off, when you are queen you will have no more need to go on foot.</div></div>
+    <div class="sentenceContainer"><div class="sentence"> The maiden cut the toe off, forced the foot into the shoe, swallowed the pain, and went out to the king's son.</div></div>
+    <div class="sentenceContainer"><div class="sentence"> Then he took her on his his horse as his bride and rode away with her.</div></div>
+    <div class="sentenceContainer"><div class="sentence"> They were obliged, however, to pass the grave, and there, on the hazel-tree, sat the two pigeons and cried - turn and peep, turn and peep, there's blood within the shoe, the shoe it is too small for her, the true bride waits for you.</div></div>
+    <div class="sentenceContainer"><div class="sentence"> Then he looked at her foot and saw how the blood was trickling from it.</div></div>
+    <div class="sentenceContainer"><div class="sentence"> He turned his horse round and took the false bride home again, and said she was not the true one, and that the other sister was to put the shoe on.</div></div>
+    <div class="sentenceContainer"><div class="sentence"> Then this one went into her chamber and got her toes safely into the shoe, but her heel was too large.</div></div>
+    <div class="sentenceContainer"><div class="sentence"> So her mother gave her a knife and said, cut a bit off your heel, when you are queen you will have no more need to go on foot.</div></div>
+    <div class="sentenceContainer"><div class="sentence"> The maiden cut a bit off her heel, forced her foot into the shoe, swallowed the pain, and went out to the king's son.</div></div>
+    <div class="sentenceContainer"><div class="sentence"> He took her on his horse as his bride, and rode away with her, but when they passed by the hazel-tree, the two pigeons sat on it and cried - turn and peep, turn and peep, there's blood within the shoe, the shoe it is too small for her, the true bride waits for you.</div></div>
+    <div class="sentenceContainer"><div class="sentence"> He looked down at her foot and saw how the blood was running out of her shoe, and how it had stained her white stocking quite red.</div></div>
+    <div class="sentenceContainer"><div class="sentence"> Then he turned his horse and took the false bride home again.</div></div>
+    <div class="sentenceContainer"><div class="sentence"> This also is not the right one, said he, have you no other daughter.</div></div>
+    <div class="sentenceContainer"><div class="sentence"> No, said the man, there is still a little stunted kitchen-wench which my late wife left behind her, but she cannot possibly be the bride.</div></div>
+    <div class="sentenceContainer"><div class="sentence"> The king's son said he was to send her up to him, but the mother answered, oh, no, she is much too dirty, she cannot show herself.</div></div>
+    <div class="sentenceContainer"><div class="sentence"> But he absolutely insisted on it, and cinderella had to be called.</div></div>
+    <div class="sentenceContainer"><div class="sentence"> She first washed her hands and face clean, and then went and bowed down before the king's son, who gave her the golden shoe.</div></div>
+    <div class="sentenceContainer"><div class="sentence"> Then she seated herself on a stool, drew her foot out of the heavy wooden shoe, and put it into the slipper, which fitted like a glove.</div></div>
+    <div class="sentenceContainer"><div class="sentence"> And when she rose up and the king's son looked at her face he recognized the beautiful maiden who had danced with him and cried, that is the true bride.</div></div>
+    <div class="sentenceContainer"><div class="sentence"> The step-mother and the two sisters were horrified and became pale with rage, he, however, took cinderella on his horse and rode away with her.</div></div>
+    <div class="sentenceContainer"><div class="sentence"> As they passed by the hazel-tree, the two white doves cried - turn and peep, turn and peep, no blood is in the shoe, the shoe is not too small for her, the true bride rides with you, and when they had cried that, the two came flying down and placed themselves on cinderella's shoulders, one on the right, the other on the left, and remained sitting there.</div></div>
+    <div class="sentenceContainer"><div class="sentence"> When the wedding with the king's son was to be celebrated, the two false sisters came and wanted to get into favor with cinderella and share her good fortune.</div></div>
+    <div class="sentenceContainer"><div class="sentence"> When the betrothed couple went to church, the elder was at the right side and the younger at the left, and the pigeons pecked out one eye from each of them.</div></div>
+    <div class="sentenceContainer"><div class="sentence"> Afterwards as they came back the elder was at the left, and the younger at the right, and then the pigeons pecked out the other eye from each.</div></div>
+    <div class="sentenceContainer"><div class="sentence"> And thus, for their wickedness and falsehood, they were punished with blindness all their days.</div></div>
+  <div>Source: https://www.cs.cmu.edu/~spok/grimmtmp/016.txt</div>
+  </div>
+  <script src="sentences-source.js"></script>
+  <script src="sentences-target.js"></script>
+  <script>
+    const divs = document.querySelectorAll(".sentenceContainer .sentence");
+
+    divs.forEach((div, index) => {
+      div.addEventListener("mouseover", () => {
+        div.innerText = sentencesTarget[index];
+      });
+      div.addEventListener("mouseout", () => {
+        div.innerText = sentencesSource[index];
+      });
+    });
+  </script>
+</body>
+</html>

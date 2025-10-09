@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="el">
+<head>
+  <title>Biingual Reader</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      text-align: center;
+      margin: 20px;
+      background: rgb(229, 235, 252);
+    }
+
+    .sentenceContainer {
+      font-size: 18px;
+      color: #333;
+      cursor: pointer;
+      padding-bottom: 30px;
+      border: none;
+      transition: background-color 0.3s;
+      margin: 5px;
+      width: 800px; /* Fixed width for the container */
+      height: auto;
+    }
+
+    .reader {
+      justify-content: space-around;
+      max-width: 800px;
+      margin: 0 auto;
+      background-color: #fff;
+      border-radius: 8px;
+      box-shadow: 0 20px 16px rgba(0, 0, 0, 0.1);
+      padding: 20px;
+      margin-top: 40px;
+    }
+
+    .sentenceContainer:hover {
+      background-color: #f0f0f0;
+    }
+
+    .sentenceContainer:active {
+      font-size: 36px;
+    }
+
+	.notepad {
+	  position: fixed;
+	  display: flex;
+	  flex: 1;
+	  padding-right: 20px;
+	  border-right: 1px;
+	  margin-right: 10px;
+	}
+
+	form {
+     display: flex;
+     flex-direction: column;
+	}
+
+	label {
+      font-weight: bold;
+      margin-top: 1rem;
+    }
+      input[type="text"],
+	textarea {
+	    width: 80px; /* Set the desired width */
+       height: 160px;
+       border: 1px solid #ccc;
+       padding: 0.5rem;
+       border-radius: 4px;
+       resize:both; /* Allow vertical resizing of the textarea */
+	}
+
+	</style>
+</head>
+	<div class="notepad">
+	<form id="notepad">
+	<label for="notes">Notes</label>
+	<textarea type="text"id="notes" notes="notes">Write down any stuff you want to remember, here. Try resizing me! </textarea>
+	</form>
+	</div>
+<body>
+  <div class="reader">
+  <div>Source: The Three Snake-Leaves</div>
+    <div class="sentenceContainer"><div class="sentence">There was once on a time a poor man, who could no longer support his only son.</div></div>
+    <div class="sentenceContainer"><div class="sentence"> Then said the son, dear father, things go so badly with us that I am a burden to you.</div></div>
+    <div class="sentenceContainer"><div class="sentence"> I would rather go away and see how I can earn my bread.</div></div>
+    <div class="sentenceContainer"><div class="sentence"> So the father gave him his blessing, and with great sorrow took leave of him.</div></div>
+    <div class="sentenceContainer"><div class="sentence"> At this time the king of a mighty empire was at war and the youth took service with him, and went out to fight.</div></div>
+    <div class="sentenceContainer"><div class="sentence"> And when he came before the enemy, there was a battle, and great danger, and it rained shot until his comrades fell on all sides, and when the leader also was killed, those left were about to take flight, but the youth stepped forth, spoke boldly to them, and cried, we will not let our father-land be ruined.</div></div>
+    <div class="sentenceContainer"><div class="sentence"> Then the others followed him, and he pressed on and conquered the enemy.</div></div>
+    <div class="sentenceContainer"><div class="sentence"> When the king heard that he owed the victory to him alone, he raised him above all the others, gave him great treasures, and made him the first in the kingdom.</div></div>
+    <div class="sentenceContainer"><div class="sentence"> The king had a daughter who was very beautiful, but she was also very strange.</div></div>
+    <div class="sentenceContainer"><div class="sentence"> She had made a vow to take no one as her lord and husband who did not promise to let himself be buried alive with her if she died first.</div></div>
+    <div class="sentenceContainer"><div class="sentence"> If he loves me with all his heart, said she, of what use will life be to him afterwards.</div></div>
+    <div class="sentenceContainer"><div class="sentence"> On her side she would do the same, and if he died first, would go down to the grave with him.</div></div>
+    <div class="sentenceContainer"><div class="sentence"> This strange oath had up to this time frightened away all wooers, but the youth became so charmed with her beauty that he cared for nothing, but asked her father for her.</div></div>
+    <div class="sentenceContainer"><div class="sentence"> But do you know what you must promise, said the king.</div></div>
+    <div class="sentenceContainer"><div class="sentence"> I must be buried with her, he replied, if I outlive her, but my love is so great that I do not mind the danger.</div></div>
+    <div class="sentenceContainer"><div class="sentence"> Then the king consented, and the wedding was solemnized with great splendor.</div></div>
+    <div class="sentenceContainer"><div class="sentence"> They lived now for a while happy and contented with each other, and then it befell that the young queen was attacked by a severe illness, and no physician could save her.</div></div>
+    <div class="sentenceContainer"><div class="sentence"> And as she lay there dead, the young king remembered what he had been obliged to promise, and was horrified at having to lie down alive in the grave, but there was no escape.</div></div>
+    <div class="sentenceContainer"><div class="sentence"> The king had placed sentries at all the gates, and it was not possible to avoid his fate.</div></div>
+    <div class="sentenceContainer"><div class="sentence"> As the day came when the corpse was to be buried, he was taken down with it into the royal vault and then the door was shut and bolted.</div></div>
+    <div class="sentenceContainer"><div class="sentence"> Near the coffin stood a table on which were four candles, four loaves of bread, and four bottles of wine, and when this provision came to an end, he would have to die of hunger.</div></div>
+    <div class="sentenceContainer"><div class="sentence"> And now he sat there full of pain and grief, ate every day only a little piece of bread, drank only a mouthful of wine, and nevertheless saw death daily drawing nearer.</div></div>
+    <div class="sentenceContainer"><div class="sentence"> Whilst he thus gazed before him, he saw a snake creep out of a corner of the vault and approach the dead body.</div></div>
+    <div class="sentenceContainer"><div class="sentence"> And as he thought it came to gnaw at it, he drew his sword and said, as long as I live, you shall not touch her, and hewed the snake in three pieces.</div></div>
+    <div class="sentenceContainer"><div class="sentence"> After a time a second snake crept out of the hole, and when it saw the other lying dead and cut in pieces, it went back, but soon came again with three green leaves in its mouth.</div></div>
+    <div class="sentenceContainer"><div class="sentence"> Then it took the three pieces of the snake, laid them together, as they fitted, and placed one of the leaves on each wound.</div></div>
+    <div class="sentenceContainer"><div class="sentence"> Immediately the severed parts joined themselves together, the snake moved, and became alive again, and both of them hastened away together.</div></div>
+    <div class="sentenceContainer"><div class="sentence"> The leaves were left lying on the ground, and a desire came into the mind of the unhappy man who had been watching all this, to know if the wondrous power of the leaves which had brought the snake to life again, could not likewise be of service to a human being.</div></div>
+    <div class="sentenceContainer"><div class="sentence"> So he picked up the leaves and laid one of them on the mouth of his dead wife, and the two others on her eyes.</div></div>
+    <div class="sentenceContainer"><div class="sentence"> And hardly had he done this than the blood stirred in her veins, rose into her pale face, and colored it again.</div></div>
+    <div class="sentenceContainer"><div class="sentence"> Then she drew breath, opened her eyes, and said, ah, God, where am I.</div></div>
+    <div class="sentenceContainer"><div class="sentence"> You are with me, dear wife, he answered, and told her how everything had happened, and how he had brought her back again to life.</div></div>
+    <div class="sentenceContainer"><div class="sentence"> Then he gave her some wine and bread, and when she had regained her strength, he raised her up and they went to the door and knocked, and called so loudly that the sentries heard it, and told the king.</div></div>
+    <div class="sentenceContainer"><div class="sentence"> The king came down himself and opened the door, and there he found both strong and well, and rejoiced with them that now all sorrow was over.</div></div>
+    <div class="sentenceContainer"><div class="sentence"> The young king, however, took the three snake-leaves with him, gave them to a servant and said, keep them for me carefully, and carry them constantly about you.</div></div>
+    <div class="sentenceContainer"><div class="sentence"> Who knows in what trouble they may yet be of service to us.</div></div>
+    <div class="sentenceContainer"><div class="sentence"> But a change had taken place in his wife.</div></div>
+    <div class="sentenceContainer"><div class="sentence"> After she had been restored to life, it seemed as if all love for her husband had gone out of her heart.</div></div>
+    <div class="sentenceContainer"><div class="sentence"> After some time, when he wanted to make a voyage over the sea, to visit his old father, and they had gone on board a ship, she forgot the great love and fidelity which he had shown her, and which had been the means of rescuing her from death, and conceived a wicked inclination for the skipper.</div></div>
+    <div class="sentenceContainer"><div class="sentence"> And once when the young king lay there asleep, she called in the skipper and seized the sleeper by the head, and the skipper took him by the feet, and thus they threw him down into the sea.</div></div>
+    <div class="sentenceContainer"><div class="sentence"> When the shameful deed was done, she said, now let us return home, and say that he died on the way.</div></div>
+    <div class="sentenceContainer"><div class="sentence"> I will extol and praise you so to my father that he will marry me to you, and make you the heir to his crown.</div></div>
+    <div class="sentenceContainer"><div class="sentence"> But the faithful servant who had seen all that they did, unseen by them, unfastened a little boat from the ship, got into it, sailed after his master, and let the traitors go on their way.</div></div>
+    <div class="sentenceContainer"><div class="sentence"> He fished up the dead body, and by the help of the three snake-leaves which he carried about with him, and laid on the eyes and mouth, he fortunately brought the young king back to life.</div></div>
+    <div class="sentenceContainer"><div class="sentence"> They both rowed with all their strength day and night, and their little boat sailed so swiftly that they reached the old king before the others.</div></div>
+    <div class="sentenceContainer"><div class="sentence"> He was astonished when he saw them come alone, and asked what had happened to them.</div></div>
+    <div class="sentenceContainer"><div class="sentence"> When he learnt the wickedness of his daughter he said, I cannot believe that she has behaved so ill, but the truth will soon come to light, and bade both go into a secret chamber and keep themselves hidden from everyone.</div></div>
+    <div class="sentenceContainer"><div class="sentence"> Soon afterwards the great ship came sailing in, and the godless woman appeared before her father with a troubled countenance.</div></div>
+    <div class="sentenceContainer"><div class="sentence"> He said, why do you come back alone.</div></div>
+    <div class="sentenceContainer"><div class="sentence"> Where is your husband.</div></div>
+    <div class="sentenceContainer"><div class="sentence"> Ah, dear father, she replied, I come home again in great grief.</div></div>
+    <div class="sentenceContainer"><div class="sentence"> During the voyage, my husband became suddenly ill and died, and if the good skipper had not given me his help, it would have gone ill with me.</div></div>
+    <div class="sentenceContainer"><div class="sentence"> He was present at his death, and can tell you all.</div></div>
+    <div class="sentenceContainer"><div class="sentence"> The king said, I will make the dead alive again, and opened the chamber, and bade the two come out.</div></div>
+    <div class="sentenceContainer"><div class="sentence"> When the woman saw her husband, she was thunderstruck, and fell on her knees and begged for mercy.</div></div>
+    <div class="sentenceContainer"><div class="sentence"> The king said, there is no mercy.</div></div>
+    <div class="sentenceContainer"><div class="sentence"> He was ready to die with you and restored you to life again, but you have murdered him in his sleep, and shall receive the reward that you deserve.</div></div>
+    <div class="sentenceContainer"><div class="sentence"> Then she was placed with her accomplice in a ship which had been pierced with holes, and sent out to sea, where they soon sank amid the waves.</div></div>
+  <div>Source: https://www.cs.cmu.edu/~spok/grimmtmp/013.txt</div>
+  </div>
+  <script src="sentences-source.js"></script>
+  <script src="sentences-target.js"></script>
+  <script>
+    const divs = document.querySelectorAll(".sentenceContainer .sentence");
+
+    divs.forEach((div, index) => {
+      div.addEventListener("mouseover", () => {
+        div.innerText = sentencesTarget[index];
+      });
+      div.addEventListener("mouseout", () => {
+        div.innerText = sentencesSource[index];
+      });
+    });
+  </script>
+</body>
+</html>

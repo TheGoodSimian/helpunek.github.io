@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="el">
+<head>
+  <title>Biingual Reader</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      text-align: center;
+      margin: 20px;
+      background: rgb(229, 235, 252);
+    }
+
+    .sentenceContainer {
+      font-size: 18px;
+      color: #333;
+      cursor: pointer;
+      padding-bottom: 30px;
+      border: none;
+      transition: background-color 0.3s;
+      margin: 5px;
+      width: 800px; /* Fixed width for the container */
+      height: auto;
+    }
+
+    .reader {
+      justify-content: space-around;
+      max-width: 800px;
+      margin: 0 auto;
+      background-color: #fff;
+      border-radius: 8px;
+      box-shadow: 0 20px 16px rgba(0, 0, 0, 0.1);
+      padding: 20px;
+      margin-top: 40px;
+    }
+
+    .sentenceContainer:hover {
+      background-color: #f0f0f0;
+    }
+
+    .sentenceContainer:active {
+      font-size: 36px;
+    }
+
+	.notepad {
+	  position: fixed;
+	  display: flex;
+	  flex: 1;
+	  padding-right: 20px;
+	  border-right: 1px;
+	  margin-right: 10px;
+	}
+
+	form {
+     display: flex;
+     flex-direction: column;
+	}
+
+	label {
+      font-weight: bold;
+      margin-top: 1rem;
+    }
+      input[type="text"],
+	textarea {
+	    width: 80px; /* Set the desired width */
+       height: 160px;
+       border: 1px solid #ccc;
+       padding: 0.5rem;
+       border-radius: 4px;
+       resize:both; /* Allow vertical resizing of the textarea */
+	}
+
+	</style>
+</head>
+	<div class="notepad">
+	<form id="notepad">
+	<label for="notes">Notes</label>
+	<textarea type="text"id="notes" notes="notes">Write down any stuff you want to remember, here. Try resizing me! </textarea>
+	</form>
+	</div>
+<body>
+  <div class="reader">
+  <div>Source: The Frog King, or Iron Henry</div>
+    <div class="sentenceContainer"><div class="sentence">In olden times when wishing still helped one, there lived a king whose daughters were all beautiful, but the youngest was so beautiful that the sun itself, which has seen so much, was astonished whenever it shone in her face.</div></div>
+    <div class="sentenceContainer"><div class="sentence"> Close by the king's castle lay a great dark forest, and under an old lime-tree in the forest was a well, and when the day was very warm, the king's child went out into the forest and sat down by the side of the cool fountain, and when she was bored she took a golden ball, and threw it up on high and caught it, and this ball was her favorite plaything.</div></div>
+    <div class="sentenceContainer"><div class="sentence"> Now it so happened that on one occasion the princess's golden ball did not fall into the little hand which she was holding up for it, but on to the ground beyond, and rolled straight into the water.</div></div>
+    <div class="sentenceContainer"><div class="sentence"> The king's daughter followed it with her eyes, but it vanished, and the well was deep, so deep that the bottom could not be seen.</div></div>
+    <div class="sentenceContainer"><div class="sentence"> At this she began to cry, and cried louder and louder, and could not be comforted.</div></div>
+    <div class="sentenceContainer"><div class="sentence"> And as she thus lamented someone said to her, 'What ails you, king's daughter?</div></div>
+    <div class="sentenceContainer"><div class="sentence"> You weep so that even a stone would show pity'.</div></div>
+    <div class="sentenceContainer"><div class="sentence"> She looked round to the side from whence the voice came, and saw a frog stretching forth its big, ugly head from the water.</div></div>
+    <div class="sentenceContainer"><div class="sentence"> 'Ah, old water-splasher, is it you,' she said, 'I am weeping for my golden ball, which has fallen into the well'.</div></div>
+    <div class="sentenceContainer"><div class="sentence"> 'Be quiet, and do not weep,' answered the frog, 'I can help you, but what will you give me if I bring your plaything up again'?</div></div>
+    <div class="sentenceContainer"><div class="sentence"> 'Whatever you will have, dear frog,' said she, 'My clothes, my pearls and jewels, and even the golden crown which I am wearing'.</div></div>
+    <div class="sentenceContainer"><div class="sentence"> The frog answered, 'I do not care for your clothes, your pearls and jewels, nor for your golden crown, but if you will love me and let me be your companion and play-fellow, and sit by you at your little table, and eat off your little golden plate, and drink out of your little cup, and sleep in your little bed - if you will promise me this I will go down below, and bring you your golden ball up again'.</div></div>
+    <div class="sentenceContainer"><div class="sentence"> 'Oh yes,' said she, 'I promise you all you wish, if you will but bring me my ball back again'.</div></div>
+    <div class="sentenceContainer"><div class="sentence"> But she thought, 'How the silly frog does talk.</div></div>
+    <div class="sentenceContainer"><div class="sentence"> All he does is to sit in the water with the other frogs, and croak.</div></div>
+    <div class="sentenceContainer"><div class="sentence"> He can be no companion to any human being'.</div></div>
+    <div class="sentenceContainer"><div class="sentence"> But the frog when he had received this promise, put his head into the water and sank down; and in a short while came swimmming up again with the ball in his mouth, and threw it on the grass.</div></div>
+    <div class="sentenceContainer"><div class="sentence"> The king's daughter was delighted to see her pretty plaything once more, and picked it up, and ran away with it.</div></div>
+    <div class="sentenceContainer"><div class="sentence"> 'Wait, wait,' said the frog.</div></div>
+    <div class="sentenceContainer"><div class="sentence"> 'Take me with you.</div></div>
+    <div class="sentenceContainer"><div class="sentence"> I can't run as you can'.</div></div>
+    <div class="sentenceContainer"><div class="sentence"> But what did it avail him to scream his croak, croak, after her, as loudly as he could.</div></div>
+    <div class="sentenceContainer"><div class="sentence"> She did not listen to it, but ran home and soon forgot the poor frog, who was forced to go back into his well again.</div></div>
+    <div class="sentenceContainer"><div class="sentence"> The next day when she had seated herself at table with the king and all the courtiers, and was eating from her little golden plate, something came creeping splish splash, splish splash, up the marble staircase, and when it had got to the top, it knocked at the door and cried, 'Princess, youngest princess, open the door for me'.</div></div>
+    <div class="sentenceContainer"><div class="sentence"> She ran to see who was outside, but when she opened the door, there sat the frog in front of it.</div></div>
+    <div class="sentenceContainer"><div class="sentence"> Then she slammed the door to, in great haste, sat down to dinner again, and was quite frightened.</div></div>
+    <div class="sentenceContainer"><div class="sentence"> The king saw plainly that her heart was beating violently, and said, 'My child, what are you so afraid of?</div></div>
+    <div class="sentenceContainer"><div class="sentence"> Is there perchance a giant outside who wants to carry you away'?</div></div>
+    <div class="sentenceContainer"><div class="sentence"> 'Ah, no,' replied she.</div></div>
+    <div class="sentenceContainer"><div class="sentence"> 'It is no giant but a disgusting frog'.</div></div>
+    <div class="sentenceContainer"><div class="sentence"> 'What does a frog want with you'?</div></div>
+    <div class="sentenceContainer"><div class="sentence"> 'Ah, dear father, yesterday as I was in the forest sitting by the well, playing, my golden ball fell into the water.</div></div>
+    <div class="sentenceContainer"><div class="sentence"> And because I cried so, the frog brought it out again for me, and because he so insisted, I promised him he should be my companion, but I never thought he would be able to come out of his water.</div></div>
+    <div class="sentenceContainer"><div class="sentence"> And now he is outside there, and wants to come in to me'.</div></div>
+    <div class="sentenceContainer"><div class="sentence"> In the meantime it knocked a second time, and cried, 'Princess, youngest princess, open the door for me, do you not know what you said to me yesterday by the cool waters of the well.</div></div>
+    <div class="sentenceContainer"><div class="sentence"> Princess, youngest princess, open the door for me'.</div></div>
+    <div class="sentenceContainer"><div class="sentence"> Then said the king, 'That which you have promised must you perform.</div></div>
+    <div class="sentenceContainer"><div class="sentence"> Go and let him in'.</div></div>
+    <div class="sentenceContainer"><div class="sentence"> She went and opened the door, and the frog hopped in and followed her, step by step, to her chair.</div></div>
+    <div class="sentenceContainer"><div class="sentence"> There he sat and cried, 'Lift me up beside you'.</div></div>
+    <div class="sentenceContainer"><div class="sentence"> She delayed, until at last the king commanded her to do it.</div></div>
+    <div class="sentenceContainer"><div class="sentence"> Once the frog was on the chair he wanted to be on the table, and when he was on the table he said, 'Now, push your little golden plate nearer to me that we may eat together'.</div></div>
+    <div class="sentenceContainer"><div class="sentence"> She did this, but it was easy to see that she did not do it willingly.</div></div>
+    <div class="sentenceContainer"><div class="sentence"> The frog enjoyed what he ate, but almost every mouthful she took choked her.</div></div>
+    <div class="sentenceContainer"><div class="sentence"> At length he said, 'I have eaten and am satisfied, now I am tired, carry me into your little room and make your little silken bed ready, and we will both lie down and go to sleep'.</div></div>
+    <div class="sentenceContainer"><div class="sentence"> The king's daughter began to cry, for she was afraid of the cold frog which she did not like to touch, and which was now to sleep in her pretty, clean little bed.</div></div>
+    <div class="sentenceContainer"><div class="sentence"> But the king grew angry and said, 'He who helped you when you were in trouble ought not afterwards to be despised by you'.</div></div>
+    <div class="sentenceContainer"><div class="sentence"> So she took hold of the frog with two fingers, carried him upstairs, and put him in a corner, but when she was in bed he crept to her and said, 'I am tired, I want to sleep as well as you, lift me up or I will tell your father'.</div></div>
+    <div class="sentenceContainer"><div class="sentence"> At this she was terribly angry, and took him up and threw him with all her might against the wall.</div></div>
+    <div class="sentenceContainer"><div class="sentence"> 'Now, will you be quiet, odious frog,' said she.</div></div>
+    <div class="sentenceContainer"><div class="sentence"> But when he fell down he was no frog but a king's son with kind and beautiful eyes.</div></div>
+    <div class="sentenceContainer"><div class="sentence"> He by her father's will was now her dear companion and husband.</div></div>
+    <div class="sentenceContainer"><div class="sentence"> Then he told her how he had been bewitched by a wicked witch, and how no one could have delivered him from the well but herself, and that to-morrow they would go together into his kingdom.</div></div>
+    <div class="sentenceContainer"><div class="sentence"> Then they went to sleep, and next morning when the sun awoke them, a carriage came driving up with eight white horses, which had white ostrich feathers on their heads, and were harnessed with golden chains, and behind stood the young king's servant Faithful Henry.</div></div>
+    <div class="sentenceContainer"><div class="sentence"> Faithful Henry had been so unhappy when his master was changed into a frog, that he had caused three iron bands to be laid round his heart, lest it should burst with grief and sadness.</div></div>
+    <div class="sentenceContainer"><div class="sentence"> The carriage was to conduct the young king into his kingdom.</div></div>
+    <div class="sentenceContainer"><div class="sentence"> Faithful Henry helped them both in, and placed himself behind again, and was full of joy because of this deliverance.</div></div>
+    <div class="sentenceContainer"><div class="sentence"> And when they had driven a part of the way the king's son heard a cracking behind him as if something had broken.</div></div>
+    <div class="sentenceContainer"><div class="sentence"> So he turned round and cried, 'Henry, the carriage is breaking'.</div></div>
+    <div class="sentenceContainer"><div class="sentence"> 'No, master, it is not the carriage.</div></div>
+    <div class="sentenceContainer"><div class="sentence"> It is a band from my heart, which was put there in my great pain when you were a frog and imprisoned in the well'.</div></div>
+    <div class="sentenceContainer"><div class="sentence"> Again and once again while they were on their way something cracked, and each time the king's son thought the carriage was breaking, but it was only the bands which were springing from the heart of Faithful Henry because his master was set free and was happy.</div></div>
+  <div>Source: https://www.cs.cmu.edu/~spok/grimmtmp/001.txt</div>
+  </div>
+  <script src="sentences-source.js"></script>
+  <script src="sentences-target.js"></script>
+  <script>
+    const divs = document.querySelectorAll(".sentenceContainer .sentence");
+
+    divs.forEach((div, index) => {
+      div.addEventListener("mouseover", () => {
+        div.innerText = sentencesTarget[index];
+      });
+      div.addEventListener("mouseout", () => {
+        div.innerText = sentencesSource[index];
+      });
+    });
+  </script>
+</body>
+</html>

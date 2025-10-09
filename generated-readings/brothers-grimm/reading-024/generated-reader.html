@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="el">
+<head>
+  <title>Biingual Reader</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      text-align: center;
+      margin: 20px;
+      background: rgb(229, 235, 252);
+    }
+
+    .sentenceContainer {
+      font-size: 18px;
+      color: #333;
+      cursor: pointer;
+      padding-bottom: 30px;
+      border: none;
+      transition: background-color 0.3s;
+      margin: 5px;
+      width: 800px; /* Fixed width for the container */
+      height: auto;
+    }
+
+    .reader {
+      justify-content: space-around;
+      max-width: 800px;
+      margin: 0 auto;
+      background-color: #fff;
+      border-radius: 8px;
+      box-shadow: 0 20px 16px rgba(0, 0, 0, 0.1);
+      padding: 20px;
+      margin-top: 40px;
+    }
+
+    .sentenceContainer:hover {
+      background-color: #f0f0f0;
+    }
+
+    .sentenceContainer:active {
+      font-size: 36px;
+    }
+
+	.notepad {
+	  position: fixed;
+	  display: flex;
+	  flex: 1;
+	  padding-right: 20px;
+	  border-right: 1px;
+	  margin-right: 10px;
+	}
+
+	form {
+     display: flex;
+     flex-direction: column;
+	}
+
+	label {
+      font-weight: bold;
+      margin-top: 1rem;
+    }
+      input[type="text"],
+	textarea {
+	    width: 80px; /* Set the desired width */
+       height: 160px;
+       border: 1px solid #ccc;
+       padding: 0.5rem;
+       border-radius: 4px;
+       resize:both; /* Allow vertical resizing of the textarea */
+	}
+
+	</style>
+</head>
+	<div class="notepad">
+	<form id="notepad">
+	<label for="notes">Notes</label>
+	<textarea type="text"id="notes" notes="notes">Write down any stuff you want to remember, here. Try resizing me! </textarea>
+	</form>
+	</div>
+<body>
+  <div class="reader">
+  <div>Source: Clever Hans</div>
+    <div class="sentenceContainer"><div class="sentence">The mother of Hans said, whither away, Hans.</div></div>
+    <div class="sentenceContainer"><div class="sentence"> Hans answered, to Gretel.</div></div>
+    <div class="sentenceContainer"><div class="sentence"> Behave well, Hans.</div></div>
+    <div class="sentenceContainer"><div class="sentence"> Oh, I'll behave well.</div></div>
+    <div class="sentenceContainer"><div class="sentence"> Good-bye, mother.</div></div>
+    <div class="sentenceContainer"><div class="sentence"> Good-bye, Hans.</div></div>
+    <div class="sentenceContainer"><div class="sentence"> Hans comes to Gretel.</div></div>
+    <div class="sentenceContainer"><div class="sentence"> Good day, Gretel.</div></div>
+    <div class="sentenceContainer"><div class="sentence"> Good day, Hans.</div></div>
+    <div class="sentenceContainer"><div class="sentence"> What do you bring that is good.</div></div>
+    <div class="sentenceContainer"><div class="sentence"> I bring nothing, I want to have something given me.</div></div>
+    <div class="sentenceContainer"><div class="sentence"> Gretel presents Hans with a needle.</div></div>
+    <div class="sentenceContainer"><div class="sentence"> Hans says, good-bye, Gretel.</div></div>
+    <div class="sentenceContainer"><div class="sentence"> Good-bye, Hans.</div></div>
+    <div class="sentenceContainer"><div class="sentence"> Hans takes the needle, sticks it into a hay-cart, and follows the cart home.</div></div>
+    <div class="sentenceContainer"><div class="sentence"> Good evening, mother.</div></div>
+    <div class="sentenceContainer"><div class="sentence"> Good evening, Hans.</div></div>
+    <div class="sentenceContainer"><div class="sentence"> Where have you been.</div></div>
+    <div class="sentenceContainer"><div class="sentence"> With Gretel.</div></div>
+    <div class="sentenceContainer"><div class="sentence"> What did you take her.</div></div>
+    <div class="sentenceContainer"><div class="sentence"> Took her nothing, had something given me.</div></div>
+    <div class="sentenceContainer"><div class="sentence"> What did Gretel give you.</div></div>
+    <div class="sentenceContainer"><div class="sentence"> Gave me a needle.</div></div>
+    <div class="sentenceContainer"><div class="sentence"> Where is the needle, Hans.</div></div>
+    <div class="sentenceContainer"><div class="sentence"> Saint* ck it in the hay-cart.</div></div>
+    <div class="sentenceContainer"><div class="sentence"> That was ill done, Hans.</div></div>
+    <div class="sentenceContainer"><div class="sentence"> You should have stuck the needle in your sleeve.</div></div>
+    <div class="sentenceContainer"><div class="sentence"> Never mind, I'll do better next time.</div></div>
+    <div class="sentenceContainer"><div class="sentence"> Whither away, Hans.</div></div>
+    <div class="sentenceContainer"><div class="sentence"> To Gretel, mother.</div></div>
+    <div class="sentenceContainer"><div class="sentence"> Behave well, Hans.</div></div>
+    <div class="sentenceContainer"><div class="sentence"> Oh, I'll behave well.</div></div>
+    <div class="sentenceContainer"><div class="sentence"> Good-bye, mother.</div></div>
+    <div class="sentenceContainer"><div class="sentence"> Good-bye, Hans.</div></div>
+    <div class="sentenceContainer"><div class="sentence"> Hans comes to Gretel.</div></div>
+    <div class="sentenceContainer"><div class="sentence"> Good day, Gretel.</div></div>
+    <div class="sentenceContainer"><div class="sentence"> Good day, Hans.</div></div>
+    <div class="sentenceContainer"><div class="sentence"> What do you bring that is good.</div></div>
+    <div class="sentenceContainer"><div class="sentence"> I bring nothing, I want to have something given to me.</div></div>
+    <div class="sentenceContainer"><div class="sentence"> Gretel presents Hans with a knife.</div></div>
+    <div class="sentenceContainer"><div class="sentence"> Good-bye, Gretel.</div></div>
+    <div class="sentenceContainer"><div class="sentence"> Good-bye Hans.</div></div>
+    <div class="sentenceContainer"><div class="sentence"> Hans takes the knife, sticks it in his sleeve, and goes home.</div></div>
+    <div class="sentenceContainer"><div class="sentence"> Good evening, mother.</div></div>
+    <div class="sentenceContainer"><div class="sentence"> Good evening, Hans.</div></div>
+    <div class="sentenceContainer"><div class="sentence"> Where have you been.</div></div>
+    <div class="sentenceContainer"><div class="sentence"> With Gretel.</div></div>
+    <div class="sentenceContainer"><div class="sentence"> What did you take her.</div></div>
+    <div class="sentenceContainer"><div class="sentence"> Took her nothing, she gave me something.</div></div>
+    <div class="sentenceContainer"><div class="sentence"> What did Gretel give you.</div></div>
+    <div class="sentenceContainer"><div class="sentence"> Gave me a knife.</div></div>
+    <div class="sentenceContainer"><div class="sentence"> Where is the knife, Hans.</div></div>
+    <div class="sentenceContainer"><div class="sentence"> Saint* ck in my sleeve.</div></div>
+    <div class="sentenceContainer"><div class="sentence"> That's ill done, Hans, you should have put the knife in your pocket.</div></div>
+    <div class="sentenceContainer"><div class="sentence"> Never mind, will do better next time.</div></div>
+    <div class="sentenceContainer"><div class="sentence"> Whither away, Hans.</div></div>
+    <div class="sentenceContainer"><div class="sentence"> To Gretel, mother.</div></div>
+    <div class="sentenceContainer"><div class="sentence"> Behave well, Hans.</div></div>
+    <div class="sentenceContainer"><div class="sentence"> Oh, I'll behave well.</div></div>
+    <div class="sentenceContainer"><div class="sentence"> Good-bye, mother.</div></div>
+    <div class="sentenceContainer"><div class="sentence"> Good-bye, Hans.</div></div>
+    <div class="sentenceContainer"><div class="sentence"> Hans comes to Gretel.</div></div>
+    <div class="sentenceContainer"><div class="sentence"> Good day, Gretel.</div></div>
+    <div class="sentenceContainer"><div class="sentence"> Good day, Hans.</div></div>
+    <div class="sentenceContainer"><div class="sentence"> What good thing do you bring.</div></div>
+    <div class="sentenceContainer"><div class="sentence"> I bring nothing, I want something given me.</div></div>
+    <div class="sentenceContainer"><div class="sentence"> Gretel presents Hans with a young goat.</div></div>
+    <div class="sentenceContainer"><div class="sentence"> Good-bye, Gretel.</div></div>
+    <div class="sentenceContainer"><div class="sentence"> Good-bye, Hans.</div></div>
+    <div class="sentenceContainer"><div class="sentence"> Hans takes the goat, ties its legs, and puts it in his pocket.</div></div>
+    <div class="sentenceContainer"><div class="sentence"> When he gets home it is suffocated.</div></div>
+    <div class="sentenceContainer"><div class="sentence"> Good evening, mother.</div></div>
+    <div class="sentenceContainer"><div class="sentence"> Good evening, Hans.</div></div>
+    <div class="sentenceContainer"><div class="sentence"> Where have you been.</div></div>
+    <div class="sentenceContainer"><div class="sentence"> With Gretel.</div></div>
+    <div class="sentenceContainer"><div class="sentence"> What did you take her.</div></div>
+    <div class="sentenceContainer"><div class="sentence"> Took nothing, she gave me something.</div></div>
+    <div class="sentenceContainer"><div class="sentence"> What did Gretel give you.</div></div>
+    <div class="sentenceContainer"><div class="sentence"> She gave me a goat.</div></div>
+    <div class="sentenceContainer"><div class="sentence"> Where is the goat, Hans.</div></div>
+    <div class="sentenceContainer"><div class="sentence"> Put it in my pocket.</div></div>
+    <div class="sentenceContainer"><div class="sentence"> That was ill done, Hans, you should have put a rope round the goat's neck.</div></div>
+    <div class="sentenceContainer"><div class="sentence"> Never mind, will do better next time.</div></div>
+    <div class="sentenceContainer"><div class="sentence"> Whither away, Hans, to Gretel, mother.</div></div>
+    <div class="sentenceContainer"><div class="sentence"> Behave well, Hans.</div></div>
+    <div class="sentenceContainer"><div class="sentence"> Oh, I'll behave well good-bye, mother.</div></div>
+    <div class="sentenceContainer"><div class="sentence"> Good-bye, Hans.</div></div>
+    <div class="sentenceContainer"><div class="sentence"> Hans comes to Gretel.</div></div>
+    <div class="sentenceContainer"><div class="sentence"> Good day, Gretel.</div></div>
+    <div class="sentenceContainer"><div class="sentence"> Good day, Hans.</div></div>
+    <div class="sentenceContainer"><div class="sentence"> What good thing do you bring.</div></div>
+    <div class="sentenceContainer"><div class="sentence"> I bring nothing, I want something given to me.</div></div>
+    <div class="sentenceContainer"><div class="sentence"> Gretel presents Hans with a piece of bacon.</div></div>
+    <div class="sentenceContainer"><div class="sentence"> Good-bye, Gretel.</div></div>
+    <div class="sentenceContainer"><div class="sentence"> Good-bye, Hans.</div></div>
+    <div class="sentenceContainer"><div class="sentence"> Hans takes the bacon, ties it to a rope, and drags it away behind him.</div></div>
+    <div class="sentenceContainer"><div class="sentence"> The dogs come and devour the bacon.</div></div>
+    <div class="sentenceContainer"><div class="sentence"> When he gets home, he has the rope in his hand, and there is no longer anything hanging to it.</div></div>
+    <div class="sentenceContainer"><div class="sentence"> Good evening, mother.</div></div>
+    <div class="sentenceContainer"><div class="sentence"> Good evening, Hans.</div></div>
+    <div class="sentenceContainer"><div class="sentence"> Where have you been.</div></div>
+    <div class="sentenceContainer"><div class="sentence"> With Gretel.</div></div>
+    <div class="sentenceContainer"><div class="sentence"> What did you take her.</div></div>
+    <div class="sentenceContainer"><div class="sentence"> I took her nothing, she gave me something.</div></div>
+    <div class="sentenceContainer"><div class="sentence"> What did Gretel give you.</div></div>
+    <div class="sentenceContainer"><div class="sentence"> Gave me a bit of bacon.</div></div>
+    <div class="sentenceContainer"><div class="sentence"> Where is the bacon, Hans.</div></div>
+    <div class="sentenceContainer"><div class="sentence"> I tied it to a rope, brought it home, dogs took it.</div></div>
+    <div class="sentenceContainer"><div class="sentence"> That was ill done, Hans, you should have carried the bacon on your head.</div></div>
+    <div class="sentenceContainer"><div class="sentence"> Never mind, will do better next time.</div></div>
+    <div class="sentenceContainer"><div class="sentence"> Whither away, Hans.</div></div>
+    <div class="sentenceContainer"><div class="sentence"> To Gretel, mother.</div></div>
+    <div class="sentenceContainer"><div class="sentence"> Behave well, Hans.</div></div>
+    <div class="sentenceContainer"><div class="sentence"> I'll behave well.</div></div>
+    <div class="sentenceContainer"><div class="sentence"> Good-bye, mother.</div></div>
+    <div class="sentenceContainer"><div class="sentence"> Good-bye, Hans.</div></div>
+    <div class="sentenceContainer"><div class="sentence"> Hans comes to Gretel.</div></div>
+    <div class="sentenceContainer"><div class="sentence"> Good day, Gretel.</div></div>
+    <div class="sentenceContainer"><div class="sentence"> Good day, Hans.</div></div>
+    <div class="sentenceContainer"><div class="sentence"> What good thing do you bring.</div></div>
+    <div class="sentenceContainer"><div class="sentence"> I bring nothing, but would have something given.</div></div>
+    <div class="sentenceContainer"><div class="sentence"> Gretel presents Hans with a calf.</div></div>
+    <div class="sentenceContainer"><div class="sentence"> Good-bye, Gretel.</div></div>
+    <div class="sentenceContainer"><div class="sentence"> Good-bye, Hans.</div></div>
+    <div class="sentenceContainer"><div class="sentence"> Hans takes the calf, puts it on his head, and the calf kicks his face.</div></div>
+    <div class="sentenceContainer"><div class="sentence"> Good evening, mother.</div></div>
+    <div class="sentenceContainer"><div class="sentence"> Good evening, Hans.</div></div>
+    <div class="sentenceContainer"><div class="sentence"> Where have you been.</div></div>
+    <div class="sentenceContainer"><div class="sentence"> With Gretel.</div></div>
+    <div class="sentenceContainer"><div class="sentence"> What did you take her.</div></div>
+    <div class="sentenceContainer"><div class="sentence"> I took nothing, but had something given me.</div></div>
+    <div class="sentenceContainer"><div class="sentence"> What did Gretel give you.</div></div>
+    <div class="sentenceContainer"><div class="sentence"> A calf.</div></div>
+    <div class="sentenceContainer"><div class="sentence"> Where have you the calf, Hans.</div></div>
+    <div class="sentenceContainer"><div class="sentence"> I set it on my head and it kicked my face.</div></div>
+    <div class="sentenceContainer"><div class="sentence"> That was ill done, Hans, you should have led the calf, and put it in the stall.</div></div>
+    <div class="sentenceContainer"><div class="sentence"> Never mind, will do better next time.</div></div>
+    <div class="sentenceContainer"><div class="sentence"> Whither away, Hans.</div></div>
+    <div class="sentenceContainer"><div class="sentence"> To Gretel, mother.</div></div>
+    <div class="sentenceContainer"><div class="sentence"> Behave well, Hans.</div></div>
+    <div class="sentenceContainer"><div class="sentence"> I'll behave well.</div></div>
+    <div class="sentenceContainer"><div class="sentence"> Good-bye, mother.</div></div>
+    <div class="sentenceContainer"><div class="sentence"> Good-bye, Hans.</div></div>
+    <div class="sentenceContainer"><div class="sentence"> Hans comes to Gretel.</div></div>
+    <div class="sentenceContainer"><div class="sentence"> Good day, Gretel.</div></div>
+    <div class="sentenceContainer"><div class="sentence"> Good day, Hans.</div></div>
+    <div class="sentenceContainer"><div class="sentence"> What good thing do you bring.</div></div>
+    <div class="sentenceContainer"><div class="sentence"> I bring nothing, but would have something given.</div></div>
+    <div class="sentenceContainer"><div class="sentence"> Gretel says to Hans, I will go with you.</div></div>
+    <div class="sentenceContainer"><div class="sentence"> Hans takes Gretel, ties her to a rope, leads her to the rack and binds her fast.</div></div>
+    <div class="sentenceContainer"><div class="sentence"> Then Hans goes to his mother.</div></div>
+    <div class="sentenceContainer"><div class="sentence"> Good evening, mother.</div></div>
+    <div class="sentenceContainer"><div class="sentence"> Good evening, Hans.</div></div>
+    <div class="sentenceContainer"><div class="sentence"> Where have you been.</div></div>
+    <div class="sentenceContainer"><div class="sentence"> With Gretel.</div></div>
+    <div class="sentenceContainer"><div class="sentence"> What did you take her.</div></div>
+    <div class="sentenceContainer"><div class="sentence"> I took her nothing.</div></div>
+    <div class="sentenceContainer"><div class="sentence"> What did Gretel give you.</div></div>
+    <div class="sentenceContainer"><div class="sentence"> She gave me nothing, she came with me.</div></div>
+    <div class="sentenceContainer"><div class="sentence"> Where have you left Gretel.</div></div>
+    <div class="sentenceContainer"><div class="sentence"> I led her by the rope, tied her to the rack, and scattered some grass for her.</div></div>
+    <div class="sentenceContainer"><div class="sentence"> That was ill done, Hans, you should have cast friendly eyes on her.</div></div>
+    <div class="sentenceContainer"><div class="sentence"> Never mind, will do better.</div></div>
+    <div class="sentenceContainer"><div class="sentence"> Hans went into the stable, cut out all the calves, and sheep's eyes, and threw them in Gretel's face.</div></div>
+    <div class="sentenceContainer"><div class="sentence"> Then Gretel became angry, tore herself loose and ran away, and was no longer the bride of Hans.</div></div>
+  <div>Source: https://www.cs.cmu.edu/~spok/grimmtmp/024.txt</div>
+  </div>
+  <script src="sentences-source.js"></script>
+  <script src="sentences-target.js"></script>
+  <script>
+    const divs = document.querySelectorAll(".sentenceContainer .sentence");
+
+    divs.forEach((div, index) => {
+      div.addEventListener("mouseover", () => {
+        div.innerText = sentencesTarget[index];
+      });
+      div.addEventListener("mouseout", () => {
+        div.innerText = sentencesSource[index];
+      });
+    });
+  </script>
+</body>
+</html>

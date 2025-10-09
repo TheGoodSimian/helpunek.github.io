@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="el">
+<head>
+  <title>Biingual Reader</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      text-align: center;
+      margin: 20px;
+      background: rgb(229, 235, 252);
+    }
+
+    .sentenceContainer {
+      font-size: 18px;
+      color: #333;
+      cursor: pointer;
+      padding-bottom: 30px;
+      border: none;
+      transition: background-color 0.3s;
+      margin: 5px;
+      width: 800px; /* Fixed width for the container */
+      height: auto;
+    }
+
+    .reader {
+      justify-content: space-around;
+      max-width: 800px;
+      margin: 0 auto;
+      background-color: #fff;
+      border-radius: 8px;
+      box-shadow: 0 20px 16px rgba(0, 0, 0, 0.1);
+      padding: 20px;
+      margin-top: 40px;
+    }
+
+    .sentenceContainer:hover {
+      background-color: #f0f0f0;
+    }
+
+    .sentenceContainer:active {
+      font-size: 36px;
+    }
+
+	.notepad {
+	  position: fixed;
+	  display: flex;
+	  flex: 1;
+	  padding-right: 20px;
+	  border-right: 1px;
+	  margin-right: 10px;
+	}
+
+	form {
+     display: flex;
+     flex-direction: column;
+	}
+
+	label {
+      font-weight: bold;
+      margin-top: 1rem;
+    }
+      input[type="text"],
+	textarea {
+	    width: 80px; /* Set the desired width */
+       height: 160px;
+       border: 1px solid #ccc;
+       padding: 0.5rem;
+       border-radius: 4px;
+       resize:both; /* Allow vertical resizing of the textarea */
+	}
+
+	</style>
+</head>
+	<div class="notepad">
+	<form id="notepad">
+	<label for="notes">Notes</label>
+	<textarea type="text"id="notes" notes="notes">Write down any stuff you want to remember, here. Try resizing me! </textarea>
+	</form>
+	</div>
+<body>
+  <div class="reader">
+  <div>Source: Mother Holle</div>
+    <div class="sentenceContainer"><div class="sentence">There was once a widow who had two daughters - one of whom was pretty and industrious, whilst the other was ugly and idle.</div></div>
+    <div class="sentenceContainer"><div class="sentence"> But she was much fonder of the ugly and idle one, because she was her own daughter.</div></div>
+    <div class="sentenceContainer"><div class="sentence"> And the other, who was a step-daughter, was obliged to do all the work, and be the cinderella of the house.</div></div>
+    <div class="sentenceContainer"><div class="sentence"> Every day the poor girl had to sit by a well, in the highway, and spin and spin till her fingers bled.</div></div>
+    <div class="sentenceContainer"><div class="sentence"> Now it happened that one day the shuttle was marked with her blood, so she dipped it in the well, to wash the mark off, but it dropped out of her hand and fell to the bottom.</div></div>
+    <div class="sentenceContainer"><div class="sentence"> She began to weep, and ran to her step-mother and told her of the mishap.</div></div>
+    <div class="sentenceContainer"><div class="sentence"> But she scolded her sharply, and was so merciless as to say, since you have let the shuttle fall in, you must fetch it out again.</div></div>
+    <div class="sentenceContainer"><div class="sentence"> So the girl went back to the well, and did not know what to do.</div></div>
+    <div class="sentenceContainer"><div class="sentence"> And in the sorrow of her heart she jumped into the well to get the shuttle.</div></div>
+    <div class="sentenceContainer"><div class="sentence"> She lost her senses.</div></div>
+    <div class="sentenceContainer"><div class="sentence"> And when she awoke and came to herself again, she was in a lovely meadow where the sun was shining and many thousands of flowers were growing.</div></div>
+    <div class="sentenceContainer"><div class="sentence"> Across this meadow she went, and at last came to a baker's oven full of bread, and the bread cried out, oh, take me out.</div></div>
+    <div class="sentenceContainer"><div class="sentence"> Take me out.</div></div>
+    <div class="sentenceContainer"><div class="sentence"> Or I shall burn.</div></div>
+    <div class="sentenceContainer"><div class="sentence"> I have been baked a long time.</div></div>
+    <div class="sentenceContainer"><div class="sentence"> So she went up to it, and took out all the loaves one after another with the bread-shovel.</div></div>
+    <div class="sentenceContainer"><div class="sentence"> After that she went on till she came to a tree covered with apples, which called out to her, oh, shake me.</div></div>
+    <div class="sentenceContainer"><div class="sentence"> Shake me.</div></div>
+    <div class="sentenceContainer"><div class="sentence"> We apples are all ripe.</div></div>
+    <div class="sentenceContainer"><div class="sentence"> So she shook the tree till the apples fell like rain, and went on shaking till they were all down, and when she had gathered them into a heap, she went on her way.</div></div>
+    <div class="sentenceContainer"><div class="sentence"> At last she came to a little house, out of which an old woman peeped.</div></div>
+    <div class="sentenceContainer"><div class="sentence"> But she had such large teeth that the girl was frightened, and was about to run away.</div></div>
+    <div class="sentenceContainer"><div class="sentence"> But the old woman called out to her, what are you afraid of, dear child.</div></div>
+    <div class="sentenceContainer"><div class="sentence"> Saint* y with me.</div></div>
+    <div class="sentenceContainer"><div class="sentence"> If you will do all the work in the house properly, you shall be the better for it.</div></div>
+    <div class="sentenceContainer"><div class="sentence"> Only you must take care to make my bed well, and shake it thoroughly till the feathers fly - for then there is snow on the earth.</div></div>
+    <div class="sentenceContainer"><div class="sentence"> I am mother holle.</div></div>
+    <div class="sentenceContainer"><div class="sentence"> As the old woman spoke so kindly to her, the girl took courage and agreed to enter her service.</div></div>
+    <div class="sentenceContainer"><div class="sentence"> She attended to everything to the satisfaction of her mistress, and always shook her bed so vigorously that the feathers flew about like snow-flakes.</div></div>
+    <div class="sentenceContainer"><div class="sentence"> So she had a pleasant life with her.</div></div>
+    <div class="sentenceContainer"><div class="sentence"> Never an angry word.</div></div>
+    <div class="sentenceContainer"><div class="sentence"> And to eat she had boiled or roast meat every day.</div></div>
+    <div class="sentenceContainer"><div class="sentence"> She stayed some time with mother holle, before she became sad.</div></div>
+    <div class="sentenceContainer"><div class="sentence"> At first she did not know what was the matter with her, but found at length that it was home-sickness.</div></div>
+    <div class="sentenceContainer"><div class="sentence"> Although she was many thousand times better off here than at home, still she had a longing to be there.</div></div>
+    <div class="sentenceContainer"><div class="sentence"> At last she said to the old woman, I have a longing for home, and however well off I am down here, I cannot stay any longer.</div></div>
+    <div class="sentenceContainer"><div class="sentence"> I must go up again to my own people.</div></div>
+    <div class="sentenceContainer"><div class="sentence"> Mother holle said, I am pleased that you long for your home again, and as you have served me so truly, I myself will take you up again.</div></div>
+    <div class="sentenceContainer"><div class="sentence"> Thereupon she took her by the hand, and led her to a large door.</div></div>
+    <div class="sentenceContainer"><div class="sentence"> The door was opened, and just as the maiden was standing beneath the doorway, a heavy shower of golden rain fell, and all the gold clung to her, so that she was completely covered over with it.</div></div>
+    <div class="sentenceContainer"><div class="sentence"> You shall have that because you have been so industrious, said mother holle, and at the same time she gave her back the shuttle which she had let fall into the well.</div></div>
+    <div class="sentenceContainer"><div class="sentence"> Thereupon the door closed, and the maiden found herself up above upon the earth, not far from her mother's house.</div></div>
+    <div class="sentenceContainer"><div class="sentence"> And as she went into the yard the cock was sitting on the well, and cried - cock-a-doodle-doo.</div></div>
+    <div class="sentenceContainer"><div class="sentence"> Your golden girl's come back to you.</div></div>
+    <div class="sentenceContainer"><div class="sentence"> So she went in to her mother, and as she arrived thus covered with gold, she was well received, both by her and her sister.</div></div>
+    <div class="sentenceContainer"><div class="sentence"> The girl told all that had happened to her, and as soon as the mother heard how she had come by so much wealth, she was very anxious to obtain the same good luck for the ugly and lazy daughter.</div></div>
+    <div class="sentenceContainer"><div class="sentence"> She had to seat herself by the well and spin.</div></div>
+    <div class="sentenceContainer"><div class="sentence"> And in order that her shuttle might be stained with blood, she stuck her hand into a thorn bush and pricked her finger.</div></div>
+    <div class="sentenceContainer"><div class="sentence"> Then she threw her shuttle into the well, and jumped in after it.</div></div>
+    <div class="sentenceContainer"><div class="sentence"> She came, like the other, to the beautiful meadow and walked along the very same path.</div></div>
+    <div class="sentenceContainer"><div class="sentence"> When she got to the oven the bread again cried, oh, take me out.</div></div>
+    <div class="sentenceContainer"><div class="sentence"> Take me out.</div></div>
+    <div class="sentenceContainer"><div class="sentence"> Or I shall burn.</div></div>
+    <div class="sentenceContainer"><div class="sentence"> I have been baked a long time.</div></div>
+    <div class="sentenceContainer"><div class="sentence"> But the lazy thing answered, as if I had any wish to make myself dirty.</div></div>
+    <div class="sentenceContainer"><div class="sentence"> And on she went.</div></div>
+    <div class="sentenceContainer"><div class="sentence"> Soon she came to the apple-tree, which cried, oh, shake me.</div></div>
+    <div class="sentenceContainer"><div class="sentence"> Shake me.</div></div>
+    <div class="sentenceContainer"><div class="sentence"> We apples are all ripe.</div></div>
+    <div class="sentenceContainer"><div class="sentence"> But she answered, I like that.</div></div>
+    <div class="sentenceContainer"><div class="sentence"> One of you might fall on my head, and so went on.</div></div>
+    <div class="sentenceContainer"><div class="sentence"> When she came to mother holle's house she was not afraid, for she had already heard of her big teeth, and she hired herself to her immediately.</div></div>
+    <div class="sentenceContainer"><div class="sentence"> The first day she forced herself to work diligently, and obeyed mother holle when she told her to do anything, for she was thinking of all the gold that she would give her.</div></div>
+    <div class="sentenceContainer"><div class="sentence"> But on the second day she began to be lazy, and on the third day still more so, and then she would not get up in the morning at all.</div></div>
+    <div class="sentenceContainer"><div class="sentence"> Neither did she make mother holle's bed as she ought, and did not shake it so as to make the feathers fly up.</div></div>
+    <div class="sentenceContainer"><div class="sentence"> Mother holle was soon tired of this, and gave her notice to leave.</div></div>
+    <div class="sentenceContainer"><div class="sentence"> The lazy girl was willing enough to go, and thought that now the golden rain would come.</div></div>
+    <div class="sentenceContainer"><div class="sentence"> Mother holle led her also to the great door, but while she was standing beneath it, instead of the gold a big kettleful of pitch was emptied over her.</div></div>
+    <div class="sentenceContainer"><div class="sentence"> That is the reward for your service, said mother holle, and shut the door.</div></div>
+    <div class="sentenceContainer"><div class="sentence"> So the lazy girl went home, but she was quite covered with pitch, and the cock on the well, as soon as he saw her, cried out - cock-a-doodle-doo.</div></div>
+    <div class="sentenceContainer"><div class="sentence"> Your dirty girl's come back to you.</div></div>
+    <div class="sentenceContainer"><div class="sentence"> But the pitch clung fast to her, and could not be got off as long as she lived.</div></div>
+  <div>Source: https://www.cs.cmu.edu/~spok/grimmtmp/018.txt</div>
+  </div>
+  <script src="sentences-source.js"></script>
+  <script src="sentences-target.js"></script>
+  <script>
+    const divs = document.querySelectorAll(".sentenceContainer .sentence");
+
+    divs.forEach((div, index) => {
+      div.addEventListener("mouseover", () => {
+        div.innerText = sentencesTarget[index];
+      });
+      div.addEventListener("mouseout", () => {
+        div.innerText = sentencesSource[index];
+      });
+    });
+  </script>
+</body>
+</html>

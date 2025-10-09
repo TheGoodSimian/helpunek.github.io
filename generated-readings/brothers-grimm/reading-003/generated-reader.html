@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="el">
+<head>
+  <title>Biingual Reader</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      text-align: center;
+      margin: 20px;
+      background: rgb(229, 235, 252);
+    }
+
+    .sentenceContainer {
+      font-size: 18px;
+      color: #333;
+      cursor: pointer;
+      padding-bottom: 30px;
+      border: none;
+      transition: background-color 0.3s;
+      margin: 5px;
+      width: 800px; /* Fixed width for the container */
+      height: auto;
+    }
+
+    .reader {
+      justify-content: space-around;
+      max-width: 800px;
+      margin: 0 auto;
+      background-color: #fff;
+      border-radius: 8px;
+      box-shadow: 0 20px 16px rgba(0, 0, 0, 0.1);
+      padding: 20px;
+      margin-top: 40px;
+    }
+
+    .sentenceContainer:hover {
+      background-color: #f0f0f0;
+    }
+
+    .sentenceContainer:active {
+      font-size: 36px;
+    }
+
+	.notepad {
+	  position: fixed;
+	  display: flex;
+	  flex: 1;
+	  padding-right: 20px;
+	  border-right: 1px;
+	  margin-right: 10px;
+	}
+
+	form {
+     display: flex;
+     flex-direction: column;
+	}
+
+	label {
+      font-weight: bold;
+      margin-top: 1rem;
+    }
+      input[type="text"],
+	textarea {
+	    width: 80px; /* Set the desired width */
+       height: 160px;
+       border: 1px solid #ccc;
+       padding: 0.5rem;
+       border-radius: 4px;
+       resize:both; /* Allow vertical resizing of the textarea */
+	}
+
+	</style>
+</head>
+	<div class="notepad">
+	<form id="notepad">
+	<label for="notes">Notes</label>
+	<textarea type="text"id="notes" notes="notes">Write down any stuff you want to remember, here. Try resizing me! </textarea>
+	</form>
+	</div>
+<body>
+  <div class="reader">
+  <div>Source: The Story of a Youth Who Went Forth to Learn What Fear Was</div>
+    <div class="sentenceContainer"><div class="sentence">A certain father had two sons, the elder of whom was smart and sensible, and could do everything, but the younger was stupid and could neither learn nor understand anything, and when people saw him they said 'there's a fellow who will give his father some trouble.</div></div>
+    <div class="sentenceContainer"><div class="sentence">' When anything had to be done, it was always the elder who was forced to do it, but if his father bade him fetch anything when it was late, or in the night-time, and the way led through the churchyard, or any other dismal place, he answered 'oh, no, father, I'll not go there, it makes me shudder.</div></div>
+    <div class="sentenceContainer"><div class="sentence">' For he was afraid.</div></div>
+    <div class="sentenceContainer"><div class="sentence"> Or when stories were told by the fire at night which made the flesh creep, the listeners sometimes said 'oh, it makes us shudder.</div></div>
+    <div class="sentenceContainer"><div class="sentence">' The younger sat in a corner and listened with the rest of them, and could not imagine what they could mean.</div></div>
+    <div class="sentenceContainer"><div class="sentence"> 'They are always saying 'it makes me shudder, it makes me shudder, it does not make me shudder.</div></div>
+    <div class="sentenceContainer"><div class="sentence">' Thought he.</div></div>
+    <div class="sentenceContainer"><div class="sentence"> 'That, too, must be an art of which I understand nothing.</div></div>
+    <div class="sentenceContainer"><div class="sentence">' Now it came to pass that his father said to him one day 'hearken to me, you fellow in the corner there, you are growing tall and strong, and you too must learn something by which you can earn your bread.</div></div>
+    <div class="sentenceContainer"><div class="sentence"> Look how your brother works, but you do not even earn your salt.</div></div>
+    <div class="sentenceContainer"><div class="sentence">' 'Well, father, he replied, 'I am quite willing to learn something - indeed, if it could but be managed, I should like to learn how to shudder.</div></div>
+    <div class="sentenceContainer"><div class="sentence"> I don't understand that at all yet.</div></div>
+    <div class="sentenceContainer"><div class="sentence">' The elder brother smiled when he heard that, and thought to himself 'good God, what a blockhead that brother of mine is.</div></div>
+    <div class="sentenceContainer"><div class="sentence"> He will never be good for anything as long as he lives.</div></div>
+    <div class="sentenceContainer"><div class="sentence"> He who wants to be a sickle must bend himself betimes.</div></div>
+    <div class="sentenceContainer"><div class="sentence">' The father sighed, and answered him 'you shall soon learn what it is to shudder, but you will not earn your bread by that.</div></div>
+    <div class="sentenceContainer"><div class="sentence">' Soon after this the sexton came to the house on a visit, and the father bewailed his trouble, and told him how his younger son was so backward in every respect that he knew nothing and learnt nothing.</div></div>
+    <div class="sentenceContainer"><div class="sentence"> 'Just think, said he, 'when I asked him how he was going to earn his bread, he actually wanted to learn to shudder.</div></div>
+    <div class="sentenceContainer"><div class="sentence">' 'If that be all, replied the sexton, 'he can learn that with me.</div></div>
+    <div class="sentenceContainer"><div class="sentence"> Send him to me, and I will soon polish him.</div></div>
+    <div class="sentenceContainer"><div class="sentence">' The father was glad to do it, for he thought 'it will train the boy a little.</div></div>
+    <div class="sentenceContainer"><div class="sentence">' The sexton therefore took him into his house, and he had to ring the church bell.</div></div>
+    <div class="sentenceContainer"><div class="sentence"> After a day or two, the sexton awoke him at midnight, and bade him arise and go up into the church tower and ring the bell.</div></div>
+    <div class="sentenceContainer"><div class="sentence"> 'You shall soon learn what shuddering is, thought he, and secretly went there before him, and when the boy was at the top of the tower and turned round, and was just going to take hold of the bell rope, he saw a white figure standing on the stairs opposite the sounding hole.</div></div>
+    <div class="sentenceContainer"><div class="sentence"> 'Who is there.</div></div>
+    <div class="sentenceContainer"><div class="sentence">' Cried he, but the figure made no reply, and did not move or stir.</div></div>
+    <div class="sentenceContainer"><div class="sentence"> 'Give an answer, cried the boy, 'or take yourself off, you have no business here at night.</div></div>
+    <div class="sentenceContainer"><div class="sentence">' The sexton, however, remained standing motionless that the boy might think he was a ghost.</div></div>
+    <div class="sentenceContainer"><div class="sentence"> The boy cried a second time 'what do you want here.</div></div>
+    <div class="sentenceContainer"><div class="sentence"> - Speak if you are an honest fellow, or I will throw you down the steps.</div></div>
+    <div class="sentenceContainer"><div class="sentence">' The sexton thought 'he can't mean to be as bad as his words, uttered no sound and stood as if he were made of stone.</div></div>
+    <div class="sentenceContainer"><div class="sentence"> Then the boy called to him for the third time, and as that was also to no purpose, he ran against him and pushed the ghost down the stairs, so that it fell down ten steps and remained lying there in a corner.</div></div>
+    <div class="sentenceContainer"><div class="sentence"> Thereupon he rang the bell, went home, and without saying a word went to bed, and fell asleep.</div></div>
+    <div class="sentenceContainer"><div class="sentence"> The sexton's wife waited a long time for her husband, but he did not come back.</div></div>
+    <div class="sentenceContainer"><div class="sentence"> At length she became uneasy, and wakened the boy, and asked 'do you not know where my husband is.</div></div>
+    <div class="sentenceContainer"><div class="sentence"> He climbed up the tower before you did.</div></div>
+    <div class="sentenceContainer"><div class="sentence">' 'No, I don't know, replied the boy, 'but someone was standing by the sounding hole on the other side of the steps, and as he would neither give an answer nor go away, I took him for a scoundrel, and threw him downstairs.</div></div>
+    <div class="sentenceContainer"><div class="sentence"> Just go there and you will see if it was he.</div></div>
+    <div class="sentenceContainer"><div class="sentence"> I should be sorry if it were.</div></div>
+    <div class="sentenceContainer"><div class="sentence">' The woman ran away and found her husband, who was lying moaning in the corner, and had broken his leg.</div></div>
+    <div class="sentenceContainer"><div class="sentence"> She carried him down, and then with loud screams she hastened to the boy's father.</div></div>
+    <div class="sentenceContainer"><div class="sentence"> 'Your boy, cried she, 'has been the cause of a great misfortune.</div></div>
+    <div class="sentenceContainer"><div class="sentence"> He has thrown my husband down the steps so that he broke his leg.</div></div>
+    <div class="sentenceContainer"><div class="sentence"> Take the good-for-nothing fellow out of our house.</div></div>
+    <div class="sentenceContainer"><div class="sentence">' The father was terrified, and ran thither and scolded the boy.</div></div>
+    <div class="sentenceContainer"><div class="sentence"> 'What wicked tricks are these.</div></div>
+    <div class="sentenceContainer"><div class="sentence">' Said he, 'the devil must have put them into your head.</div></div>
+    <div class="sentenceContainer"><div class="sentence">' 'Father, he replied, 'do listen to me.</div></div>
+    <div class="sentenceContainer"><div class="sentence"> I am quite innocent.</div></div>
+    <div class="sentenceContainer"><div class="sentence"> He was standing there by night like one intent on doing evil.</div></div>
+    <div class="sentenceContainer"><div class="sentence"> I did not know who it was, and I entreated him three times either to speak or to go away.</div></div>
+    <div class="sentenceContainer"><div class="sentence">' 'Ah, said the father, 'I have nothing but unhappiness with you.</div></div>
+    <div class="sentenceContainer"><div class="sentence"> Go out of my sight.</div></div>
+    <div class="sentenceContainer"><div class="sentence"> I will see you no more.</div></div>
+    <div class="sentenceContainer"><div class="sentence">' 'Yes, father, right willingly, wait only until it is day.</div></div>
+    <div class="sentenceContainer"><div class="sentence"> Then will I go forth and learn how to shudder, and then I shall, at any rate, understand one art which will support me.</div></div>
+    <div class="sentenceContainer"><div class="sentence">' 'Learn what you will, spoke the father, 'it is all the same to me.</div></div>
+    <div class="sentenceContainer"><div class="sentence"> Here are fifty talers for you.</div></div>
+    <div class="sentenceContainer"><div class="sentence"> Take these and go into the wide world, and tell no one from whence you come, and who is your father, for I have reason to be ashamed of you.</div></div>
+    <div class="sentenceContainer"><div class="sentence">' 'Yes, father, it shall be as you will.</div></div>
+    <div class="sentenceContainer"><div class="sentence"> If you desire nothing more than that, I can easily keep it in mind.</div></div>
+    <div class="sentenceContainer"><div class="sentence">' When day dawned, therefore, the boy put his fifty talers into his pocket, and went forth on the great highway, and continually said to himself 'if I could but shudder.</div></div>
+    <div class="sentenceContainer"><div class="sentence"> If I could but shudder.</div></div>
+    <div class="sentenceContainer"><div class="sentence">' Then a man approached who heard this conversation which the youth was holding with himself, and when they had walked a little farther to where they could see the gallows, the man said to him 'look, there is the tree where seven men have married the ropemaker's daughter, and are now learning how to fly.</div></div>
+    <div class="sentenceContainer"><div class="sentence"> Sit down beneath it, and wait till night comes, and you will soon learn how to shudder.</div></div>
+    <div class="sentenceContainer"><div class="sentence">' 'If that is all that is wanted, answered the youth, 'it is easily done, but if I learn how to shudder as fast as that, you shall have my fifty talers.</div></div>
+    <div class="sentenceContainer"><div class="sentence"> Just come back to me early in the morning.</div></div>
+    <div class="sentenceContainer"><div class="sentence">' Then the youth went to the gallows, sat down beneath it, and waited till evening came.</div></div>
+    <div class="sentenceContainer"><div class="sentence"> And as he was cold, he lighted himself a fire, but at midnight the wind blew so sharply that in spite of his fire, he could not get warm.</div></div>
+    <div class="sentenceContainer"><div class="sentence"> And as the wind knocked the hanged men against each other, and they moved backwards and forwards, he thought to himself 'if you shiver below by the fire, how those up above must freeze and suffer.</div></div>
+    <div class="sentenceContainer"><div class="sentence">' And as he felt pity for them, he raised the ladder, and climbed up, unbound one of them after the other, and brought down all seven.</div></div>
+    <div class="sentenceContainer"><div class="sentence"> Then he stoked the fire, blew it, and set them all round it to warm themselves.</div></div>
+    <div class="sentenceContainer"><div class="sentence"> But they sat there and did not stir, and the fire caught their clothes.</div></div>
+    <div class="sentenceContainer"><div class="sentence"> So he said 'take care, or I will hang you up again.</div></div>
+    <div class="sentenceContainer"><div class="sentence">' The dead men, however, did not hear, but were quite silent, and let their rags go on burning.</div></div>
+    <div class="sentenceContainer"><div class="sentence"> At this he grew angry, and said 'if you will not take care, I cannot help you, I will not be burnt with you, and he hung them up again each in his turn.</div></div>
+    <div class="sentenceContainer"><div class="sentence"> Then he sat down by his fire and fell asleep, and the next morning the man came to him and wanted to have the fifty talers, and said 'well, do you know how to shudder.</div></div>
+    <div class="sentenceContainer"><div class="sentence">' 'No, answered he, 'how should I know.</div></div>
+    <div class="sentenceContainer"><div class="sentence"> Those fellows up there did not open their mouths, and were so stupid that they let the few old rags which they had on their bodies get burnt.</div></div>
+    <div class="sentenceContainer"><div class="sentence">' Then the man saw that he would not get the fifty talers that day, and went away saying 'such a youth has never come my way before.</div></div>
+    <div class="sentenceContainer"><div class="sentence">' The youth likewise went his way, and once more began to mutter to himself 'ah, if I could but shudder.</div></div>
+    <div class="sentenceContainer"><div class="sentence"> Ah, if I could but shudder.</div></div>
+    <div class="sentenceContainer"><div class="sentence">' A waggoner who was striding behind him heard this and asked 'who are you.</div></div>
+    <div class="sentenceContainer"><div class="sentence">' 'I don't know, answered the youth.</div></div>
+    <div class="sentenceContainer"><div class="sentence"> Then the waggoner asked 'from whence do you come.</div></div>
+    <div class="sentenceContainer"><div class="sentence">' 'I know not.</div></div>
+    <div class="sentenceContainer"><div class="sentence">' 'Who is your father.</div></div>
+    <div class="sentenceContainer"><div class="sentence">' 'That I may not tell you.</div></div>
+    <div class="sentenceContainer"><div class="sentence">' 'What is it that you are always muttering between your teeth.</div></div>
+    <div class="sentenceContainer"><div class="sentence">' 'Ah, replied the youth, 'I do so wish I could shudder, but no one can teach me how.</div></div>
+    <div class="sentenceContainer"><div class="sentence">' 'Enough of your foolish chatter, said the waggoner.</div></div>
+    <div class="sentenceContainer"><div class="sentence"> 'Come, go with me, I will see about a place for you.</div></div>
+    <div class="sentenceContainer"><div class="sentence">' The youth went with the waggoner, and in the evening they arrived at an inn where they wished to pass the night.</div></div>
+    <div class="sentenceContainer"><div class="sentence"> Then at the entrance of the parlor the youth again said quite loudly 'if I could but shudder.</div></div>
+    <div class="sentenceContainer"><div class="sentence"> If I could but shudder.</div></div>
+    <div class="sentenceContainer"><div class="sentence">' The host who heard this, laughed and said 'if that is your desire, there ought to be a good opportunity for you here.</div></div>
+    <div class="sentenceContainer"><div class="sentence">' 'Ah, be silent, said the hostess, 'so many prying persons have already lost their lives, it would be a pity and a shame if such beautiful eyes as these should never see the daylight again.</div></div>
+    <div class="sentenceContainer"><div class="sentence">' But the youth said 'however difficult it may be, I will learn it.</div></div>
+    <div class="sentenceContainer"><div class="sentence"> For this purpose indeed have I journeyed forth.</div></div>
+    <div class="sentenceContainer"><div class="sentence">' He let the host have no rest, until the latter told him, that not far from thence stood a haunted castle where any one could very easily learn what shuddering was, if he would but watch in it for three nights.</div></div>
+    <div class="sentenceContainer"><div class="sentence"> The king had promised that he who would venture should have his daughter to wife, and she was the most beautiful maiden the sun shone on.</div></div>
+    <div class="sentenceContainer"><div class="sentence"> Likewise in the castle lay great treasures, which were guarded by evil spirits, and these treasures would then be freed, and would make a poor man rich enough.</div></div>
+    <div class="sentenceContainer"><div class="sentence"> Already many men had gone into the castle, but as yet none had come out again.</div></div>
+    <div class="sentenceContainer"><div class="sentence"> Then the youth went next morning to the king and said 'if it be allowed, I will willingly watch three nights in the haunted castle.</div></div>
+    <div class="sentenceContainer"><div class="sentence">' The king looked at him, and as the youth pleased him, he said 'you may ask for three things to take into the castle with you, but they must be things without life.</div></div>
+    <div class="sentenceContainer"><div class="sentence">' Then he answered 'then I ask for a fire, a turning lathe, and a cutting-board with the knife.</div></div>
+    <div class="sentenceContainer"><div class="sentence">' The king had these things carried into the castle for him during the day.</div></div>
+    <div class="sentenceContainer"><div class="sentence"> When night was drawing near, the youth went up and made himself a bright fire in one of the rooms, placed the cutting-board and knife beside it, and seated himself by the turning-lathe.</div></div>
+    <div class="sentenceContainer"><div class="sentence"> 'Ah, if I could but shudder.</div></div>
+    <div class="sentenceContainer"><div class="sentence">' Said he, 'but I shall not learn it here either.</div></div>
+    <div class="sentenceContainer"><div class="sentence">' Towards midnight he was about to poke his fire, and as he was blowing it, something cried suddenly from one corner 'au, miau.</div></div>
+    <div class="sentenceContainer"><div class="sentence"> How cold we are.</div></div>
+    <div class="sentenceContainer"><div class="sentence">' 'You fools.</div></div>
+    <div class="sentenceContainer"><div class="sentence">' Cried he, 'what are you crying about.</div></div>
+    <div class="sentenceContainer"><div class="sentence"> If you are cold, come and take a seat by the fire and warm yourselves.</div></div>
+    <div class="sentenceContainer"><div class="sentence">' And when he had said that, two great black cats came with one tremendous leap and sat down on each side of him, and looked savagely at him with their fiery eyes.</div></div>
+    <div class="sentenceContainer"><div class="sentence"> After a short time, when they had warmed themselves, they said 'comrade, shall we have a game of cards.</div></div>
+    <div class="sentenceContainer"><div class="sentence">' 'Why not.</div></div>
+    <div class="sentenceContainer"><div class="sentence">' He replied, 'but just show me your paws.</div></div>
+    <div class="sentenceContainer"><div class="sentence">' Then they stretched out their claws.</div></div>
+    <div class="sentenceContainer"><div class="sentence"> 'Oh, said he, 'what long nails you have.</div></div>
+    <div class="sentenceContainer"><div class="sentence"> Wait, I must first cut them for you.</div></div>
+    <div class="sentenceContainer"><div class="sentence">' Thereupon he seized them by the throats, put them on the cutting-board and screwed their feet fast.</div></div>
+    <div class="sentenceContainer"><div class="sentence"> 'I have looked at your fingers, said he, 'and my fancy for card-playing has gone, and he struck them dead and threw them out into the water.</div></div>
+    <div class="sentenceContainer"><div class="sentence"> But when he had made away with these two, and was about to sit down again by his fire, out from every hole and corner came black cats and black dogs with red-hot chains, and more and more of them came until he could no longer move, and they yelled horribly, and got on his fire, pulled it to pieces, and tried to put it out.</div></div>
+    <div class="sentenceContainer"><div class="sentence"> He watched them for a while quietly, but at last when they were going too far, he seized his cutting-knife, and cried 'away with you, vermin, and began to cut them down.</div></div>
+    <div class="sentenceContainer"><div class="sentence"> Some of them ran away, the others he killed, and threw out into the fish-pond.</div></div>
+    <div class="sentenceContainer"><div class="sentence"> When he came back he fanned the embers of his fire again and warmed himself.</div></div>
+    <div class="sentenceContainer"><div class="sentence"> And as he thus sat, his eyes would keep open no longer, and he felt a desire to sleep.</div></div>
+    <div class="sentenceContainer"><div class="sentence"> Then he looked round and saw a great bed in the corner.</div></div>
+    <div class="sentenceContainer"><div class="sentence"> 'That is the very thing for me, said he, and got into it.</div></div>
+    <div class="sentenceContainer"><div class="sentence"> When he was just going to shut his eyes, however, the bed began to move of its own accord, and went over the whole of the castle.</div></div>
+    <div class="sentenceContainer"><div class="sentence"> 'That's right, said he, 'but go faster.</div></div>
+    <div class="sentenceContainer"><div class="sentence">' Then the bed rolled on as if six horses were harnessed to it, up and down, over thresholds and stairs, but suddenly hop, hop, it turned over upside down, and lay on him like a mountain.</div></div>
+    <div class="sentenceContainer"><div class="sentence"> But he threw quilts and pillows up in the air, got out and said 'now any one who likes, may drive, and lay down by his fire, and slept till it was day.</div></div>
+    <div class="sentenceContainer"><div class="sentence"> In the morning the king came, and when he saw him lying there on the ground, he thought the evil spirits had killed him and he was dead.</div></div>
+    <div class="sentenceContainer"><div class="sentence"> Then said he 'after all it is a pity, -- for so handsome a man.</div></div>
+    <div class="sentenceContainer"><div class="sentence">' The youth heard it, got up, and said 'it has not come to that yet.</div></div>
+    <div class="sentenceContainer"><div class="sentence">' Then the king was astonished, but very glad, and asked how he had fared.</div></div>
+    <div class="sentenceContainer"><div class="sentence"> 'Very well indeed, answered he, 'one night is past, the two others will pass likewise.</div></div>
+    <div class="sentenceContainer"><div class="sentence">' Then he went to the innkeeper, who opened his eyes very wide, and said 'I never expected to see you alive again.</div></div>
+    <div class="sentenceContainer"><div class="sentence"> Have you learnt how to shudder yet.</div></div>
+    <div class="sentenceContainer"><div class="sentence">' 'No, said he, 'it is all in vain.</div></div>
+    <div class="sentenceContainer"><div class="sentence"> If some one would but tell me.</div></div>
+    <div class="sentenceContainer"><div class="sentence">' The second night he again went up into the old castle, sat down by the fire, and once more began his old song 'if I could but shudder.</div></div>
+    <div class="sentenceContainer"><div class="sentence">' When midnight came, an uproar and noise of tumbling about was heard, at first it was low, but it grew louder and louder.</div></div>
+    <div class="sentenceContainer"><div class="sentence"> Then it was quiet for a while, and at length with a loud scream, half a man came down the chimney and fell before him.</div></div>
+    <div class="sentenceContainer"><div class="sentence"> 'Hullo.</div></div>
+    <div class="sentenceContainer"><div class="sentence">' Cried he, 'another half belongs to this.</div></div>
+    <div class="sentenceContainer"><div class="sentence"> This is not enough.</div></div>
+    <div class="sentenceContainer"><div class="sentence">' Then the uproar began again, there was a roaring and howling, and the other half fell down likewise.</div></div>
+    <div class="sentenceContainer"><div class="sentence"> 'Wait, said he, 'I will just stoke up the fire a little for you.</div></div>
+    <div class="sentenceContainer"><div class="sentence">' When he had done that and looked round again, the two pieces were joined together, and a hideous man was sitting in his place.</div></div>
+    <div class="sentenceContainer"><div class="sentence"> 'That is no part of our bargain, said the youth, 'the bench is mine.</div></div>
+    <div class="sentenceContainer"><div class="sentence">' The man wanted to push him away, the youth, however, would not allow that, but thrust him off with all his strength, and seated himself again in his own place.</div></div>
+    <div class="sentenceContainer"><div class="sentence"> Then still more men fell down, one after the other, they brought nine dead men's legs and two skulls, and set them up and played at nine-pins with them.</div></div>
+    <div class="sentenceContainer"><div class="sentence"> The youth also wanted to play and said 'listen you, can I join you.</div></div>
+    <div class="sentenceContainer"><div class="sentence">' 'Yes, if you have any money.</div></div>
+    <div class="sentenceContainer"><div class="sentence">' Money enough, replied he, 'but your balls are not quite round.</div></div>
+    <div class="sentenceContainer"><div class="sentence">' Then he took the skulls and put them in the lathe and turned them till they were round.</div></div>
+    <div class="sentenceContainer"><div class="sentence"> 'There, now they will roll better.</div></div>
+    <div class="sentenceContainer"><div class="sentence">' Said he.</div></div>
+    <div class="sentenceContainer"><div class="sentence"> 'Hurrah.</div></div>
+    <div class="sentenceContainer"><div class="sentence"> Now we'll have fun.</div></div>
+    <div class="sentenceContainer"><div class="sentence">' He played with them and lost some of his money, but when it struck twelve, everything vanished from his sight.</div></div>
+    <div class="sentenceContainer"><div class="sentence"> He lay down and quietly fell asleep.</div></div>
+    <div class="sentenceContainer"><div class="sentence"> Next morning the king came to inquire after him.</div></div>
+    <div class="sentenceContainer"><div class="sentence"> 'How has it fared with you this time.</div></div>
+    <div class="sentenceContainer"><div class="sentence">' Asked he.</div></div>
+    <div class="sentenceContainer"><div class="sentence"> 'I have been playing at nine-pins, he answered, 'and have lost a couple of farthings.</div></div>
+    <div class="sentenceContainer"><div class="sentence">' 'Have you not shuddered then.</div></div>
+    <div class="sentenceContainer"><div class="sentence">' 'What.</div></div>
+    <div class="sentenceContainer"><div class="sentence">' Said he, 'I have had a wonderful time.</div></div>
+    <div class="sentenceContainer"><div class="sentence"> If I did but know what it was to shudder.</div></div>
+    <div class="sentenceContainer"><div class="sentence">' The third night he sat down again on his bench and said quite sadly 'if I could but shudder.</div></div>
+    <div class="sentenceContainer"><div class="sentence">' When it grew late, six tall men came in and brought a coffin.</div></div>
+    <div class="sentenceContainer"><div class="sentence"> Then said he 'ha, ha, that is certainly my little cousin, who died only a few days ago, and he beckoned with his finger, and cried 'come, little cousin, come.</div></div>
+    <div class="sentenceContainer"><div class="sentence">' They placed the coffin on the ground, but he went to it and took the lid off, and a dead man lay therein.</div></div>
+    <div class="sentenceContainer"><div class="sentence"> He felt his face, but it was cold as ice.</div></div>
+    <div class="sentenceContainer"><div class="sentence"> 'Wait, said he, 'I will warm you a little, and went to the fire and warmed his hand and laid it on the dead man's face, but he remained cold.</div></div>
+    <div class="sentenceContainer"><div class="sentence"> Then he took him out, and sat down by the fire and laid him on his breast and rubbed his arms that the blood might circulate again.</div></div>
+    <div class="sentenceContainer"><div class="sentence"> As this also did no good, he thought to himself 'when two people lie in bed together, they warm each other, and carried him to the bed, covered him over and lay down by him.</div></div>
+    <div class="sentenceContainer"><div class="sentence"> After a short time the dead man became warm too, and began to move.</div></div>
+    <div class="sentenceContainer"><div class="sentence"> Then said the youth, 'see, little cousin, have I not warmed you.</div></div>
+    <div class="sentenceContainer"><div class="sentence">' The dead man, however, got up and cried 'now will I strangle you.</div></div>
+    <div class="sentenceContainer"><div class="sentence">' 'What.</div></div>
+    <div class="sentenceContainer"><div class="sentence">' Said he, 'is that the way you thank me.</div></div>
+    <div class="sentenceContainer"><div class="sentence"> You shall at once go into your coffin again, and he took him up, threw him into it, and shut the lid.</div></div>
+    <div class="sentenceContainer"><div class="sentence"> Then came the six men and carried him away again.</div></div>
+    <div class="sentenceContainer"><div class="sentence"> 'I cannot manage to shudder, said he.</div></div>
+    <div class="sentenceContainer"><div class="sentence"> 'I shall never learn it here as long as I live.</div></div>
+    <div class="sentenceContainer"><div class="sentence">' Then a man entered who was taller than all others, and looked terrible.</div></div>
+    <div class="sentenceContainer"><div class="sentence"> He was old, however, and had a long white beard.</div></div>
+    <div class="sentenceContainer"><div class="sentence"> 'You wretch, cried he, 'you shall soon learn what it is to shudder, for you shall die.</div></div>
+    <div class="sentenceContainer"><div class="sentence">' 'Not so fast, replied the youth.</div></div>
+    <div class="sentenceContainer"><div class="sentence"> 'If I am to die, I shall have to have a say in it.</div></div>
+    <div class="sentenceContainer"><div class="sentence">' 'I will soon seize you, said the fiend.</div></div>
+    <div class="sentenceContainer"><div class="sentence"> 'Softly, softly, do not talk so big.</div></div>
+    <div class="sentenceContainer"><div class="sentence"> I am as strong as you are, and perhaps even stronger.</div></div>
+    <div class="sentenceContainer"><div class="sentence">' 'We shall see, said the old man.</div></div>
+    <div class="sentenceContainer"><div class="sentence"> 'If you are stronger, I will let you go - come, we will try.</div></div>
+    <div class="sentenceContainer"><div class="sentence">' Then he led him by dark passages to a smith's forge, took an axe, and with one blow struck an anvil into the ground.</div></div>
+    <div class="sentenceContainer"><div class="sentence"> 'I can do better than that, said the youth, and went to the other anvil.</div></div>
+    <div class="sentenceContainer"><div class="sentence"> The old man placed himself near and wanted to look on, and his white beard hung down.</div></div>
+    <div class="sentenceContainer"><div class="sentence"> Then the youth seized the axe, split the anvil with one blow, and in it caught the old man's beard.</div></div>
+    <div class="sentenceContainer"><div class="sentence"> 'Now I have you, said the youth.</div></div>
+    <div class="sentenceContainer"><div class="sentence"> 'Now it is your turn to die.</div></div>
+    <div class="sentenceContainer"><div class="sentence">' Then he seized an iron bar and beat the old man till he moaned and entreated him to stop, when he would give him great riches.</div></div>
+    <div class="sentenceContainer"><div class="sentence"> The youth drew out the axe and let him go.</div></div>
+    <div class="sentenceContainer"><div class="sentence"> The old man led him back into the castle, and in a cellar showed him three chests full of gold.</div></div>
+    <div class="sentenceContainer"><div class="sentence"> 'Of these, said he, 'one part is for the poor, the other for the king, the third yours.</div></div>
+    <div class="sentenceContainer"><div class="sentence">' In the meantime it struck twelve, and the spirit disappeared, so that the youth stood in darkness.</div></div>
+    <div class="sentenceContainer"><div class="sentence"> 'I shall still be able to find my way out, said he and felt about, found the way into the room, and slept there by his fire.</div></div>
+    <div class="sentenceContainer"><div class="sentence"> Next morning the king came and said 'now you must have learnt what shuddering is.</div></div>
+    <div class="sentenceContainer"><div class="sentence">' 'No, he answered 'what can it be.</div></div>
+    <div class="sentenceContainer"><div class="sentence"> My dead cousin was here, and a bearded man came and showed me a great deal of money down below, but no one told me what it was to shudder.</div></div>
+    <div class="sentenceContainer"><div class="sentence">' 'Then, said the king, 'you have saved the castle, and shall marry my daughter.</div></div>
+    <div class="sentenceContainer"><div class="sentence">' 'That is all very well, said he, 'but still I do not know what it is to shudder.</div></div>
+    <div class="sentenceContainer"><div class="sentence">' Then the gold was brought up and the wedding celebrated, but howsoever much the young king loved his wife, and however happy he was, he still said always 'if I could but shudder - if I could but shudder.</div></div>
+    <div class="sentenceContainer"><div class="sentence">' And this at last angered her.</div></div>
+    <div class="sentenceContainer"><div class="sentence"> Her waiting-maid said 'I will find a cure for him, he shall soon learn what it is to shudder.</div></div>
+    <div class="sentenceContainer"><div class="sentence"> She went out to the stream which flowed through the garden, and had a whole bucketful of gudgeons brought to her.</div></div>
+    <div class="sentenceContainer"><div class="sentence"> At night when the young king was sleeping, his wife was to draw the clothes off him and empty the bucketful of cold water with the gudgeons in it over him, so that the little fishes would sprawl about him.</div></div>
+    <div class="sentenceContainer"><div class="sentence"> Then he woke up and cried 'oh, what makes me shudder so.</div></div>
+    <div class="sentenceContainer"><div class="sentence"> - What makes me shudder so, dear wife.</div></div>
+    <div class="sentenceContainer"><div class="sentence"> Ah.</div></div>
+    <div class="sentenceContainer"><div class="sentence"> Now I know what it is to shudder.</div></div>
+  <div>Source: https://www.cs.cmu.edu/~spok/grimmtmp/003.txt</div>
+  </div>
+  <script src="sentences-source.js"></script>
+  <script src="sentences-target.js"></script>
+  <script>
+    const divs = document.querySelectorAll(".sentenceContainer .sentence");
+
+    divs.forEach((div, index) => {
+      div.addEventListener("mouseover", () => {
+        div.innerText = sentencesTarget[index];
+      });
+      div.addEventListener("mouseout", () => {
+        div.innerText = sentencesSource[index];
+      });
+    });
+  </script>
+</body>
+</html>

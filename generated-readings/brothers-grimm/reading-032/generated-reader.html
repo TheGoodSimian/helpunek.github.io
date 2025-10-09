@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="el">
+<head>
+  <title>Biingual Reader</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      text-align: center;
+      margin: 20px;
+      background: rgb(229, 235, 252);
+    }
+
+    .sentenceContainer {
+      font-size: 18px;
+      color: #333;
+      cursor: pointer;
+      padding-bottom: 30px;
+      border: none;
+      transition: background-color 0.3s;
+      margin: 5px;
+      width: 800px; /* Fixed width for the container */
+      height: auto;
+    }
+
+    .reader {
+      justify-content: space-around;
+      max-width: 800px;
+      margin: 0 auto;
+      background-color: #fff;
+      border-radius: 8px;
+      box-shadow: 0 20px 16px rgba(0, 0, 0, 0.1);
+      padding: 20px;
+      margin-top: 40px;
+    }
+
+    .sentenceContainer:hover {
+      background-color: #f0f0f0;
+    }
+
+    .sentenceContainer:active {
+      font-size: 36px;
+    }
+
+	.notepad {
+	  position: fixed;
+	  display: flex;
+	  flex: 1;
+	  padding-right: 20px;
+	  border-right: 1px;
+	  margin-right: 10px;
+	}
+
+	form {
+     display: flex;
+     flex-direction: column;
+	}
+
+	label {
+      font-weight: bold;
+      margin-top: 1rem;
+    }
+      input[type="text"],
+	textarea {
+	    width: 80px; /* Set the desired width */
+       height: 160px;
+       border: 1px solid #ccc;
+       padding: 0.5rem;
+       border-radius: 4px;
+       resize:both; /* Allow vertical resizing of the textarea */
+	}
+
+	</style>
+</head>
+	<div class="notepad">
+	<form id="notepad">
+	<label for="notes">Notes</label>
+	<textarea type="text"id="notes" notes="notes">Write down any stuff you want to remember, here. Try resizing me! </textarea>
+	</form>
+	</div>
+<body>
+  <div class="reader">
+  <div>Source: Frau Trude</div>
+    <div class="sentenceContainer"><div class="sentence">There was once a little girl who was obstinate and inquisitive, and when her parents told her to do anything, she did not obey them, so how could she fare well.</div></div>
+    <div class="sentenceContainer"><div class="sentence"> One day she said to her parents, I have heard so much of frau trude, I will go to her some day.</div></div>
+    <div class="sentenceContainer"><div class="sentence"> People say that everything about her does look so strange, and that there are such odd things in her house, that I have become quite curious.</div></div>
+    <div class="sentenceContainer"><div class="sentence"> Her parents absolutely forbade her, and said, frau trude is a bad woman, who does wicked things, and if you go to her, you are no longer our child.</div></div>
+    <div class="sentenceContainer"><div class="sentence"> But the maiden did not let herself be turned aside by her parents, prohibition, and still went to frau trude.</div></div>
+    <div class="sentenceContainer"><div class="sentence"> And when she got to her, frau trude said, why are you so pale.</div></div>
+    <div class="sentenceContainer"><div class="sentence"> Ah, she replied, and her whole body trembled, I have been so terrified at what I have seen.</div></div>
+    <div class="sentenceContainer"><div class="sentence"> What have you seen.</div></div>
+    <div class="sentenceContainer"><div class="sentence"> I saw a black man on your steps.</div></div>
+    <div class="sentenceContainer"><div class="sentence"> That was a collier.</div></div>
+    <div class="sentenceContainer"><div class="sentence"> Then I saw a green man.</div></div>
+    <div class="sentenceContainer"><div class="sentence"> That was a huntsman.</div></div>
+    <div class="sentenceContainer"><div class="sentence"> After that I saw a blood-red man.</div></div>
+    <div class="sentenceContainer"><div class="sentence"> That was a butcher.</div></div>
+    <div class="sentenceContainer"><div class="sentence"> Ah, frau trude, I was terrified.</div></div>
+    <div class="sentenceContainer"><div class="sentence"> I looked through the window and saw not you, but, as I verily believe, the devil himself with a head of fire.</div></div>
+    <div class="sentenceContainer"><div class="sentence"> Oho.</div></div>
+    <div class="sentenceContainer"><div class="sentence"> Said she, then you have seen the witch in her proper costume.</div></div>
+    <div class="sentenceContainer"><div class="sentence"> I have been waiting for you, and wanting you a long time already.</div></div>
+    <div class="sentenceContainer"><div class="sentence"> You shall give me some light.</div></div>
+    <div class="sentenceContainer"><div class="sentence"> Then she changed the girl into a block of wood, and threw it into the fire.</div></div>
+    <div class="sentenceContainer"><div class="sentence"> And when it was in a full blaze she sat down close to it, and warmed herself by it, and said, that shines bright for once in a way.</div></div>
+  <div>Source: https://www.cs.cmu.edu/~spok/grimmtmp/032.txt</div>
+  </div>
+  <script src="sentences-source.js"></script>
+  <script src="sentences-target.js"></script>
+  <script>
+    const divs = document.querySelectorAll(".sentenceContainer .sentence");
+
+    divs.forEach((div, index) => {
+      div.addEventListener("mouseover", () => {
+        div.innerText = sentencesTarget[index];
+      });
+      div.addEventListener("mouseout", () => {
+        div.innerText = sentencesSource[index];
+      });
+    });
+  </script>
+</body>
+</html>

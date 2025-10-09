@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="el">
+<head>
+  <title>Biingual Reader</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      text-align: center;
+      margin: 20px;
+      background: rgb(229, 235, 252);
+    }
+
+    .sentenceContainer {
+      font-size: 18px;
+      color: #333;
+      cursor: pointer;
+      padding-bottom: 30px;
+      border: none;
+      transition: background-color 0.3s;
+      margin: 5px;
+      width: 800px; /* Fixed width for the container */
+      height: auto;
+    }
+
+    .reader {
+      justify-content: space-around;
+      max-width: 800px;
+      margin: 0 auto;
+      background-color: #fff;
+      border-radius: 8px;
+      box-shadow: 0 20px 16px rgba(0, 0, 0, 0.1);
+      padding: 20px;
+      margin-top: 40px;
+    }
+
+    .sentenceContainer:hover {
+      background-color: #f0f0f0;
+    }
+
+    .sentenceContainer:active {
+      font-size: 36px;
+    }
+
+	.notepad {
+	  position: fixed;
+	  display: flex;
+	  flex: 1;
+	  padding-right: 20px;
+	  border-right: 1px;
+	  margin-right: 10px;
+	}
+
+	form {
+     display: flex;
+     flex-direction: column;
+	}
+
+	label {
+      font-weight: bold;
+      margin-top: 1rem;
+    }
+      input[type="text"],
+	textarea {
+	    width: 80px; /* Set the desired width */
+       height: 160px;
+       border: 1px solid #ccc;
+       padding: 0.5rem;
+       border-radius: 4px;
+       resize:both; /* Allow vertical resizing of the textarea */
+	}
+
+	</style>
+</head>
+	<div class="notepad">
+	<form id="notepad">
+	<label for="notes">Notes</label>
+	<textarea type="text"id="notes" notes="notes">Write down any stuff you want to remember, here. Try resizing me! </textarea>
+	</form>
+	</div>
+<body>
+  <div class="reader">
+  <div>Source: The Valiant Little Tailor</div>
+    <div class="sentenceContainer"><div class="sentence">One summer's morning a little tailor was sitting on his table by the window, he was in good spirits, and sewed with all his might.</div></div>
+    <div class="sentenceContainer"><div class="sentence"> Then came a peasant woman down the street crying, good jams, cheap.</div></div>
+    <div class="sentenceContainer"><div class="sentence"> Good jams, cheap.</div></div>
+    <div class="sentenceContainer"><div class="sentence"> This rang pleasantly in the tailor's ears, he stretched his delicate head out of the window, and called, come up here, dear woman, here you will get rid of your goods.</div></div>
+    <div class="sentenceContainer"><div class="sentence"> The woman came up the three steps to the tailor with her heavy basket, and he made her unpack all the pots for him.</div></div>
+    <div class="sentenceContainer"><div class="sentence"> He inspected each one, lifted it up, put his nose to it, and at length said, the jam seems to me to be good, so weigh me out four ounces, dear woman, and if it is a quarter of a pound that is of no consequence.</div></div>
+    <div class="sentenceContainer"><div class="sentence"> The woman who had hoped to find a good sale, gave him what he desired, but went away quite angry and grumbling.</div></div>
+    <div class="sentenceContainer"><div class="sentence"> Now, this jam shall be blessed by God, cried the little tailor, and give me health and strength.</div></div>
+    <div class="sentenceContainer"><div class="sentence"> So he brought the bread out of the cupboard, cut himself a piece right across the loaf and spread the jam over it.</div></div>
+    <div class="sentenceContainer"><div class="sentence"> This won't taste bitter, said he, but I will just finish the jacket before I take a bite.</div></div>
+    <div class="sentenceContainer"><div class="sentence"> He laid the bread near him, sewed on, and in his joy, made bigger and bigger stitches.</div></div>
+    <div class="sentenceContainer"><div class="sentence"> In the meantime the smell of the sweet jam rose to where the flies were sitting in great numbers, and they were attracted and descended on it in hosts.</div></div>
+    <div class="sentenceContainer"><div class="sentence"> HI, who invited you, said the little tailor, and drove the unbidden guests away.</div></div>
+    <div class="sentenceContainer"><div class="sentence"> The flies, however, who understood no german, would not be turned away, but came back again in ever-increasing companies.</div></div>
+    <div class="sentenceContainer"><div class="sentence"> The little tailor at last lost all patience, and drew a piece of cloth from the hole under his work-table, and saying, wait, and I will give it to you, struck it mercilessly on them.</div></div>
+    <div class="sentenceContainer"><div class="sentence"> When he drew it away and counted, there lay before him no fewer than seven, dead and with legs stretched out.</div></div>
+    <div class="sentenceContainer"><div class="sentence"> Are you a fellow of that sort, said he, and could not help admiring his own bravery.</div></div>
+    <div class="sentenceContainer"><div class="sentence"> The whole town shall know of this.</div></div>
+    <div class="sentenceContainer"><div class="sentence"> And the little tailor hastened to cut himself a girdle, stitched it, and embroidered on it in large letters, seven at one stroke.</div></div>
+    <div class="sentenceContainer"><div class="sentence"> What, the town, he continued, the whole world shall hear of it.</div></div>
+    <div class="sentenceContainer"><div class="sentence"> And his heart wagged with joy like a lamb's tail.</div></div>
+    <div class="sentenceContainer"><div class="sentence"> The tailor put on the girdle, and resolved to go forth into the world, because he thought his workshop was too small for his valor.</div></div>
+    <div class="sentenceContainer"><div class="sentence"> Before he went away, he sought about in the house to see if there was anything which he could take with him, however, he found nothing but an old cheese, and that he put in his pocket.</div></div>
+    <div class="sentenceContainer"><div class="sentence"> In front of the door he observed a bird which had caught itself in the thicket.</div></div>
+    <div class="sentenceContainer"><div class="sentence"> It had to go into his pocket with the cheese.</div></div>
+    <div class="sentenceContainer"><div class="sentence"> Now he took to the road boldly, and as he was light and nimble, he felt no fatigue.</div></div>
+    <div class="sentenceContainer"><div class="sentence"> The road led him up a mountain, and when he had reached the highest point of it, there sat a powerful giant looking peacefully about him.</div></div>
+    <div class="sentenceContainer"><div class="sentence"> The little tailor went bravely up, spoke to him, and said, good day, comrade, so you are sitting there overlooking the wide-spread world.</div></div>
+    <div class="sentenceContainer"><div class="sentence"> I am just on my way thither, and want to try my luck.</div></div>
+    <div class="sentenceContainer"><div class="sentence"> Have you any inclination to go with me.</div></div>
+    <div class="sentenceContainer"><div class="sentence"> The giant looked contemptuously at the tailor, and said, you ragamuffin.</div></div>
+    <div class="sentenceContainer"><div class="sentence"> You miserable creature.</div></div>
+    <div class="sentenceContainer"><div class="sentence"> Oh, indeed, answered the little tailor, and unbuttoned his coat, and showed the giant the girdle, there may you read what kind of a man I am.</div></div>
+    <div class="sentenceContainer"><div class="sentence"> The giant read, seven at one stroke.</div></div>
+    <div class="sentenceContainer"><div class="sentence"> And thought that they had been men whom the tailor had killed, and began to feel a little respect for the tiny fellow.</div></div>
+    <div class="sentenceContainer"><div class="sentence"> Nevertheless, he wished to try him first, and took a stone in his hand and squeezed it together so that water dropped out of it.</div></div>
+    <div class="sentenceContainer"><div class="sentence"> Do that likewise, said the giant, if you have strength.</div></div>
+    <div class="sentenceContainer"><div class="sentence"> Is that all, said the tailor, that is child's play with us, and put his hand into his pocket, brought out the soft cheese, and pressed it until the liquid ran out of it.</div></div>
+    <div class="sentenceContainer"><div class="sentence"> Faith, said he, that was a little better, wasn't it.</div></div>
+    <div class="sentenceContainer"><div class="sentence"> The giant did not know what to say, and could not believe it of the little man.</div></div>
+    <div class="sentenceContainer"><div class="sentence"> Then the giant picked up a stone and threw it so high that the eye could scarcely follow it.</div></div>
+    <div class="sentenceContainer"><div class="sentence"> Now, little mite of a man, do that likewise.</div></div>
+    <div class="sentenceContainer"><div class="sentence"> Well thrown, said the tailor, but after all the stone came down to earth again, I will throw you one which shall never come back at all.</div></div>
+    <div class="sentenceContainer"><div class="sentence"> And he put his hand into his pocket, took out the bird, and threw it into the air.</div></div>
+    <div class="sentenceContainer"><div class="sentence"> The bird, delighted with its liberty, rose, flew away and did not come back.</div></div>
+    <div class="sentenceContainer"><div class="sentence"> How does that shot please you, comrade, asked the tailor.</div></div>
+    <div class="sentenceContainer"><div class="sentence"> You can certainly throw, said the giant, but now we will see if you are able to carry anything properly.</div></div>
+    <div class="sentenceContainer"><div class="sentence"> He took the little tailor to a mighty oak tree which lay there felled on the ground, and said, if you are strong enough, help me to carry the tree out of the forest.</div></div>
+    <div class="sentenceContainer"><div class="sentence"> Readily, answered the little man, take the trunk on your shoulders, and I will raise up the branches and twigs, after all, they are the heaviest.</div></div>
+    <div class="sentenceContainer"><div class="sentence"> The giant took the trunk on his shoulder, but the tailor seated himself on a branch, and the giant who could not look round, had to carry away the whole tree, and the little tailor into the bargain, he behind, was quite merry and happy, and whistled the song, three tailors rode forth from the gate, as if carrying the tree were child's play.</div></div>
+    <div class="sentenceContainer"><div class="sentence"> The giant, after he had dragged the heavy burden part of the way, could go no further, and cried, hark you, I shall have to let the tree fall.</div></div>
+    <div class="sentenceContainer"><div class="sentence"> The tailor sprang nimbly down, seized the tree with both arms as if he had been carrying it, and said to the giant, you are such a great fellow, and yet can not even carry the tree.</div></div>
+    <div class="sentenceContainer"><div class="sentence"> They went on together, and as they passed a cherry-tree, the giant laid hold of the top of the tree where the ripest fruit was hanging, bent it down, gave it into the tailor's hand, and bade him eat.</div></div>
+    <div class="sentenceContainer"><div class="sentence"> But the little tailor was much too weak to hold the tree, and when the giant let it go, it sprang back again, and the tailor was tossed into the air with it.</div></div>
+    <div class="sentenceContainer"><div class="sentence"> When he had fallen down again without injury, the giant said, what is this.</div></div>
+    <div class="sentenceContainer"><div class="sentence"> Have you not strength enough to hold the weak twig.</div></div>
+    <div class="sentenceContainer"><div class="sentence"> There is no lack of strength, answered the little tailor.</div></div>
+    <div class="sentenceContainer"><div class="sentence"> Do you think that could be anything to a man who has struck down seven at one blow.</div></div>
+    <div class="sentenceContainer"><div class="sentence"> I leapt over the tree because the huntsmen are shooting down there in the thicket.</div></div>
+    <div class="sentenceContainer"><div class="sentence"> Jump as I did, if you can do it.</div></div>
+    <div class="sentenceContainer"><div class="sentence"> The giant made the attempt, but could not get over the tree, and remained hanging in the branches, so that in this also the tailor kept the upper hand.</div></div>
+    <div class="sentenceContainer"><div class="sentence"> The giant said, if you are such a valiant fellow, come with me into our cavern and spend the night with us.</div></div>
+    <div class="sentenceContainer"><div class="sentence"> The little tailor was willing, and followed him.</div></div>
+    <div class="sentenceContainer"><div class="sentence"> When they went into the cave, other giants were sitting there by the fire, and each of them had a roasted sheep in his hand and was eating it.</div></div>
+    <div class="sentenceContainer"><div class="sentence"> The little tailor looked round and thought, it is much more spacious here than in my workshop.</div></div>
+    <div class="sentenceContainer"><div class="sentence"> The giant showed him a bed, and said he was to lie down in it and sleep.</div></div>
+    <div class="sentenceContainer"><div class="sentence"> The bed, however, was too big for the little tailor, he did not lie down in it, but crept into a corner.</div></div>
+    <div class="sentenceContainer"><div class="sentence"> When it was midnight, and the giant thought that the little tailor was lying in a sound sleep, he got up, took a great iron bar, cut through the bed with one blow, and thought he had finished off the grasshopper for good.</div></div>
+    <div class="sentenceContainer"><div class="sentence"> With the earliest dawn the giants went into the forest, and had quite forgotten the little tailor, when all at once he walked up to them quite merrily and boldly.</div></div>
+    <div class="sentenceContainer"><div class="sentence"> The giants were terrified, they were afraid that he would strike them all dead, and ran away in a great hurry.</div></div>
+    <div class="sentenceContainer"><div class="sentence"> The little tailor went onwards, always following his own pointed nose.</div></div>
+    <div class="sentenceContainer"><div class="sentence"> After he had walked for a long time, he came to the courtyard of a royal palace, and as he felt weary, he lay down on the grass and fell asleep.</div></div>
+    <div class="sentenceContainer"><div class="sentence"> Whilst he lay there, the people came and inspected him on all sides, and read on his girdle, seven at one stroke.</div></div>
+    <div class="sentenceContainer"><div class="sentence"> Ah, said they, what does the great warrior here in the midst of peace.</div></div>
+    <div class="sentenceContainer"><div class="sentence"> He must be a mighty lord.</div></div>
+    <div class="sentenceContainer"><div class="sentence"> They went and announced him to the king, and gave it as their opinion that if war should break out, this would be a weighty and useful man who ought on no account to be allowed to depart.</div></div>
+    <div class="sentenceContainer"><div class="sentence"> The counsel pleased the king, and he sent one of his courtiers to the little tailor to offer him military service when he awoke.</div></div>
+    <div class="sentenceContainer"><div class="sentence"> The ambassador remained standing by the sleeper, waited until he stretched his limbs and opened his eyes, and then conveyed to him this proposal.</div></div>
+    <div class="sentenceContainer"><div class="sentence"> For this reason have I come here, the tailor replied, I am ready to enter the king's service.</div></div>
+    <div class="sentenceContainer"><div class="sentence"> He was therefore honorably received and a special dwelling was assigned him.</div></div>
+    <div class="sentenceContainer"><div class="sentence"> The soldiers, however, were set against the little tailor, and wished him a thousand miles away.</div></div>
+    <div class="sentenceContainer"><div class="sentence"> What is to be the end of this, they said among themselves.</div></div>
+    <div class="sentenceContainer"><div class="sentence"> If we quarrel with him, and he strikes about him, seven of us will fall at every blow, not one of us can stand against him.</div></div>
+    <div class="sentenceContainer"><div class="sentence"> They came therefore to a decision, betook themselves in a body to the king, and begged for their dismissal.</div></div>
+    <div class="sentenceContainer"><div class="sentence"> We are not prepared, said they, to stay with a man who kills seven at one stroke.</div></div>
+    <div class="sentenceContainer"><div class="sentence"> The king was sorry that for the sake of one he should lose all his faithful servants, wished that he had never set eyes on the tailor, and would willingly have been rid of him again.</div></div>
+    <div class="sentenceContainer"><div class="sentence"> But he did not venture to give him his dismissal, for he dreaded lest he should strike him and all his people dead, and place himself on the royal throne.</div></div>
+    <div class="sentenceContainer"><div class="sentence"> He thought about it for a long time, and at last found good counsel.</div></div>
+    <div class="sentenceContainer"><div class="sentence"> He sent to the little tailor and caused him to be informed that as he was such a great warrior, he had one request to make of him.</div></div>
+    <div class="sentenceContainer"><div class="sentence"> In a forest of his country lived two giants who caused great mischief with their robbing, murdering, ravaging, and burning, and no one could approach them without putting himself in danger of death.</div></div>
+    <div class="sentenceContainer"><div class="sentence"> If the tailor conquered and killed these two giants, he would give him his only daughter to wife, and half of his kingdom as a dowry, likewise one hundred horsemen should go with him to assist him.</div></div>
+    <div class="sentenceContainer"><div class="sentence"> That would indeed be a fine thing for a man like me, thought the little tailor.</div></div>
+    <div class="sentenceContainer"><div class="sentence"> One is not offered a beautiful princess and half a kingdom every day of one's life.</div></div>
+    <div class="sentenceContainer"><div class="sentence"> Oh, yes, he replied, I will soon subdue the giants, and do not require the help of the hundred horsemen to do it, he who can hit seven with one blow has no need to be afraid of two.</div></div>
+    <div class="sentenceContainer"><div class="sentence"> The little tailor went forth, and the hundred horsemen followed him.</div></div>
+    <div class="sentenceContainer"><div class="sentence"> When he came to the outskirts of the forest, he said to his followers, just stay waiting here, I alone will soon finish off the giants.</div></div>
+    <div class="sentenceContainer"><div class="sentence"> Then he bounded into the forest and looked about right and left.</div></div>
+    <div class="sentenceContainer"><div class="sentence"> After a while he perceived both giants.</div></div>
+    <div class="sentenceContainer"><div class="sentence"> They lay sleeping under a tree, and snored so that the branches waved up and down.</div></div>
+    <div class="sentenceContainer"><div class="sentence"> The little tailor, not idle, gathered two pocketsful of stones, and with these climbed up the tree.</div></div>
+    <div class="sentenceContainer"><div class="sentence"> When he was half-way up, he slipped down by a branch, until he sat just above the sleepers, and then let one stone after another fall on the breast of one of the giants.</div></div>
+    <div class="sentenceContainer"><div class="sentence"> For a long time the giant felt nothing, but at last he awoke, pushed his comrade, and said, why are you knocking me.</div></div>
+    <div class="sentenceContainer"><div class="sentence"> You must be dreaming, said the other, I am not knocking you.</div></div>
+    <div class="sentenceContainer"><div class="sentence"> They laid themselves down to sleep again, and then the tailor threw a stone down on the second.</div></div>
+    <div class="sentenceContainer"><div class="sentence"> What is the meaning of this, cried the other.</div></div>
+    <div class="sentenceContainer"><div class="sentence"> Why are you pelting me.</div></div>
+    <div class="sentenceContainer"><div class="sentence"> I am not pelting you, answered the first, growling.</div></div>
+    <div class="sentenceContainer"><div class="sentence"> They disputed about it for a time, but as they were weary they let the matter rest, and their eyes closed once more.</div></div>
+    <div class="sentenceContainer"><div class="sentence"> The little tailor began his game again, picked out the biggest stone, and threw it with all his might on the breast of the first giant.</div></div>
+    <div class="sentenceContainer"><div class="sentence"> That is too bad, cried he, and sprang up like a madman, and pushed his companion against the tree until it shook.</div></div>
+    <div class="sentenceContainer"><div class="sentence"> The other paid him back in the same coin, and they got into such a rage that they tore up trees and belabored each other so long, that at last they both fell down dead on the ground at the same time.</div></div>
+    <div class="sentenceContainer"><div class="sentence"> Then the little tailor leapt down.</div></div>
+    <div class="sentenceContainer"><div class="sentence"> It is a lucky thing, said he, that they did not tear up the tree on which I was sitting, or I should have had to spring on to another like a squirrel, but we tailors are nimble.</div></div>
+    <div class="sentenceContainer"><div class="sentence"> He drew out his sword and gave each of them a couple of thrusts in the breast, and then went out to the horsemen and said, the work is done, I have finished both of them off, but it was hard work.</div></div>
+    <div class="sentenceContainer"><div class="sentence"> They tore up trees in their sore need, and defended themselves with them, but all that is to no purpose when a man like myself comes, who can kill seven at one blow.</div></div>
+    <div class="sentenceContainer"><div class="sentence"> But you are not wounded, asked the horsemen.</div></div>
+    <div class="sentenceContainer"><div class="sentence"> You need not concern yourself about that, answered the tailor, they have not bent one hair of mine.</div></div>
+    <div class="sentenceContainer"><div class="sentence"> The horsemen would not believe him, and rode into the forest, there they found the giants swimming in their blood, and all round about lay the torn-up trees.</div></div>
+    <div class="sentenceContainer"><div class="sentence"> The little tailor demanded of the king the promised reward.</div></div>
+    <div class="sentenceContainer"><div class="sentence"> He, however, repented of his promise, and again bethought himself how he could get rid of the hero.</div></div>
+    <div class="sentenceContainer"><div class="sentence"> Before you receive my daughter, and the half of my kingdom, said he to him, you must perform one more heroic deed.</div></div>
+    <div class="sentenceContainer"><div class="sentence"> In the forest roams a unicorn which does great harm, and you must catch it first.</div></div>
+    <div class="sentenceContainer"><div class="sentence"> I fear one unicorn still less than two giants.</div></div>
+    <div class="sentenceContainer"><div class="sentence"> Seven at one blow, is my kind of affair.</div></div>
+    <div class="sentenceContainer"><div class="sentence"> He took a rope and an axe with him, went forth into the forest, and again bade those who were sent with him to wait outside.</div></div>
+    <div class="sentenceContainer"><div class="sentence"> He had not long to seek.</div></div>
+    <div class="sentenceContainer"><div class="sentence"> The unicorn soon came towards him, and rushed directly on the tailor, as if it would gore him with its horn without more ado.</div></div>
+    <div class="sentenceContainer"><div class="sentence"> Softly, softly, it can't be done as quickly as that, said he, and stood still and waited until the animal was quite close, and then sprang nimbly behind the tree.</div></div>
+    <div class="sentenceContainer"><div class="sentence"> The unicorn ran against the tree with all its strength, and struck its horn so fast in the trunk that it had not strength enough to draw it out again, and thus it was caught.</div></div>
+    <div class="sentenceContainer"><div class="sentence"> Now, I have got the bird, said the tailor, and came out from behind the tree and put the rope round its neck, and then with his axe he hewed the horn out of the tree, and when all was ready he led the beast away and took it to the king.</div></div>
+    <div class="sentenceContainer"><div class="sentence"> The king still would not give him the promised reward, and made a third demand.</div></div>
+    <div class="sentenceContainer"><div class="sentence"> Before the wedding the tailor was to catch him a wild boar that made great havoc in the forest, and the huntsmen should give him their help.</div></div>
+    <div class="sentenceContainer"><div class="sentence"> Willingly, said the tailor, that is child's play.</div></div>
+    <div class="sentenceContainer"><div class="sentence"> He did not take the huntsmen with him into the forest, and they were well pleased that he did not, for the wild boar had several times received them in such a manner that they had no inclination to lie in wait for him.</div></div>
+    <div class="sentenceContainer"><div class="sentence"> When the boar perceived the tailor, it ran on him with foaming mouth and whetted tusks, and was about to throw him to the ground, but the hero fled and sprang into a chapel which was near, and up to the window at once, and in one bound out again.</div></div>
+    <div class="sentenceContainer"><div class="sentence"> The boar ran in after him, but the tailor ran round outside and shut the door behind it, and then the raging beast, which was much too heavy and awkward to leap out of the window, was caught.</div></div>
+    <div class="sentenceContainer"><div class="sentence"> The little tailor called the huntsmen thither that they might see the prisoner with their own eyes.</div></div>
+    <div class="sentenceContainer"><div class="sentence"> The hero, however went to the king, who was now, whether he liked it or not, obliged to keep his promise, and gave him his daughter and the half of his kingdom.</div></div>
+    <div class="sentenceContainer"><div class="sentence"> Had he known that it was no warlike hero, but a little tailor who was standing before him it would have gone to his heart still more than it did.</div></div>
+    <div class="sentenceContainer"><div class="sentence"> The wedding was held with great magnificence and small joy, and out of a tailor a king was made.</div></div>
+    <div class="sentenceContainer"><div class="sentence"> After some time the young queen heard her husband say in his dreams at night, boy, make me the doublet, and patch the pantaloons, or else I will rap the yard-measure over your ears.</div></div>
+    <div class="sentenceContainer"><div class="sentence"> Then she discovered in what state of life the young lord had been born, and next morning complained of her wrongs to her father, and begged him to help her to get rid of her husband, who was nothing else but a tailor.</div></div>
+    <div class="sentenceContainer"><div class="sentence"> The king comforted her and said, leave your bedroom door open this night, and my servants shall stand outside, and when he has fallen asleep shall go in, bind him, and take him on board a ship which shall carry him into the wide world.</div></div>
+    <div class="sentenceContainer"><div class="sentence"> The woman was satisfied with this, but the king's armor-bearer, who had heard all, was friendly with the young lord, and informed him of the whole plot.</div></div>
+    <div class="sentenceContainer"><div class="sentence"> I'll put a screw into that business, said the little tailor.</div></div>
+    <div class="sentenceContainer"><div class="sentence"> At night he went to bed with his wife at the usual time, and when she thought that he had fallen asleep, she got up, opened the door, and then lay down again.</div></div>
+    <div class="sentenceContainer"><div class="sentence"> The little tailor, who was only pretending to be asleep, began to cry out in a clear voice, boy, make me the doublet and patch me the pantaloons, or I will rap the yard-measure over your ears.</div></div>
+    <div class="sentenceContainer"><div class="sentence"> I smote seven at one blow.</div></div>
+    <div class="sentenceContainer"><div class="sentence"> I killed two giants, I brought away one unicorn and caught a wild boar, and am I to fear those who are standing outside the room.</div></div>
+    <div class="sentenceContainer"><div class="sentence"> When these men heard the tailor speaking thus, they were overcome by a great dread, and ran as if the wild huntsman were behind them, and none of them would venture anything further against him.</div></div>
+    <div class="sentenceContainer"><div class="sentence"> So the little tailor was and remained a king to the end of his life.</div></div>
+  <div>Source: https://www.cs.cmu.edu/~spok/grimmtmp/015.txt</div>
+  </div>
+  <script src="sentences-source.js"></script>
+  <script src="sentences-target.js"></script>
+  <script>
+    const divs = document.querySelectorAll(".sentenceContainer .sentence");
+
+    divs.forEach((div, index) => {
+      div.addEventListener("mouseover", () => {
+        div.innerText = sentencesTarget[index];
+      });
+      div.addEventListener("mouseout", () => {
+        div.innerText = sentencesSource[index];
+      });
+    });
+  </script>
+</body>
+</html>
